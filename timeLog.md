@@ -13,3 +13,5 @@ Date	    Task	                                                Hours
 01/24/2018	Week 2 videos & Activity 3	                            1.5
 01/25/2018	Week 2 Act 4 Video and read Act 4 instructions	        1
 01/26/2018	Activity 4	                                            2
+01/27/2018  Remaining Week 2 Videos and Exercise 2                  3                                             3
+
