@@ -1,9 +1,9 @@
-Date	    Task	                                                Hours
+Date	    Task	                                                  Hours
 01/06/2018	Week 0 Set Up Tasks	                                    3
-01/10/2018	Week 1 Activity 4	                                    1
-01/11/2018	Week 1 Activity 4 & 5	                                1
-01/12/2018	Week 1 Activity 5	                                    1
-01/13/2018	Week 1 Activity 6 & Week 0 Videos	                    3
+01/10/2018	Week 1 Activity 4	                                      1
+01/11/2018	Week 1 Activity 4 & 5	                                  1
+01/12/2018	Week 1 Activity 5	                                      1
+01/13/2018	Week 1 Activity 6 & Week 0 Videos	                      3
 01/14/2018	Week 0 Videos, some Week 1 Activity Videos, Exercise 1	4.5
 01/15/2018	Exercise 1	                                            2
 01/17/2018	Exercise 1	                                            2
