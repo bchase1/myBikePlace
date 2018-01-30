@@ -37,4 +37,4 @@
                                          
 01/28/2018  Exercise 2 6 hours   
                                           
-01/29/2018  Exercise 2 1 hour                                             
+01/29/2018  Exercise 2 2 hours                                             
