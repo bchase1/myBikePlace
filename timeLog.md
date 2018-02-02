@@ -39,4 +39,6 @@
                                           
 01/29/2018  Exercise 2 2 hours
 
-01/31/2018  Week 3 Activity 2.5 hours                                             
+01/31/2018  Week 3 Activity 2.5 hours  
+
+02/01/2018  Week 3 Activity & Week 3 Exercise 2 hours                                           
