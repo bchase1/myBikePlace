@@ -48,3 +48,9 @@ Although there are other sites where you can enter information regarding your bi
 	* JUnit tests to achieve 80%+ code coverage
 	
 * IDE: IntelliJ IDEA
+
+## Design
+
+## [Project Plan](/Users/sighguy4/IdeaProjects/myBikePlace/src/ProjectPlan.md "Project Plan")
+
+## [Time Log](/Users/sighguy4/IdeaProjects/myBikePlace/timeLog.md "Time Log")
