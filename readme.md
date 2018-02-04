@@ -51,6 +51,7 @@ Although there are other sites where you can enter information regarding your bi
 
 ## Design
 * [Screen Design](myBikePlaceScreens.bmpr "myBikePlaceScreens.bmpr")
+* [Application Flow](applicationFlow.md "Application Flow")
 
 ## [Project Plan](projectPlan.md "Project Plan")
 
