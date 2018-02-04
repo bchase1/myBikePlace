@@ -45,4 +45,4 @@
 
 02/02/2018  Week 3 Exercise 1.5 hours
 
-02/03/2018  Week 3 Exercise and update myBikePlace readme.md 5 hours
+02/03/2018  Week 3 Exercise and update myBikePlace readme.md 5.5 hours
