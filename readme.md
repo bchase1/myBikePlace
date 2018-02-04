@@ -53,4 +53,4 @@ Although there are other sites where you can enter information regarding your bi
 
 ## [Project Plan](/Users/sighguy4/IdeaProjects/myBikePlace/src/ProjectPlan.md "Project Plan")
 
-## [Time Log](/Users/sighguy4/IdeaProjects/myBikePlace/timeLog.md "Time Log")
+## [Time Log](timeLog.md)
