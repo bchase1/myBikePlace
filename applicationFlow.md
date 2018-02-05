@@ -12,7 +12,6 @@
 	2. User enters username and password on form and submits
 	3. If user is authenticated, the server will handle allowing access to edit pages. JDBCRealm used for authentication (users table)
 	4. If authentication fails, show error message/page
-	5.
 
 ## View Bike Information
 	1. Page sends a request to view bike information servlet along with criteria (year of make, bike make, bike name, etc)
