@@ -23,12 +23,12 @@
 	7. Consider paging results so page does not get super long and too much data is sent
 
 ## View Bike Ride Information
-	1. Page sends a request to view bike information servlet along with criteria (year of make, bike make, bike name, etc)
-	2. Servlet uses the bikeinformation dao to select bike information according to criteria
-	3. Dao performs select and creates bike information objects from results
-	4. Dao returns list of bike information matching criteria to servlet
-	5. Servlet sends list back to bike information jsp
-	6. bike information jsp displays the reports
+	1. Page sends a request to view bike ride information servlet along with criteria (start and end point, distance, etc)
+	2. Servlet uses the bikerideinformation dao to select bike ride information according to criteria
+	3. Dao performs select and creates bike ride information objects from results
+	4. Dao returns list of bike ride information matching criteria to servlet
+	5. Servlet sends list back to bike ride information jsp
+	6. bike ride information jsp displays the reports
 	7. Consider paging results so page does not get super long and too much data is sent
 
 ## About
