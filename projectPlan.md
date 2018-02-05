@@ -28,6 +28,10 @@
 	
 ## Week 5
 	[ ] Create the template for all jsps using materialize
+	[ ] Add the role table
+	[ ] Add the role entity
+	[ ] Create the role dao
+	[ ] Create the role dao unit tests
 	[ ] add a jsp to display user
 	[ ] Add jsp to add a user
 	[ ] Daily Time Log entry
