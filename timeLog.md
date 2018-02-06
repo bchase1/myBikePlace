@@ -49,4 +49,4 @@
 
 02/04/2018  Update myBikePlace readme.md, create projectPlan.md, myBikePlaceScreens.bmpr, and applicationFlow.md  4.5 hours
 
-02/05/2018  Update myBikePlace projectPlan.md and applicationFlow.md.  Week 4 Readings.
+02/05/2018  Update myBikePlace projectPlan.md and applicationFlow.md.  Week 4 Readings  2 hours
