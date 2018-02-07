@@ -19,7 +19,7 @@
 	3. Dao performs select and creates bike information objects from results
 	4. Dao returns list of bike information matching criteria to servlet
 	5. Servlet sends list back to bike information jsp
-	6. bike information jsp displays the reports
+	6. bike information jsp displays the bike information
 	7. Consider paging results so page does not get super long and too much data is sent
 
 ## View Bike Ride Information
@@ -28,7 +28,7 @@
 	3. Dao performs select and creates bike ride information objects from results
 	4. Dao returns list of bike ride information matching criteria to servlet
 	5. Servlet sends list back to bike ride information jsp
-	6. bike ride information jsp displays the reports
+	6. bike ride information jsp displays the bike ride information
 	7. Consider paging results so page does not get super long and too much data is sent
 
 ## About
