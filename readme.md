@@ -50,7 +50,7 @@ Although there are other sites where you can enter information regarding your bi
 * IDE: IntelliJ IDEA
 
 ## Design
-* [Screen Design](myBikePlaceScreens.bmpr "myBikePlaceScreens.bmpr")
+* [Screen Design](myBikePlaceScreens.pdf "myBikePlaceScreens.pdf")
 * [Application Flow](applicationFlow.md "Application Flow")
 
 ## [Project Plan](projectPlan.md "Project Plan")
