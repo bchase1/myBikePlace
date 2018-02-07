@@ -1,5 +1,5 @@
                             
-01/06/2018 | Week 0 Set Up Tasks	| 3 hours
+01/06/2018 | Week 0 Set Up Tasks | 3 hours
 
 01/10/2018	Week 1 Activity  4 hours
 
