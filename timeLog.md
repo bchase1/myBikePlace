@@ -14,8 +14,8 @@
 | 01/21/2018	| Exercise 1 & Week 2 videos | 4 | |
 | 01/22/2018 | Week 2 videos & Activity 2 | 2 | |
 | 01/24/2018	| Week 2 videos & Activity 3 | 1.5 | |
-| 01/25/2018	| Week 2 Act 4 Video and read Act 4 instructions | 1 hour | |
-| 01/26/2018	| Activity 4 | 2 hours | | |
+| 01/25/2018	| Week 2 Act 4 Video and read Act 4 instructions | 1 | |
+| 01/26/2018	| Activity 4 | 2 | | |
 | 01/27/2018 | Remaining Week 2 Videos and Exercise 2 | 3 | |
 | 01/28/2018 | Exercise 2 | 6 | |
 | 01/29/2018 | Update Individual Project and Exercise 2 | 1 | |
