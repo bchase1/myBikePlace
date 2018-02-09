@@ -28,5 +28,6 @@
 | 02/03/2018 | Week 3 Exercise and update myBikePlace readme.md | 5.5 ||
 | 02/04/2018 | Update myBikePlace readme.md, create projectPlan.md, myBikePlaceScreens.bmpr, and applicationFlow.md | 4.5 ||
 | 02/05/2018 | Update myBikePlace projectPlan.md and applicationFlow.md.  Week 4 Readings | 2 | |  
-| 02/07/2018 | Watch Week 4 videos | 1 | |          
+| 02/07/2018 | Watch Week 4 videos | 1 | | 
+| 02/08/2018 | Watch Week 4 videos | 1 | |         
   
