@@ -32,4 +32,6 @@
 | 02/08/2018 | Watch Week 4 videos | 1 | |
 | 02/09/2018 | Watch Week 4 videos | 1.5 | |         
 | 02/10/2018 | Watch Week 4 videos | 2 | |
+| 02/11/2018 | Watch Week 4 videos | 3 | |
+
   
