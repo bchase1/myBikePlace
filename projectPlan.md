@@ -15,16 +15,16 @@
  -	[x] Ready for Checkpoint 1
 	
 ## Week 4
- -	[ ] Complete database design
- -	[ ] Create the database and user table
- -	[ ] Create the user entity class and annotate for hibernate
- -	[ ] Create user dao
- -	[ ] Set up logging
+ -	[x] Complete database design
+ -	[x] Create the database and user table
+ -	[x] Create the user entity class and annotate for hibernate
+ -	[x] Create user dao
+ -	[x] Set up logging
  -	[ ] Create the test database
- -	[ ] Create user dao unit tests
+ -	[x] Create user dao unit tests
  -	[ ] Create class uml diagram
  -	[ ] Prepare for Week 5 peer design/code review
- -	[ ] Daily Time Log entry
+ -	[x] Daily Time Log entry
 	
 ## Week 5
  -	[ ] Create the template for all jsps using materialize

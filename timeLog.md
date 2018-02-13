@@ -33,5 +33,6 @@
 | 02/09/2018 | Watch Week 4 videos | 1.5 | |         
 | 02/10/2018 | Watch Week 4 videos | 2 | |
 | 02/11/2018 | Watch Week 4 videos | 3 | |
+| 02/12/2018 | Watch Week 4 videos and do Week 4 Exercise with individual project | 9 | |
 
   
