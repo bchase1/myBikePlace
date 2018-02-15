@@ -67,3 +67,17 @@
 [DEBUG] 2018-02-12 20:09:55.403 [main] UserDao - Searching for: c
 [DEBUG] 2018-02-12 20:09:56.155 [main] UserDao - Searching for user with lastName = Curry
 [DEBUG] 2018-02-12 20:09:56.192 [main] UserDao - Searching for user with lastName = c
+[DEBUG] 2018-02-13 17:16:45.558 [main] UserDao - Searching for user with lastName = Curry
+[DEBUG] 2018-02-13 17:16:46.114 [main] UserDao - Searching for user with lastName = c
+[DEBUG] 2018-02-13 18:23:23.880 [main] UserDao - Searching for user with lastName = Curry
+[DEBUG] 2018-02-13 18:23:24.486 [main] UserDao - Searching for user with lastName = c
+[DEBUG] 2018-02-13 18:28:01.206 [main] UserDao - Searching for user with lastName = Curry
+[DEBUG] 2018-02-13 18:28:01.670 [main] UserDao - Searching for user with lastName = c
+[DEBUG] 2018-02-13 18:36:38.088 [main] UserDao - Searching for user with lastName = Curry
+[DEBUG] 2018-02-13 18:36:38.624 [main] UserDao - Searching for user with lastName = c
+[DEBUG] 2018-02-13 18:37:50.287 [main] UserDao - Searching for user with lastName = Curry
+[DEBUG] 2018-02-13 18:37:50.775 [main] UserDao - Searching for user with lastName = c
+[DEBUG] 2018-02-13 18:52:19.659 [main] UserDao - Searching for user with lastName = Curry
+[DEBUG] 2018-02-13 18:52:20.098 [main] UserDao - Searching for user with lastName = c
+[DEBUG] 2018-02-13 18:56:41.710 [main] UserDao - Searching for user with lastName = Curry
+[DEBUG] 2018-02-13 18:56:42.349 [main] UserDao - Searching for user with lastName = c

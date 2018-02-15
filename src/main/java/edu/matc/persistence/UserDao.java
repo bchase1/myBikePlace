@@ -38,26 +38,6 @@ public class UserDao {
     }
 
     /**
-     * Gets user by last name.
-     *
-     * @param lastName the last name
-     * @return the user by last name
-     */
-    public List<User> getUserByLastName(String lastName) {
-
-        logger.debug("Searching for: {}", lastName);
-
-        Session session = sessionFactory.openSession();
-        CriteriaBuilder builder = session.getCriteriaBuilder();
-        CriteriaQuery<User> query = builder.createQuery(User.class);
-        Root<User> root = query.from(User.class);
-        Expression<String> propertyPath = root.get("lastName");
-        query.where(builder.like(propertyPath, "%" + lastName + "%"));
-        List<User> users = session.createQuery(query).getResultList();
-        session.close();
-        return users;
-    }
-    /**
      * Gets a user by id.
      * @return a user
      */

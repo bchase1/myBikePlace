@@ -1,5 +1,7 @@
 package edu.matc.entity;
+import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.GenericGenerator;
+import org.hibernate.annotations.UpdateTimestamp;
 
 import javax.persistence.Entity;
 import javax.persistence.Table;
@@ -21,6 +23,7 @@ public class User {
     private int UserId;
 
     @Column(name = "createDate")
+    @CreationTimestamp
     private Timestamp createDate;
 
     @Column(name = "email")
@@ -36,6 +39,7 @@ public class User {
     private String password;
 
     @Column(name = "updateDate")
+    @UpdateTimestamp
     private Timestamp updateDate;
 
     @Column(name = "userName")
