@@ -35,5 +35,6 @@
 | 02/11/2018 | Watch Week 4 videos | 3 | |
 | 02/12/2018 | Watch Week 4 videos and do Week 4 Exercise with individual project | 9 | |
 | 02/14/2018 | Watch Week 5 videos | 1.5 | |
+| 02/15/2018 | Watch Week 5 videos | 2 | |
 
   
