@@ -7,6 +7,7 @@ import javax.persistence.Entity;
 import javax.persistence.Table;
 import javax.persistence.*;
 import java.sql.Timestamp;
+import java.util.Objects;
 
 /**
  * A class to represent a user.
@@ -218,5 +219,24 @@ public class User {
                 ", updateDate" + updateDate + '\'' +
                 ", userName" + userName + '\'' +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof User)) return false;
+        User user = (User) o;
+        return getUserId() == user.getUserId() &&
+                Objects.equals(getEmail(), user.getEmail()) &&
+                Objects.equals(getFirstName(), user.getFirstName()) &&
+                Objects.equals(getLastName(), user.getLastName()) &&
+                Objects.equals(getPassword(), user.getPassword()) &&
+                Objects.equals(getUserName(), user.getUserName());
+    }
+
+    @Override
+    public int hashCode() {
+
+        return Objects.hash(getUserId(), getEmail(), getFirstName(), getLastName(), getPassword(), getUserName());
     }
 }

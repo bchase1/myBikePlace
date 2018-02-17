@@ -81,3 +81,5 @@
 [DEBUG] 2018-02-13 18:52:20.098 [main] UserDao - Searching for user with lastName = c
 [DEBUG] 2018-02-13 18:56:41.710 [main] UserDao - Searching for user with lastName = Curry
 [DEBUG] 2018-02-13 18:56:42.349 [main] UserDao - Searching for user with lastName = c
+[DEBUG] 2018-02-17 17:21:49.974 [main] UserDao - Searching for user with lastName = Curry
+[DEBUG] 2018-02-17 17:21:50.413 [main] UserDao - Searching for user with lastName = c
