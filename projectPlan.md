@@ -23,17 +23,17 @@
  -	[ ] Create the test database
  -	[x] Create user dao unit tests
  -	[ ] Create class uml diagram
- -	[ ] Prepare for Week 5 peer design/code review
  -	[x] Daily Time Log entry
 	
 ## Week 5
- -	[ ] Create the template for all jsps using materialize
- -	[ ] Add the role table
- -	[ ] Add the role entity
- -	[ ] Create the role dao
- -	[ ] Create the role dao unit tests
+ -	[ ] Add the bike table
+ -	[ ] Add the bike entity
+ -	[ ] Create the bike dao
+ -	[ ] Create the bike dao unit tests
  -	[ ] add a jsp to display user
  -	[ ] Add jsp to add a user
+ -	[ ] Prepare for Week 6 peer design/code review
+
  -	[ ] Daily Time Log entry
 	
 ## Week 6
@@ -42,6 +42,7 @@
  -	[ ] Create bike rides table
  -	[ ] Add update and delete functionality in jsp for user
  -	[ ] Build the bike rides add/update/delete jsp
+ - [ ] Create the template for all jsps using materialize
  -	[ ] Prepare for Checkpoint 2: Database designed and created, at least one DAO implemented with Hibernate, DAO is unit tested, Log4J is implemented (no System.out.printlns), class design and any other diagrams you plan to use have been created
  -	[ ] Daily Time Log entry
 	
