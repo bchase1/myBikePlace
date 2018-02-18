@@ -17,7 +17,7 @@ import java.util.Objects;
 @Entity(name = "User")
 @Table(name = "user")
 public class User {
-    @Column(name = "userId")
+    @Column(name = "id")
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
     @GenericGenerator(name = "native", strategy = "native")
