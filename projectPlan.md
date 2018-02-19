@@ -26,15 +26,15 @@
  -	[x] Daily Time Log entry
 	
 ## Week 5
- -	[ ] Add the bike table
- -	[ ] Add the bike entity
- -	[ ] Create the bike dao
- -	[ ] Create the bike dao unit tests
+ -	[x] Add the bike table
+ -	[x] Add the bike entity
+ -	[x] Create the bike dao
+ -	[x] Create the bike dao unit tests
  -	[ ] add a jsp to display user
  -	[ ] Add jsp to add a user
- -	[ ] Prepare for Week 6 peer design/code review
+ -	[x] Prepare for Week 6 peer design/code review
 
- -	[ ] Daily Time Log entry
+ -	[x] Daily Time Log entry
 	
 ## Week 6
  -	[ ] Create db on AWS

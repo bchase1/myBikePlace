@@ -37,6 +37,7 @@
 | 02/14/2018 | Watch Week 5 videos | 1.5 | |
 | 02/15/2018 | Watch Week 5 videos | 2 | |
 | 02/17/2018 | Watch Week 5 videos | 8 | |
+| 02/18/2018 | Create Bike, GenericDao, and BikeDaoTest tables | 9 | |
 
 
   

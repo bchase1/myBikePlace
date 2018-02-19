@@ -41,12 +41,12 @@ class BikeDaoTest {
     /**
      * Verifies a bike is returned correctly based on id search.
      */
-    //@Test
-    //void getByIdSuccess() {
-        //Bike newBike = new Bike("2015","Trek","Domane","carbon wheels",2);
-        //Bike retrievedBike = (Bike) genericDao.getById(3);
-        //assertNotNull(retrievedBike);
-        //assertEquals("Trek", retrievedBike.getBikeBrand("Trek"));
+    @Test
+    void getByIdSuccess() {
+        Bike newBike = new Bike("2015","Trek","Domane","carbon wheels",2);
+        Bike retrievedBike = (Bike) genericDao.getById(3);
+        assertNotNull(retrievedBike);
+        assertEquals("Trek", retrievedBike.getBikeBrand("Trek"));
     //}
     /**
      * Verify successful insert of a bike
