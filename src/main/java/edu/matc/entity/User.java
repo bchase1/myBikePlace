@@ -7,7 +7,9 @@ import javax.persistence.Entity;
 import javax.persistence.Table;
 import javax.persistence.*;
 import java.sql.Timestamp;
+import java.util.HashSet;
 import java.util.Objects;
+import java.util.Set;
 
 /**
  * A class to represent a user.
@@ -46,6 +48,9 @@ public class User {
     @Column(name = "userName")
     private String userName;
 
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
+    private Set<Bike> bike = new HashSet<>();
+
     /**
      * Instantiates a new User.
      */
@@ -55,14 +60,14 @@ public class User {
     /**
      * Instantiates a new User.
      *
-     * @param UserId the userId
+     * @param UserId     the userId
      * @param createDate the date the user is created
-     * @param email the email address
-     * @param firstName the first name
-     * @param lastName  the last name
-     * @param password the password
+     * @param email      the email address
+     * @param firstName  the first name
+     * @param lastName   the last name
+     * @param password   the password
      * @param updateDate the date the user is updated
-     * @param userName  the user name
+     * @param userName   the user name
      */
     public User(int UserId, Timestamp createDate, String email, String firstName, String lastName, String password,
                 Timestamp updateDate, String userName) {
@@ -75,6 +80,7 @@ public class User {
         this.updateDate = updateDate;
         this.userName = userName;
     }
+
     /**
      * Gets UserId.
      *
@@ -95,6 +101,8 @@ public class User {
 
     /**
      * Gets the createDate
+     *
+     * @return the create date
      */
     public Timestamp getCreateDate() {
         return createDate;
@@ -102,6 +110,8 @@ public class User {
 
     /**
      * Sets the createDate
+     *
+     * @param createDate the create date
      */
     public void setCreateDate(Timestamp createDate) {
         this.createDate = createDate;
@@ -163,6 +173,8 @@ public class User {
 
     /**
      * Gets the password
+     *
+     * @return the password
      */
     public String getPassword() {
         return password;
@@ -170,6 +182,8 @@ public class User {
 
     /**
      * Sets the password
+     *
+     * @param password the password
      */
     public void setPassword(String password) {
         this.password = password;
@@ -177,6 +191,8 @@ public class User {
 
     /**
      * Gets the updateDate
+     *
+     * @return the update date
      */
     public Timestamp getUpdateDate() {
         return updateDate;
@@ -184,6 +200,8 @@ public class User {
 
     /**
      * Sets the updateDate
+     *
+     * @param updateDate the update date
      */
     public void setUpdateDate(Timestamp updateDate) {
         this.updateDate = updateDate;
@@ -207,6 +225,43 @@ public class User {
         this.userName = userName;
     }
 
+    /**
+     * Gets bike.
+     *
+     * @return the bike
+     */
+    public Set<Bike> getBike() {
+        return bike;
+    }
+
+    /**
+     * Sets bike.
+     *
+     * @param bikes the bikes
+     */
+    public void setBike(Set<Bike> bikes) {
+        this.bike = bikes;
+    }
+
+    /**
+     * Add bike.
+     *
+     * @param bike the bike
+     */
+    //public void addBike(Bike bikes) {
+        //bikes.add(bike);
+        //bike.setUser(this);
+    //}
+
+    /**
+     * Remove bike.
+     *
+     * @param bike the bike
+     */
+    //public void removeBike(Bike bike) {
+        //bike.remove(bike);
+        //bike.setBike(null);
+    //}
     @Override
     public String toString() {
         return "User{" +

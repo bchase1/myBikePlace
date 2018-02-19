@@ -927,7 +927,7 @@
     </column>
     <column id="233" parent="230" name="modelYear">
       <Position>2</Position>
-      <DataType>varchar(255)|0</DataType>
+      <DataType>varchar(4)|0</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="234" parent="230" name="bikeBrand">

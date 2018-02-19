@@ -1,5 +1,6 @@
 package edu.matc.persistence;
 
+import edu.matc.entity.Bike;
 import edu.matc.entity.User;
 import edu.matc.util.Database;
 import org.junit.jupiter.api.BeforeEach;
@@ -15,7 +16,7 @@ import static org.junit.jupiter.api.Assertions.*;
  */
 class UserDaoTest {
 
-    UserDao dao;
+    GenericDao genericDao;
 
     /**
      * Run set up tasks before each test:
@@ -24,7 +25,7 @@ class UserDaoTest {
      */
     @BeforeEach
     void setUp() {
-        dao = new UserDao();
+        genericDao = new GenericDao(User.class);
         Database database = Database.getInstance();
         database.runSQL("cleandb.sql");
     }
@@ -34,7 +35,7 @@ class UserDaoTest {
      */
     @Test
     void getUserSuccess() {
-        List<User> users = dao.getUser();
+        List<User> users = genericDao.getAll();
         assertEquals(6, users.size());
     }
 
@@ -43,7 +44,7 @@ class UserDaoTest {
      */
     @Test
     void getByIdSuccess() {
-        User retrievedUser = dao.getById(3);
+        User retrievedUser = (User)genericDao.getById(3);
         assertNotNull(retrievedUser);
         assertEquals("Barney", retrievedUser.getFirstName());
     }
@@ -60,9 +61,15 @@ class UserDaoTest {
         //Passed the milliseconds to constructor of Timestamp class
         Timestamp ts = new Timestamp(time);
         User newUser = new User(7, ts, "fflintstone@gmail.com", "Fred", "Flintstone", "supersecret7", ts, "fflintstone");
-        int id = dao.insert(newUser);
+        //String modelYear = "2005";
+        //String bikeBrand = "Trek";
+        //String bikeName = "1000";
+        //String accessories = "water bottle cage, seat pack"
+        //Bike bike = new Bike(modelYear, bikeBrand, bikeName, accessories, newUser);
+        //newUser.addBike(bike);
+        int id = genericDao.insert(newUser);
         assertNotEquals(0,id);
-        User insertedUser = dao.getById(id);
+        User insertedUser = (User)genericDao.getById(id);
         assertEquals(newUser, insertedUser);
     }
 
@@ -71,8 +78,8 @@ class UserDaoTest {
      */
     @Test
     void deleteSuccess() {
-        dao.delete(dao.getById(3));
-        assertNull(dao.getById(3));
+        genericDao.delete(genericDao.getById(3));
+        assertNull(genericDao.getById(3));
     }
     /**
      * Verify successful update of user
@@ -80,10 +87,10 @@ class UserDaoTest {
     @Test
     void updateSuccess() {
         String newLastName = "Curry";
-        User userToUpdate = dao.getById(3);
+        User userToUpdate = (User)genericDao.getById(3);
         userToUpdate.setLastName(newLastName);
-        dao.saveOrUpdate(userToUpdate);
-        User retrievedUser = dao.getById(3);
+        genericDao.saveOrUpdate(userToUpdate);
+        User retrievedUser = (User)genericDao.getById(3);
         assertEquals(newLastName, retrievedUser.getLastName());
     }
     /**
@@ -91,7 +98,7 @@ class UserDaoTest {
      */
     @Test
     void getByPropertyEqualSuccess() {
-        List<User> users = dao.getByPropertyLike("lastName", "Curry");
+        List<User> users = genericDao.getByPropertyLike("lastName", "Curry");
         assertEquals(1, users.size());
         assertEquals(3, users.get(0).getUserId());
     }
@@ -101,7 +108,7 @@ class UserDaoTest {
      */
     @Test
     void getByPropertyLikeSuccess() {
-        List<User> users = dao.getByPropertyLike("lastName", "c");
+        List<User> users = genericDao.getByPropertyLike("lastName", "c");
         assertEquals(3, users.size());
     }
 }
