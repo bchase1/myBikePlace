@@ -243,25 +243,6 @@ public class User {
         this.bike = bikes;
     }
 
-    /**
-     * Add bike.
-     *
-     * @param bike the bike
-     */
-    //public void addBike(Bike bikes) {
-        //bikes.add(bike);
-        //bike.setUser(this);
-    //}
-
-    /**
-     * Remove bike.
-     *
-     * @param bike the bike
-     */
-    //public void removeBike(Bike bike) {
-        //bike.remove(bike);
-        //bike.setBike(null);
-    //}
     @Override
     public String toString() {
         return "User{" +

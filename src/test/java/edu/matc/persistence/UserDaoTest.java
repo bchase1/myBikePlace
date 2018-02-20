@@ -61,12 +61,6 @@ class UserDaoTest {
         //Passed the milliseconds to constructor of Timestamp class
         Timestamp ts = new Timestamp(time);
         User newUser = new User(7, ts, "fflintstone@gmail.com", "Fred", "Flintstone", "supersecret7", ts, "fflintstone");
-        //String modelYear = "2005";
-        //String bikeBrand = "Trek";
-        //String bikeName = "1000";
-        //String accessories = "water bottle cage, seat pack"
-        //Bike bike = new Bike(modelYear, bikeBrand, bikeName, accessories, newUser);
-        //newUser.addBike(bike);
         int id = genericDao.insert(newUser);
         assertNotEquals(0,id);
         User insertedUser = (User)genericDao.getById(id);
