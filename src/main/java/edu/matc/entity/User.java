@@ -49,7 +49,7 @@ public class User {
     private String userName;
 
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
-    private Set<Bike> bike = new HashSet<>();
+    private Set<Bike> bikes = new HashSet<>();
 
     /**
      * Instantiates a new User.
@@ -230,8 +230,8 @@ public class User {
      *
      * @return the bike
      */
-    public Set<Bike> getBike() {
-        return bike;
+    public Set<Bike> getBikes() {
+        return bikes;
     }
 
     /**
@@ -240,8 +240,13 @@ public class User {
      * @param bikes the bikes
      */
     public void setBike(Set<Bike> bikes) {
-        this.bike = bikes;
+        this.bikes = bikes;
     }
+    public void addBike(Bike bike) {
+        bikes.add(bike);
+        bike.setUser(this);
+    }
+
 
     @Override
     public String toString() {

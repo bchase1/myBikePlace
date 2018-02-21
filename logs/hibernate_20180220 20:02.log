@@ -1,0 +1,965 @@
+[DEBUG] 2018-02-20 19:59:17.966 [main] IntegratorServiceImpl - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+[DEBUG] 2018-02-20 19:59:18.034 [main] IntegratorServiceImpl - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+[DEBUG] 2018-02-20 19:59:18.088 [main] IntegratorServiceImpl - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+[INFO ] 2018-02-20 19:59:18.941 [main] Version - HHH000412: Hibernate Core {5.2.12.Final}
+[INFO ] 2018-02-20 19:59:18.967 [main] Environment - HHH000206: hibernate.properties not found
+[DEBUG] 2018-02-20 19:59:19.187 [main] LocalXmlResourceResolver - Interpreting public/system identifier : [-//Hibernate/Hibernate Configuration DTD//EN] - [http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd]
+[DEBUG] 2018-02-20 19:59:19.191 [main] LocalXmlResourceResolver - Recognized hibernate-configuration identifier; attempting to resolve on classpath under org/hibernate/
+[DEBUG] 2018-02-20 19:59:19.211 [main] JaxbCfgProcessor - cfg.xml document did not define namespaces; wrapping in custom event reader to introduce namespace information
+[DEBUG] 2018-02-20 19:59:20.387 [main] ServiceBinding - Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+[DEBUG] 2018-02-20 19:59:20.631 [main] RegionFactoryInitiator - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+[INFO ] 2018-02-20 19:59:20.751 [main] Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[DEBUG] 2018-02-20 19:59:21.068 [main] BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@28782602
+[DEBUG] 2018-02-20 19:59:21.069 [main] BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@28782602
+[DEBUG] 2018-02-20 19:59:21.069 [main] BasicTypeRegistry - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@28782602
+[DEBUG] 2018-02-20 19:59:21.080 [main] BasicTypeRegistry - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@288a4658
+[DEBUG] 2018-02-20 19:59:21.092 [main] BasicTypeRegistry - Adding type registration true_false -> org.hibernate.type.TrueFalseType@53b98ff6
+[DEBUG] 2018-02-20 19:59:21.096 [main] BasicTypeRegistry - Adding type registration yes_no -> org.hibernate.type.YesNoType@76adb233
+[DEBUG] 2018-02-20 19:59:21.110 [main] BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@607b2792
+[DEBUG] 2018-02-20 19:59:21.111 [main] BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@607b2792
+[DEBUG] 2018-02-20 19:59:21.111 [main] BasicTypeRegistry - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@607b2792
+[DEBUG] 2018-02-20 19:59:21.119 [main] BasicTypeRegistry - Adding type registration character -> org.hibernate.type.CharacterType@99a65d3
+[DEBUG] 2018-02-20 19:59:21.121 [main] BasicTypeRegistry - Adding type registration char -> org.hibernate.type.CharacterType@99a65d3
+[DEBUG] 2018-02-20 19:59:21.122 [main] BasicTypeRegistry - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@99a65d3
+[DEBUG] 2018-02-20 19:59:21.134 [main] BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@29d37757
+[DEBUG] 2018-02-20 19:59:21.135 [main] BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@29d37757
+[DEBUG] 2018-02-20 19:59:21.136 [main] BasicTypeRegistry - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@29d37757
+[DEBUG] 2018-02-20 19:59:21.145 [main] BasicTypeRegistry - Adding type registration integer -> org.hibernate.type.IntegerType@7882c44a
+[DEBUG] 2018-02-20 19:59:21.146 [main] BasicTypeRegistry - Adding type registration int -> org.hibernate.type.IntegerType@7882c44a
+[DEBUG] 2018-02-20 19:59:21.147 [main] BasicTypeRegistry - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@7882c44a
+[DEBUG] 2018-02-20 19:59:21.159 [main] BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@794b435f
+[DEBUG] 2018-02-20 19:59:21.159 [main] BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@794b435f
+[DEBUG] 2018-02-20 19:59:21.160 [main] BasicTypeRegistry - Adding type registration java.lang.Long -> org.hibernate.type.LongType@794b435f
+[DEBUG] 2018-02-20 19:59:21.175 [main] BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@7b22ec89
+[DEBUG] 2018-02-20 19:59:21.176 [main] BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@7b22ec89
+[DEBUG] 2018-02-20 19:59:21.177 [main] BasicTypeRegistry - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@7b22ec89
+[DEBUG] 2018-02-20 19:59:21.188 [main] BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@46baf579
+[DEBUG] 2018-02-20 19:59:21.189 [main] BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@46baf579
+[DEBUG] 2018-02-20 19:59:21.190 [main] BasicTypeRegistry - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@46baf579
+[DEBUG] 2018-02-20 19:59:21.205 [main] BasicTypeRegistry - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@7e0b9178
+[DEBUG] 2018-02-20 19:59:21.205 [main] BasicTypeRegistry - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@7e0b9178
+[DEBUG] 2018-02-20 19:59:21.214 [main] BasicTypeRegistry - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@4ee33af7
+[DEBUG] 2018-02-20 19:59:21.215 [main] BasicTypeRegistry - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@4ee33af7
+[DEBUG] 2018-02-20 19:59:21.223 [main] BasicTypeRegistry - Adding type registration string -> org.hibernate.type.StringType@5f212d84
+[DEBUG] 2018-02-20 19:59:21.224 [main] BasicTypeRegistry - Adding type registration java.lang.String -> org.hibernate.type.StringType@5f212d84
+[DEBUG] 2018-02-20 19:59:21.231 [main] BasicTypeRegistry - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@3249a1ce
+[DEBUG] 2018-02-20 19:59:21.239 [main] BasicTypeRegistry - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@4bd2f0dc
+[DEBUG] 2018-02-20 19:59:21.247 [main] BasicTypeRegistry - Adding type registration url -> org.hibernate.type.UrlType@73aff8f1
+[DEBUG] 2018-02-20 19:59:21.248 [main] BasicTypeRegistry - Adding type registration java.net.URL -> org.hibernate.type.UrlType@73aff8f1
+[DEBUG] 2018-02-20 19:59:21.257 [main] BasicTypeRegistry - Adding type registration Duration -> org.hibernate.type.DurationType@352e612e
+[DEBUG] 2018-02-20 19:59:21.258 [main] BasicTypeRegistry - Adding type registration java.time.Duration -> org.hibernate.type.DurationType@352e612e
+[DEBUG] 2018-02-20 19:59:21.343 [main] BasicTypeRegistry - Adding type registration Instant -> org.hibernate.type.InstantType@2fb5fe30
+[DEBUG] 2018-02-20 19:59:21.344 [main] BasicTypeRegistry - Adding type registration java.time.Instant -> org.hibernate.type.InstantType@2fb5fe30
+[DEBUG] 2018-02-20 19:59:21.353 [main] BasicTypeRegistry - Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@411291e5
+[DEBUG] 2018-02-20 19:59:21.354 [main] BasicTypeRegistry - Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@411291e5
+[DEBUG] 2018-02-20 19:59:21.366 [main] BasicTypeRegistry - Adding type registration LocalDate -> org.hibernate.type.LocalDateType@6b7d1df8
+[DEBUG] 2018-02-20 19:59:21.367 [main] BasicTypeRegistry - Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@6b7d1df8
+[DEBUG] 2018-02-20 19:59:21.380 [main] BasicTypeRegistry - Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@143d9a93
+[DEBUG] 2018-02-20 19:59:21.380 [main] BasicTypeRegistry - Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@143d9a93
+[DEBUG] 2018-02-20 19:59:21.390 [main] BasicTypeRegistry - Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@400d912a
+[DEBUG] 2018-02-20 19:59:21.391 [main] BasicTypeRegistry - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@400d912a
+[DEBUG] 2018-02-20 19:59:21.400 [main] BasicTypeRegistry - Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@34237b90
+[DEBUG] 2018-02-20 19:59:21.400 [main] BasicTypeRegistry - Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@34237b90
+[DEBUG] 2018-02-20 19:59:21.423 [main] BasicTypeRegistry - Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@60f2e0bd
+[DEBUG] 2018-02-20 19:59:21.424 [main] BasicTypeRegistry - Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@60f2e0bd
+[DEBUG] 2018-02-20 19:59:21.436 [main] BasicTypeRegistry - Adding type registration date -> org.hibernate.type.DateType@464a4442
+[DEBUG] 2018-02-20 19:59:21.437 [main] BasicTypeRegistry - Adding type registration java.sql.Date -> org.hibernate.type.DateType@464a4442
+[DEBUG] 2018-02-20 19:59:21.445 [main] BasicTypeRegistry - Adding type registration time -> org.hibernate.type.TimeType@2234078
+[DEBUG] 2018-02-20 19:59:21.446 [main] BasicTypeRegistry - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@2234078
+[DEBUG] 2018-02-20 19:59:21.455 [main] BasicTypeRegistry - Adding type registration timestamp -> org.hibernate.type.TimestampType@6719a5b8
+[DEBUG] 2018-02-20 19:59:21.456 [main] BasicTypeRegistry - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@6719a5b8
+[DEBUG] 2018-02-20 19:59:21.457 [main] BasicTypeRegistry - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@6719a5b8
+[DEBUG] 2018-02-20 19:59:21.468 [main] BasicTypeRegistry - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@41e1455d
+[DEBUG] 2018-02-20 19:59:21.480 [main] BasicTypeRegistry - Adding type registration calendar -> org.hibernate.type.CalendarType@14bae047
+[DEBUG] 2018-02-20 19:59:21.481 [main] BasicTypeRegistry - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@14bae047
+[DEBUG] 2018-02-20 19:59:21.482 [main] BasicTypeRegistry - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@14bae047
+[DEBUG] 2018-02-20 19:59:21.487 [main] BasicTypeRegistry - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@3122b117
+[DEBUG] 2018-02-20 19:59:21.495 [main] BasicTypeRegistry - Adding type registration locale -> org.hibernate.type.LocaleType@7c9b78e3
+[DEBUG] 2018-02-20 19:59:21.496 [main] BasicTypeRegistry - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@7c9b78e3
+[DEBUG] 2018-02-20 19:59:21.504 [main] BasicTypeRegistry - Adding type registration currency -> org.hibernate.type.CurrencyType@1ec7d8b3
+[DEBUG] 2018-02-20 19:59:21.505 [main] BasicTypeRegistry - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@1ec7d8b3
+[DEBUG] 2018-02-20 19:59:21.513 [main] BasicTypeRegistry - Adding type registration timezone -> org.hibernate.type.TimeZoneType@585ac855
+[DEBUG] 2018-02-20 19:59:21.514 [main] BasicTypeRegistry - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@585ac855
+[DEBUG] 2018-02-20 19:59:21.522 [main] BasicTypeRegistry - Adding type registration class -> org.hibernate.type.ClassType@272a179c
+[DEBUG] 2018-02-20 19:59:21.523 [main] BasicTypeRegistry - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@272a179c
+[DEBUG] 2018-02-20 19:59:21.538 [main] BasicTypeRegistry - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@25c5e994
+[DEBUG] 2018-02-20 19:59:21.539 [main] BasicTypeRegistry - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@25c5e994
+[DEBUG] 2018-02-20 19:59:21.544 [main] BasicTypeRegistry - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@6331250e
+[DEBUG] 2018-02-20 19:59:21.555 [main] BasicTypeRegistry - Adding type registration binary -> org.hibernate.type.BinaryType@3d7fa3ae
+[DEBUG] 2018-02-20 19:59:21.556 [main] BasicTypeRegistry - Adding type registration byte[] -> org.hibernate.type.BinaryType@3d7fa3ae
+[DEBUG] 2018-02-20 19:59:21.557 [main] BasicTypeRegistry - Adding type registration [B -> org.hibernate.type.BinaryType@3d7fa3ae
+[DEBUG] 2018-02-20 19:59:21.567 [main] BasicTypeRegistry - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@522b2631
+[DEBUG] 2018-02-20 19:59:21.568 [main] BasicTypeRegistry - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@522b2631
+[DEBUG] 2018-02-20 19:59:21.569 [main] BasicTypeRegistry - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@522b2631
+[DEBUG] 2018-02-20 19:59:21.579 [main] BasicTypeRegistry - Adding type registration row_version -> org.hibernate.type.RowVersionType@c9d82f9
+[DEBUG] 2018-02-20 19:59:21.587 [main] BasicTypeRegistry - Adding type registration image -> org.hibernate.type.ImageType@720653c2
+[DEBUG] 2018-02-20 19:59:21.595 [main] BasicTypeRegistry - Adding type registration characters -> org.hibernate.type.CharArrayType@4fe01803
+[DEBUG] 2018-02-20 19:59:21.596 [main] BasicTypeRegistry - Adding type registration char[] -> org.hibernate.type.CharArrayType@4fe01803
+[DEBUG] 2018-02-20 19:59:21.597 [main] BasicTypeRegistry - Adding type registration [C -> org.hibernate.type.CharArrayType@4fe01803
+[DEBUG] 2018-02-20 19:59:21.605 [main] BasicTypeRegistry - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@599f571f
+[DEBUG] 2018-02-20 19:59:21.606 [main] BasicTypeRegistry - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@599f571f
+[DEBUG] 2018-02-20 19:59:21.607 [main] BasicTypeRegistry - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@599f571f
+[DEBUG] 2018-02-20 19:59:21.614 [main] BasicTypeRegistry - Adding type registration text -> org.hibernate.type.TextType@65327f5
+[DEBUG] 2018-02-20 19:59:21.622 [main] BasicTypeRegistry - Adding type registration ntext -> org.hibernate.type.NTextType@349d0836
+[DEBUG] 2018-02-20 19:59:21.670 [main] BasicTypeRegistry - Adding type registration blob -> org.hibernate.type.BlobType@27068a50
+[DEBUG] 2018-02-20 19:59:21.671 [main] BasicTypeRegistry - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@27068a50
+[DEBUG] 2018-02-20 19:59:21.675 [main] BasicTypeRegistry - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@48bfb884
+[DEBUG] 2018-02-20 19:59:21.718 [main] BasicTypeRegistry - Adding type registration clob -> org.hibernate.type.ClobType@7c28c1
+[DEBUG] 2018-02-20 19:59:21.719 [main] BasicTypeRegistry - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@7c28c1
+[DEBUG] 2018-02-20 19:59:21.754 [main] BasicTypeRegistry - Adding type registration nclob -> org.hibernate.type.NClobType@55ea2d70
+[DEBUG] 2018-02-20 19:59:21.755 [main] BasicTypeRegistry - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@55ea2d70
+[DEBUG] 2018-02-20 19:59:21.759 [main] BasicTypeRegistry - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@4e868ef5
+[DEBUG] 2018-02-20 19:59:21.764 [main] BasicTypeRegistry - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@1dab9dd6
+[DEBUG] 2018-02-20 19:59:21.799 [main] BasicTypeRegistry - Adding type registration serializable -> org.hibernate.type.SerializableType@56ccd751
+[DEBUG] 2018-02-20 19:59:21.826 [main] BasicTypeRegistry - Adding type registration object -> org.hibernate.type.ObjectType@5e3a39cd
+[DEBUG] 2018-02-20 19:59:21.827 [main] BasicTypeRegistry - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@5e3a39cd
+[DEBUG] 2018-02-20 19:59:21.832 [main] BasicTypeRegistry - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@52a36910
+[DEBUG] 2018-02-20 19:59:21.833 [main] BasicTypeRegistry - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@3a095ec0
+[DEBUG] 2018-02-20 19:59:21.833 [main] BasicTypeRegistry - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@4f20a5e0
+[DEBUG] 2018-02-20 19:59:21.834 [main] BasicTypeRegistry - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@54da32dc
+[DEBUG] 2018-02-20 19:59:21.835 [main] BasicTypeRegistry - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@1d782abe
+[DEBUG] 2018-02-20 19:59:21.836 [main] BasicTypeRegistry - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@6df7988f
+[DEBUG] 2018-02-20 19:59:21.836 [main] BasicTypeRegistry - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@27b22f74
+[DEBUG] 2018-02-20 19:59:21.837 [main] BasicTypeRegistry - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@22fba58c
+[INFO ] 2018-02-20 19:59:21.946 [main] C3P0ConnectionProvider - HHH010002: C3P0 using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://localhost:3306/myBikePlace
+[INFO ] 2018-02-20 19:59:21.947 [main] C3P0ConnectionProvider - HHH10001001: Connection properties: {user=root, password=****}
+[INFO ] 2018-02-20 19:59:21.948 [main] C3P0ConnectionProvider - HHH10001003: Autocommit mode: false
+[INFO ] 2018-02-20 19:59:23.637 [main] C3P0ConnectionProvider - HHH10001007: JDBC isolation level: <unknown>
+[DEBUG] 2018-02-20 19:59:24.152 [main] JdbcEnvironmentInitiator - Database ->
+       name : MySQL
+    version : 5.7.20
+      major : 5
+      minor : 7
+[DEBUG] 2018-02-20 19:59:24.153 [main] JdbcEnvironmentInitiator - Driver ->
+       name : MySQL Connector Java
+    version : mysql-connector-java-5.1.39 ( Revision: 3289a357af6d09ecc1a10fd3c26e95183e5790ad )
+      major : 5
+      minor : 1
+[DEBUG] 2018-02-20 19:59:24.154 [main] JdbcEnvironmentInitiator - JDBC version : 4.0
+[INFO ] 2018-02-20 19:59:24.311 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[DEBUG] 2018-02-20 19:59:24.704 [main] IdentifierHelperBuilder - JDBC driver metadata reported database stores quoted identifiers in more than one case
+[DEBUG] 2018-02-20 19:59:24.783 [main] IdentifierHelperBuilder - IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [MIXED]; that will likely lead to problems in schema update and validation if using quoted identifiers
+[DEBUG] 2018-02-20 19:59:25.222 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+[DEBUG] 2018-02-20 19:59:25.227 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+[DEBUG] 2018-02-20 19:59:25.235 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+[DEBUG] 2018-02-20 19:59:25.236 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+[DEBUG] 2018-02-20 19:59:25.240 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+[DEBUG] 2018-02-20 19:59:25.256 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+[DEBUG] 2018-02-20 19:59:25.260 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+[DEBUG] 2018-02-20 19:59:25.273 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+[DEBUG] 2018-02-20 19:59:25.295 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+[DEBUG] 2018-02-20 19:59:25.303 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+[DEBUG] 2018-02-20 19:59:25.309 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+[DEBUG] 2018-02-20 19:59:25.316 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+[DEBUG] 2018-02-20 19:59:25.317 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+[DEBUG] 2018-02-20 19:59:25.323 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+[DEBUG] 2018-02-20 19:59:25.639 [main] Namespace - Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+[DEBUG] 2018-02-20 19:59:25.877 [main] AnnotationBinder - Binding entity from annotated class: edu.matc.entity.User
+[DEBUG] 2018-02-20 19:59:26.107 [main] Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+[DEBUG] 2018-02-20 19:59:26.193 [main] EntityBinder - Import with entity name User
+[DEBUG] 2018-02-20 19:59:26.222 [main] EntityBinder - Bind entity edu.matc.entity.User on table user
+[DEBUG] 2018-02-20 19:59:26.591 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=id, insertable=true, updatable=true, unique=false}
+[DEBUG] 2018-02-20 19:59:26.631 [main] PropertyBinder - MetadataSourceProcessor property UserId with lazy=false
+[DEBUG] 2018-02-20 19:59:26.643 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.User:UserId]
+[DEBUG] 2018-02-20 19:59:26.658 [main] SimpleValueBinder - building SimpleValue for UserId
+[DEBUG] 2018-02-20 19:59:26.675 [main] PropertyBinder - Building property UserId
+[DEBUG] 2018-02-20 19:59:26.739 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='user'}
+[DEBUG] 2018-02-20 19:59:26.751 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=bike, insertable=true, updatable=true, unique=false}
+[DEBUG] 2018-02-20 19:59:26.765 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=null, insertable=true, updatable=true, unique=false}
+[DEBUG] 2018-02-20 19:59:26.860 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=element, insertable=true, updatable=true, unique=false}
+[DEBUG] 2018-02-20 19:59:26.864 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=bike_KEY, insertable=true, updatable=true, unique=false}
+[DEBUG] 2018-02-20 19:59:26.871 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='bike_KEY', referencedColumn='null', mappedBy='null'}
+[DEBUG] 2018-02-20 19:59:26.881 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='user'}
+[DEBUG] 2018-02-20 19:59:26.881 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='user'}
+[DEBUG] 2018-02-20 19:59:26.884 [main] CollectionBinder - Collection role: edu.matc.entity.User.bike
+[DEBUG] 2018-02-20 19:59:26.913 [main] PropertyBinder - Building property bike
+[DEBUG] 2018-02-20 19:59:26.917 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=createDate, insertable=true, updatable=true, unique=false}
+[DEBUG] 2018-02-20 19:59:26.918 [main] PropertyBinder - MetadataSourceProcessor property createDate with lazy=false
+[DEBUG] 2018-02-20 19:59:26.919 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.User:createDate]
+[DEBUG] 2018-02-20 19:59:26.920 [main] SimpleValueBinder - building SimpleValue for createDate
+[DEBUG] 2018-02-20 19:59:26.920 [main] PropertyBinder - Building property createDate
+[DEBUG] 2018-02-20 19:59:27.008 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=email, insertable=true, updatable=true, unique=false}
+[DEBUG] 2018-02-20 19:59:27.009 [main] PropertyBinder - MetadataSourceProcessor property email with lazy=false
+[DEBUG] 2018-02-20 19:59:27.010 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.User:email]
+[DEBUG] 2018-02-20 19:59:27.011 [main] SimpleValueBinder - building SimpleValue for email
+[DEBUG] 2018-02-20 19:59:27.011 [main] PropertyBinder - Building property email
+[DEBUG] 2018-02-20 19:59:27.013 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=firstName, insertable=true, updatable=true, unique=false}
+[DEBUG] 2018-02-20 19:59:27.014 [main] PropertyBinder - MetadataSourceProcessor property firstName with lazy=false
+[DEBUG] 2018-02-20 19:59:27.015 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.User:firstName]
+[DEBUG] 2018-02-20 19:59:27.016 [main] SimpleValueBinder - building SimpleValue for firstName
+[DEBUG] 2018-02-20 19:59:27.016 [main] PropertyBinder - Building property firstName
+[DEBUG] 2018-02-20 19:59:27.018 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=lastName, insertable=true, updatable=true, unique=false}
+[DEBUG] 2018-02-20 19:59:27.020 [main] PropertyBinder - MetadataSourceProcessor property lastName with lazy=false
+[DEBUG] 2018-02-20 19:59:27.021 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.User:lastName]
+[DEBUG] 2018-02-20 19:59:27.022 [main] SimpleValueBinder - building SimpleValue for lastName
+[DEBUG] 2018-02-20 19:59:27.023 [main] PropertyBinder - Building property lastName
+[DEBUG] 2018-02-20 19:59:27.025 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=password, insertable=true, updatable=true, unique=false}
+[DEBUG] 2018-02-20 19:59:27.026 [main] PropertyBinder - MetadataSourceProcessor property password with lazy=false
+[DEBUG] 2018-02-20 19:59:27.027 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.User:password]
+[DEBUG] 2018-02-20 19:59:27.029 [main] SimpleValueBinder - building SimpleValue for password
+[DEBUG] 2018-02-20 19:59:27.029 [main] PropertyBinder - Building property password
+[DEBUG] 2018-02-20 19:59:27.031 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=updateDate, insertable=true, updatable=true, unique=false}
+[DEBUG] 2018-02-20 19:59:27.033 [main] PropertyBinder - MetadataSourceProcessor property updateDate with lazy=false
+[DEBUG] 2018-02-20 19:59:27.034 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.User:updateDate]
+[DEBUG] 2018-02-20 19:59:27.035 [main] SimpleValueBinder - building SimpleValue for updateDate
+[DEBUG] 2018-02-20 19:59:27.036 [main] PropertyBinder - Building property updateDate
+[DEBUG] 2018-02-20 19:59:27.043 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=userName, insertable=true, updatable=true, unique=false}
+[DEBUG] 2018-02-20 19:59:27.044 [main] PropertyBinder - MetadataSourceProcessor property userName with lazy=false
+[DEBUG] 2018-02-20 19:59:27.045 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.User:userName]
+[DEBUG] 2018-02-20 19:59:27.046 [main] SimpleValueBinder - building SimpleValue for userName
+[DEBUG] 2018-02-20 19:59:27.047 [main] PropertyBinder - Building property userName
+[DEBUG] 2018-02-20 19:59:27.055 [main] AnnotationBinder - Binding entity from annotated class: edu.matc.entity.Bike
+[DEBUG] 2018-02-20 19:59:27.056 [main] Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+[DEBUG] 2018-02-20 19:59:27.057 [main] EntityBinder - Import with entity name Bike
+[DEBUG] 2018-02-20 19:59:27.058 [main] EntityBinder - Bind entity edu.matc.entity.Bike on table bike
+[DEBUG] 2018-02-20 19:59:27.088 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(bike), mappingColumn=id, insertable=true, updatable=true, unique=false}
+[DEBUG] 2018-02-20 19:59:27.089 [main] PropertyBinder - MetadataSourceProcessor property id with lazy=false
+[DEBUG] 2018-02-20 19:59:27.090 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.Bike:id]
+[DEBUG] 2018-02-20 19:59:27.091 [main] SimpleValueBinder - building SimpleValue for id
+[DEBUG] 2018-02-20 19:59:27.096 [main] PropertyBinder - Building property id
+[DEBUG] 2018-02-20 19:59:27.098 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(bike), mappingColumn=accessories, insertable=true, updatable=true, unique=false}
+[DEBUG] 2018-02-20 19:59:27.099 [main] PropertyBinder - MetadataSourceProcessor property accessories with lazy=false
+[DEBUG] 2018-02-20 19:59:27.099 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.Bike:accessories]
+[DEBUG] 2018-02-20 19:59:27.100 [main] SimpleValueBinder - building SimpleValue for accessories
+[DEBUG] 2018-02-20 19:59:27.101 [main] PropertyBinder - Building property accessories
+[DEBUG] 2018-02-20 19:59:27.103 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(bike), mappingColumn=bikeBrand, insertable=true, updatable=true, unique=false}
+[DEBUG] 2018-02-20 19:59:27.104 [main] PropertyBinder - MetadataSourceProcessor property bikeBrand with lazy=false
+[DEBUG] 2018-02-20 19:59:27.104 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.Bike:bikeBrand]
+[DEBUG] 2018-02-20 19:59:27.105 [main] SimpleValueBinder - building SimpleValue for bikeBrand
+[DEBUG] 2018-02-20 19:59:27.107 [main] PropertyBinder - Building property bikeBrand
+[DEBUG] 2018-02-20 19:59:27.109 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(bike), mappingColumn=bikeName, insertable=true, updatable=true, unique=false}
+[DEBUG] 2018-02-20 19:59:27.110 [main] PropertyBinder - MetadataSourceProcessor property bikeName with lazy=false
+[DEBUG] 2018-02-20 19:59:27.111 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.Bike:bikeName]
+[DEBUG] 2018-02-20 19:59:27.112 [main] SimpleValueBinder - building SimpleValue for bikeName
+[DEBUG] 2018-02-20 19:59:27.113 [main] PropertyBinder - Building property bikeName
+[DEBUG] 2018-02-20 19:59:27.114 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(bike), mappingColumn=modelYear, insertable=true, updatable=true, unique=false}
+[DEBUG] 2018-02-20 19:59:27.115 [main] PropertyBinder - MetadataSourceProcessor property modelYear with lazy=false
+[DEBUG] 2018-02-20 19:59:27.115 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.Bike:modelYear]
+[DEBUG] 2018-02-20 19:59:27.118 [main] SimpleValueBinder - building SimpleValue for modelYear
+[DEBUG] 2018-02-20 19:59:27.119 [main] PropertyBinder - Building property modelYear
+[DEBUG] 2018-02-20 19:59:27.120 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='null'}
+[DEBUG] 2018-02-20 19:59:27.121 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(bike), mappingColumn=user, insertable=true, updatable=true, unique=false}
+[DEBUG] 2018-02-20 19:59:27.136 [main] PropertyBinder - Building property user
+[DEBUG] 2018-02-20 19:59:27.152 [main] SimpleValueBinder - Starting fillSimpleValue for UserId
+[DEBUG] 2018-02-20 19:59:27.153 [main] SimpleValueBinder - Starting fillSimpleValue for createDate
+[DEBUG] 2018-02-20 19:59:27.154 [main] SimpleValueBinder - Starting fillSimpleValue for email
+[DEBUG] 2018-02-20 19:59:27.154 [main] SimpleValueBinder - Starting fillSimpleValue for firstName
+[DEBUG] 2018-02-20 19:59:27.155 [main] SimpleValueBinder - Starting fillSimpleValue for lastName
+[DEBUG] 2018-02-20 19:59:27.156 [main] SimpleValueBinder - Starting fillSimpleValue for password
+[DEBUG] 2018-02-20 19:59:27.156 [main] SimpleValueBinder - Starting fillSimpleValue for updateDate
+[DEBUG] 2018-02-20 19:59:27.157 [main] SimpleValueBinder - Starting fillSimpleValue for userName
+[DEBUG] 2018-02-20 19:59:27.158 [main] SimpleValueBinder - Starting fillSimpleValue for id
+[DEBUG] 2018-02-20 19:59:27.158 [main] SimpleValueBinder - Starting fillSimpleValue for accessories
+[DEBUG] 2018-02-20 19:59:27.159 [main] SimpleValueBinder - Starting fillSimpleValue for bikeBrand
+[DEBUG] 2018-02-20 19:59:27.160 [main] SimpleValueBinder - Starting fillSimpleValue for bikeName
+[DEBUG] 2018-02-20 19:59:27.160 [main] SimpleValueBinder - Starting fillSimpleValue for modelYear
+[DEBUG] 2018-02-20 19:59:27.198 [main] PrimaryKey - Forcing column [id] to be non-null as it is part of the primary key for table [user]
+[DEBUG] 2018-02-20 19:59:27.200 [main] PrimaryKey - Forcing column [id] to be non-null as it is part of the primary key for table [bike]
+[DEBUG] 2018-02-20 19:59:27.201 [main] CollectionSecondPass - Second pass for collection: edu.matc.entity.User.bike
+[DEBUG] 2018-02-20 19:59:27.206 [main] CollectionBinder - Binding a OneToMany: edu.matc.entity.User.bike through a foreign key
+[DEBUG] 2018-02-20 19:59:27.211 [main] CollectionBinder - Mapping collection: edu.matc.entity.User.bike -> bike
+[DEBUG] 2018-02-20 19:59:27.224 [main] TableBinder - Retrieving property edu.matc.entity.Bike.user
+[DEBUG] 2018-02-20 19:59:27.225 [main] CollectionSecondPass - Mapped collection key: user_id, one-to-many: edu.matc.entity.Bike
+[DEBUG] 2018-02-20 19:59:27.226 [main] InFlightMetadataCollectorImpl - Resolving reference to class: edu.matc.entity.User
+[DEBUG] 2018-02-20 19:59:27.256 [main] InFlightMetadataCollectorImpl - Resolving reference to class: edu.matc.entity.User
+[DEBUG] 2018-02-20 19:59:27.670 [main] SessionFactoryImpl - Building session factory
+[DEBUG] 2018-02-20 19:59:27.676 [main] Settings - SessionFactory name : null
+[DEBUG] 2018-02-20 19:59:27.676 [main] Settings - Automatic flush during beforeCompletion(): enabled
+[DEBUG] 2018-02-20 19:59:27.677 [main] Settings - Automatic session close at end of transaction: disabled
+[DEBUG] 2018-02-20 19:59:27.678 [main] Settings - Statistics: disabled
+[DEBUG] 2018-02-20 19:59:27.678 [main] Settings - Deleted entity synthetic identifier rollback: disabled
+[DEBUG] 2018-02-20 19:59:27.679 [main] Settings - Default entity-mode: pojo
+[DEBUG] 2018-02-20 19:59:27.679 [main] Settings - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+[DEBUG] 2018-02-20 19:59:27.680 [main] Settings - Allow initialization of lazy state outside session : disabled
+[DEBUG] 2018-02-20 19:59:27.681 [main] Settings - Using BatchFetchStyle : LEGACY
+[DEBUG] 2018-02-20 19:59:27.681 [main] Settings - Default batch fetch size: -1
+[DEBUG] 2018-02-20 19:59:27.682 [main] Settings - Maximum outer join fetch depth: 2
+[DEBUG] 2018-02-20 19:59:27.683 [main] Settings - Default null ordering: NONE
+[DEBUG] 2018-02-20 19:59:27.683 [main] Settings - Order SQL updates by primary key: disabled
+[DEBUG] 2018-02-20 19:59:27.684 [main] Settings - Order SQL inserts for batching: disabled
+[DEBUG] 2018-02-20 19:59:27.684 [main] Settings - multi-tenancy strategy : NONE
+[DEBUG] 2018-02-20 19:59:27.685 [main] Settings - JTA Track by Thread: enabled
+[DEBUG] 2018-02-20 19:59:27.686 [main] Settings - Query language substitutions: {}
+[DEBUG] 2018-02-20 19:59:27.686 [main] Settings - JPA query language strict compliance: disabled
+[DEBUG] 2018-02-20 19:59:27.687 [main] Settings - Named query checking : enabled
+[DEBUG] 2018-02-20 19:59:27.687 [main] Settings - Second-level cache: enabled
+[DEBUG] 2018-02-20 19:59:27.688 [main] Settings - Second-level query cache: disabled
+[DEBUG] 2018-02-20 19:59:27.689 [main] Settings - Second-level query cache factory: org.hibernate.cache.internal.StandardQueryCacheFactory@48d293ee
+[DEBUG] 2018-02-20 19:59:27.689 [main] Settings - Second-level cache region prefix: null
+[DEBUG] 2018-02-20 19:59:27.690 [main] Settings - Optimize second-level cache for minimal puts: disabled
+[DEBUG] 2018-02-20 19:59:27.691 [main] Settings - Structured second-level cache entries: disabled
+[DEBUG] 2018-02-20 19:59:27.691 [main] Settings - Second-level cache direct-reference entries: disabled
+[DEBUG] 2018-02-20 19:59:27.692 [main] Settings - Automatic eviction of collection cache: disabled
+[DEBUG] 2018-02-20 19:59:27.693 [main] Settings - JDBC batch size: 15
+[DEBUG] 2018-02-20 19:59:27.693 [main] Settings - JDBC batch updates for versioned data: enabled
+[DEBUG] 2018-02-20 19:59:27.694 [main] Settings - Scrollable result sets: enabled
+[DEBUG] 2018-02-20 19:59:27.694 [main] Settings - Wrap result sets: disabled
+[DEBUG] 2018-02-20 19:59:27.695 [main] Settings - JDBC3 getGeneratedKeys(): enabled
+[DEBUG] 2018-02-20 19:59:27.695 [main] Settings - JDBC result set fetch size: null
+[DEBUG] 2018-02-20 19:59:27.696 [main] Settings - Connection release mode: AFTER_TRANSACTION
+[DEBUG] 2018-02-20 19:59:27.696 [main] Settings - Generate SQL with comments: disabled
+[DEBUG] 2018-02-20 19:59:28.398 [main] SessionFactoryImpl - Session factory constructed with filter configurations : {}
+[DEBUG] 2018-02-20 19:59:28.400 [main] SessionFactoryImpl - Instantiating session factory with properties: {gopherProxySet=false, awt.toolkit=sun.lwawt.macosx.LWCToolkit, file.encoding.pkg=sun.io, java.specification.version=1.8, hibernate.c3p0.idle_test_period=3000, sun.cpu.isalist=, sun.jnu.encoding=UTF-8, hibernate.c3p0.min_size=5, java.class.path=/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar:/Applications/IntelliJ IDEA.app/Contents/plugins/junit/lib/junit-rt.jar:/Applications/IntelliJ IDEA.app/Contents/plugins/junit/lib/junit5-rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/jre/lib/deploy.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/jre/lib/ext/cldrdata.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/jre/lib/ext/dnsns.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/jre/lib/ext/jaccess.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/jre/lib/ext/jfxrt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/jre/lib/ext/localedata.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/jre/lib/ext/nashorn.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/jre/lib/ext/sunec.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/jre/lib/ext/sunjce_provider.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/jre/lib/ext/sunpkcs11.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/jre/lib/ext/zipfs.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/jre/lib/javaws.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/jre/lib/jfxswt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/jre/lib/management-agent.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/jre/lib/plugin.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/lib/ant-javafx.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/lib/dt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/lib/javafx-mx.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/lib/jconsole.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/lib/packager.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/lib/sa-jdi.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/lib/tools.jar:/Users/sighguy4/IdeaProjects/myBikePlace/target/test-classes:/Users/sighguy4/IdeaProjects/myBikePlace/target/classes:/Users/sighguy4/.m2/repository/junit/junit/4.12/junit-4.12.jar:/Users/sighguy4/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/sighguy4/.m2/repository/javax/javaee-web-api/7.0/javaee-web-api-7.0.jar:/Users/sighguy4/.m2/repository/mysql/mysql-connector-java/5.1.39/mysql-connector-java-5.1.39.jar:/Users/sighguy4/.m2/repository/org/apache/logging/log4j/log4j-api/2.10.0/log4j-api-2.10.0.jar:/Users/sighguy4/.m2/repository/org/apache/logging/log4j/log4j-core/2.10.0/log4j-core-2.10.0.jar:/Users/sighguy4/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.0.0/junit-jupiter-engine-5.0.0.jar:/Users/sighguy4/.m2/repository/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.jar:/Users/sighguy4/.m2/repository/org/junit/platform/junit-platform-engine/1.0.0/junit-platform-engine-1.0.0.jar:/Users/sighguy4/.m2/repository/org/junit/platform/junit-platform-commons/1.0.0/junit-platform-commons-1.0.0.jar:/Users/sighguy4/.m2/repository/org/opentest4j/opentest4j/1.0.0/opentest4j-1.0.0.jar:/Users/sighguy4/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.0.0/junit-jupiter-api-5.0.0.jar:/Users/sighguy4/.m2/repository/org/junit/platform/junit-platform-runner/1.0.0/junit-platform-runner-1.0.0.jar:/Users/sighguy4/.m2/repository/org/junit/platform/junit-platform-launcher/1.0.0/junit-platform-launcher-1.0.0.jar:/Users/sighguy4/.m2/repository/org/junit/platform/junit-platform-suite-api/1.0.0/junit-platform-suite-api-1.0.0.jar:/Users/sighguy4/.m2/repository/org/junit/vintage/junit-vintage-engine/4.12.0/junit-vintage-engine-4.12.0.jar:/Users/sighguy4/.m2/repository/org/hibernate/hibernate-core/5.2.12.Final/hibernate-core-5.2.12.Final.jar:/Users/sighguy4/.m2/repository/org/jboss/logging/jboss-logging/3.3.0.Final/jboss-logging-3.3.0.Final.jar:/Users/sighguy4/.m2/repository/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final.jar:/Users/sighguy4/.m2/repository/org/javassist/javassist/3.20.0-GA/javassist-3.20.0-GA.jar:/Users/sighguy4/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar:/Users/sighguy4/.m2/repository/org/jboss/spec/javax/transaction/jboss-transaction-api_1.2_spec/1.0.1.Final/jboss-transaction-api_1.2_spec-1.0.1.Final.jar:/Users/sighguy4/.m2/repository/org/jboss/jandex/2.0.3.Final/jandex-2.0.3.Final.jar:/Users/sighguy4/.m2/repository/com/fasterxml/classmate/1.3.0/classmate-1.3.0.jar:/Users/sighguy4/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar:/Users/sighguy4/.m2/repository/org/hibernate/common/hibernate-commons-annotations/5.0.1.Final/hibernate-commons-annotations-5.0.1.Final.jar:/Users/sighguy4/.m2/repository/org/hibernate/hibernate-c3p0/5.2.12.Final/hibernate-c3p0-5.2.12.Final.jar:/Users/sighguy4/.m2/repository/com/mchange/c3p0/0.9.5.2/c3p0-0.9.5.2.jar:/Users/sighguy4/.m2/repository/com/mchange/mchange-commons-java/0.2.11/mchange-commons-java-0.2.11.jar:/Users/sighguy4/Library/Caches/IntelliJIdea2017.3/captureAgent/debugger-agent.jar, java.vm.vendor=Oracle Corporation, sun.arch.data.model=64, idea.test.cyclic.buffer.size=1048576, java.vendor.url=http://java.oracle.com/, user.timezone=America/Chicago, os.name=Mac OS X, java.vm.specification.version=1.8, user.country=US, sun.java.launcher=SUN_STANDARD, sun.boot.library.path=/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/jre/lib, sun.java.command=com.intellij.rt.execution.junit.JUnitStarter -ideVersion5 -junit5 edu.matc.persistence.BikeDaoTest,insertSuccess, http.nonProxyHosts=local|*.local|169.254/16|*.169.254/16, sun.cpu.endian=little, hibernate.c3p0.max_statements=50, user.home=/Users/sighguy4, user.language=en, java.specification.vendor=Oracle Corporation, java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/jre, file.separator=/, line.separator=
+, hibernate.c3p0.timeout=300, java.vm.specification.vendor=Oracle Corporation, java.specification.name=Java Platform API Specification, java.awt.graphicsenv=sun.awt.CGraphicsEnvironment, sun.boot.class.path=/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/jre/classes:/Users/sighguy4/Library/Caches/IntelliJIdea2017.3/captureAgent/debugger-agent-storage.jar, connection.password=Belguim#66, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, hibernate.c3p0.max_size=20, ftp.nonProxyHosts=local|*.local|169.254/16|*.169.254/16, java.runtime.version=1.8.0_152-b16, user.name=sighguy4, path.separator=:, hibernate.connection.username=root, os.version=10.12.6, java.endorsed.dirs=/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/jre/lib/endorsed, java.runtime.name=Java(TM) SE Runtime Environment, hibernate.connection.url=jdbc:mysql://localhost:3306/myBikePlace, file.encoding=UTF-8, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, hibernate.connection.driver_class=com.mysql.jdbc.Driver, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, java.io.tmpdir=/var/folders/9d/xsg98tsj1dn630h6j241zf3h0000gn/T/, jboss.modules.system.pkgs=com.intellij.rt, java.version=1.8.0_152, user.dir=/Users/sighguy4/IdeaProjects/myBikePlace, os.arch=x86_64, connection.username=root, java.vm.specification.name=Java Virtual Machine Specification, hibernate.connection.password=****, java.awt.printerjob=sun.lwawt.macosx.CPrinterJob, sun.os.patch.level=unknown, connection.driver_class=com.mysql.jdbc.Driver, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.cfgxml.spi.LoadedConfig@1b956cfa, java.library.path=/Users/sighguy4/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:., java.vm.info=mixed mode, java.vendor=Oracle Corporation, java.vm.version=25.152-b16, hibernate.bytecode.use_reflection_optimizer=false, java.ext.dirs=/Users/sighguy4/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java, sun.io.unicode.encoding=UnicodeBig, connection.url=jdbc:mysql://localhost:3306/myBikePlace, java.class.version=52.0, socksNonProxyHosts=local|*.local|169.254/16|*.169.254/16}
+[DEBUG] 2018-02-20 19:59:28.585 [main] TypeSafeActivator - Unable to acquire Bean Validation ValidatorFactory, skipping activation
+[DEBUG] 2018-02-20 19:59:28.586 [main] JaccIntegrator - Skipping JACC integration as it was not enabled
+[DEBUG] 2018-02-20 19:59:28.594 [main] SessionFactoryImpl - Instantiated session factory
+[DEBUG] 2018-02-20 19:59:29.083 [main] ClassLoaderAccessImpl - Not known whether passed class name [edu.matc.entity.User] is safe
+[DEBUG] 2018-02-20 19:59:29.085 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : edu.matc.entity.User
+[DEBUG] 2018-02-20 19:59:29.317 [main] ClassLoaderAccessImpl - Not known whether passed class name [edu.matc.entity.User] is safe
+[DEBUG] 2018-02-20 19:59:29.317 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : edu.matc.entity.User
+[DEBUG] 2018-02-20 19:59:29.913 [main] ClassLoaderAccessImpl - Not known whether passed class name [edu.matc.entity.Bike] is safe
+[DEBUG] 2018-02-20 19:59:29.913 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : edu.matc.entity.Bike
+[DEBUG] 2018-02-20 19:59:29.917 [main] ClassLoaderAccessImpl - Not known whether passed class name [edu.matc.entity.Bike] is safe
+[DEBUG] 2018-02-20 19:59:29.917 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : edu.matc.entity.Bike
+[DEBUG] 2018-02-20 19:59:30.047 [main] AbstractCollectionPersister - Static SQL for collection: edu.matc.entity.User.bike
+[DEBUG] 2018-02-20 19:59:30.048 [main] AbstractCollectionPersister -  Row insert: update bike set user_id=? where id=?
+[DEBUG] 2018-02-20 19:59:30.049 [main] AbstractCollectionPersister -  Row update: update bike set  where id=?
+[DEBUG] 2018-02-20 19:59:30.049 [main] AbstractCollectionPersister -  Row delete: update bike set user_id=null where user_id=? and id=?
+[DEBUG] 2018-02-20 19:59:30.050 [main] AbstractCollectionPersister -  One-shot delete: update bike set user_id=null where user_id=?
+[DEBUG] 2018-02-20 19:59:30.080 [main] AbstractEntityPersister - Static SQL for entity: edu.matc.entity.User
+[DEBUG] 2018-02-20 19:59:30.081 [main] AbstractEntityPersister -  Version select: select id from user where id =?
+[DEBUG] 2018-02-20 19:59:30.082 [main] AbstractEntityPersister -  Snapshot select: select user_.id, user_.createDate as createDa2_1_, user_.email as email3_1_, user_.firstName as firstNam4_1_, user_.lastName as lastName5_1_, user_.password as password6_1_, user_.updateDate as updateDa7_1_, user_.userName as userName8_1_ from user user_ where user_.id=?
+[DEBUG] 2018-02-20 19:59:30.082 [main] AbstractEntityPersister -  Insert 0: insert into user (createDate, email, firstName, lastName, password, updateDate, userName, id) values (?, ?, ?, ?, ?, ?, ?, ?)
+[DEBUG] 2018-02-20 19:59:30.083 [main] AbstractEntityPersister -  Update 0: update user set createDate=?, email=?, firstName=?, lastName=?, password=?, updateDate=?, userName=? where id=?
+[DEBUG] 2018-02-20 19:59:30.084 [main] AbstractEntityPersister -  Delete 0: delete from user where id=?
+[DEBUG] 2018-02-20 19:59:30.084 [main] AbstractEntityPersister -  Identity insert: insert into user (createDate, email, firstName, lastName, password, updateDate, userName) values (?, ?, ?, ?, ?, ?, ?)
+[DEBUG] 2018-02-20 19:59:30.346 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@6f1b8544]
+[DEBUG] 2018-02-20 19:59:30.360 [main] MetamodelGraphWalker - Visiting attribute path : bike
+[DEBUG] 2018-02-20 19:59:30.410 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@d535a3d]
+[DEBUG] 2018-02-20 19:59:30.436 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@48a663e9]
+[DEBUG] 2018-02-20 19:59:30.449 [main] MetamodelGraphWalker - Visiting attribute path : bike.accessories
+[DEBUG] 2018-02-20 19:59:30.450 [main] MetamodelGraphWalker - Visiting attribute path : bike.bikeBrand
+[DEBUG] 2018-02-20 19:59:30.451 [main] MetamodelGraphWalker - Visiting attribute path : bike.bikeName
+[DEBUG] 2018-02-20 19:59:30.451 [main] MetamodelGraphWalker - Visiting attribute path : bike.modelYear
+[DEBUG] 2018-02-20 19:59:30.452 [main] MetamodelGraphWalker - Visiting attribute path : bike.user
+[DEBUG] 2018-02-20 19:59:30.452 [main] MetamodelGraphWalker - Property path deemed to be circular : bike.user
+[DEBUG] 2018-02-20 19:59:30.458 [main] MetamodelGraphWalker - Visiting attribute path : createDate
+[DEBUG] 2018-02-20 19:59:30.458 [main] MetamodelGraphWalker - Visiting attribute path : email
+[DEBUG] 2018-02-20 19:59:30.459 [main] MetamodelGraphWalker - Visiting attribute path : firstName
+[DEBUG] 2018-02-20 19:59:30.459 [main] MetamodelGraphWalker - Visiting attribute path : lastName
+[DEBUG] 2018-02-20 19:59:30.460 [main] MetamodelGraphWalker - Visiting attribute path : password
+[DEBUG] 2018-02-20 19:59:30.460 [main] MetamodelGraphWalker - Visiting attribute path : updateDate
+[DEBUG] 2018-02-20 19:59:30.461 [main] MetamodelGraphWalker - Visiting attribute path : userName
+[DEBUG] 2018-02-20 19:59:30.461 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2018-02-20 19:59:30.586 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2018-02-20 19:59:30.646 [main] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.User)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.User, querySpaceUid=<gen:0>, path=edu.matc.entity.User)
+          - CollectionAttributeFetchImpl(collection=edu.matc.entity.User.bike, querySpaceUid=<gen:1>, path=edu.matc.entity.User.bike)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=edu.matc.entity.Bike, querySpaceUid=<gen:2>, path=edu.matc.entity.User.bike.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+          - JOIN (JoinDefinedByMetadata(bike)) : <gen:0> -> <gen:1>
+             - CollectionQuerySpaceImpl(uid=<gen:1>, collection=edu.matc.entity.User.bike)
+                - SQL table alias mapping - bike1_
+                - alias suffix - 1_
+                - suffixed key columns - {user_id6_0_1_}
+                - entity-element alias suffix - 2_
+                - 2_entity-element suffixed key columns - id1_0_2_
+                - JOIN (JoinDefinedByMetadata(elements)) : <gen:1> -> <gen:2>
+                   - EntityQuerySpaceImpl(uid=<gen:2>, entity=edu.matc.entity.Bike)
+                      - SQL table alias mapping - bike1_
+                      - alias suffix - 2_
+                      - suffixed key columns - {id1_0_2_}
+
+[DEBUG] 2018-02-20 19:59:30.666 [main] EntityLoader - Static select for entity edu.matc.entity.User [NONE]: select user0_.id as id1_1_0_, user0_.createDate as createDa2_1_0_, user0_.email as email3_1_0_, user0_.firstName as firstNam4_1_0_, user0_.lastName as lastName5_1_0_, user0_.password as password6_1_0_, user0_.updateDate as updateDa7_1_0_, user0_.userName as userName8_1_0_, bike1_.user_id as user_id6_0_1_, bike1_.id as id1_0_1_, bike1_.id as id1_0_2_, bike1_.accessories as accessor2_0_2_, bike1_.bikeBrand as bikeBran3_0_2_, bike1_.bikeName as bikeName4_0_2_, bike1_.modelYear as modelYea5_0_2_, bike1_.user_id as user_id6_0_2_ from user user0_ left outer join bike bike1_ on user0_.id=bike1_.user_id where user0_.id=?
+[DEBUG] 2018-02-20 19:59:30.668 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@631cb129]
+[DEBUG] 2018-02-20 19:59:30.669 [main] MetamodelGraphWalker - Visiting attribute path : bike
+[DEBUG] 2018-02-20 19:59:30.670 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@3252747e]
+[DEBUG] 2018-02-20 19:59:30.671 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@2b4b96a4]
+[DEBUG] 2018-02-20 19:59:30.673 [main] MetamodelGraphWalker - Visiting attribute path : bike.accessories
+[DEBUG] 2018-02-20 19:59:30.673 [main] MetamodelGraphWalker - Visiting attribute path : bike.bikeBrand
+[DEBUG] 2018-02-20 19:59:30.674 [main] MetamodelGraphWalker - Visiting attribute path : bike.bikeName
+[DEBUG] 2018-02-20 19:59:30.674 [main] MetamodelGraphWalker - Visiting attribute path : bike.modelYear
+[DEBUG] 2018-02-20 19:59:30.675 [main] MetamodelGraphWalker - Visiting attribute path : bike.user
+[DEBUG] 2018-02-20 19:59:30.675 [main] MetamodelGraphWalker - Property path deemed to be circular : bike.user
+[DEBUG] 2018-02-20 19:59:30.676 [main] MetamodelGraphWalker - Visiting attribute path : createDate
+[DEBUG] 2018-02-20 19:59:30.677 [main] MetamodelGraphWalker - Visiting attribute path : email
+[DEBUG] 2018-02-20 19:59:30.677 [main] MetamodelGraphWalker - Visiting attribute path : firstName
+[DEBUG] 2018-02-20 19:59:30.678 [main] MetamodelGraphWalker - Visiting attribute path : lastName
+[DEBUG] 2018-02-20 19:59:30.678 [main] MetamodelGraphWalker - Visiting attribute path : password
+[DEBUG] 2018-02-20 19:59:30.679 [main] MetamodelGraphWalker - Visiting attribute path : updateDate
+[DEBUG] 2018-02-20 19:59:30.679 [main] MetamodelGraphWalker - Visiting attribute path : userName
+[DEBUG] 2018-02-20 19:59:30.680 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2018-02-20 19:59:30.682 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2018-02-20 19:59:30.693 [main] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.User)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.User, querySpaceUid=<gen:0>, path=edu.matc.entity.User)
+          - CollectionAttributeFetchImpl(collection=edu.matc.entity.User.bike, querySpaceUid=<gen:1>, path=edu.matc.entity.User.bike)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=edu.matc.entity.Bike, querySpaceUid=<gen:2>, path=edu.matc.entity.User.bike.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+          - JOIN (JoinDefinedByMetadata(bike)) : <gen:0> -> <gen:1>
+             - CollectionQuerySpaceImpl(uid=<gen:1>, collection=edu.matc.entity.User.bike)
+                - SQL table alias mapping - bike1_
+                - alias suffix - 1_
+                - suffixed key columns - {user_id6_0_1_}
+                - entity-element alias suffix - 2_
+                - 2_entity-element suffixed key columns - id1_0_2_
+                - JOIN (JoinDefinedByMetadata(elements)) : <gen:1> -> <gen:2>
+                   - EntityQuerySpaceImpl(uid=<gen:2>, entity=edu.matc.entity.Bike)
+                      - SQL table alias mapping - bike1_
+                      - alias suffix - 2_
+                      - suffixed key columns - {id1_0_2_}
+
+[DEBUG] 2018-02-20 19:59:30.698 [main] EntityLoader - Static select for entity edu.matc.entity.User [READ]: select user0_.id as id1_1_0_, user0_.createDate as createDa2_1_0_, user0_.email as email3_1_0_, user0_.firstName as firstNam4_1_0_, user0_.lastName as lastName5_1_0_, user0_.password as password6_1_0_, user0_.updateDate as updateDa7_1_0_, user0_.userName as userName8_1_0_, bike1_.user_id as user_id6_0_1_, bike1_.id as id1_0_1_, bike1_.id as id1_0_2_, bike1_.accessories as accessor2_0_2_, bike1_.bikeBrand as bikeBran3_0_2_, bike1_.bikeName as bikeName4_0_2_, bike1_.modelYear as modelYea5_0_2_, bike1_.user_id as user_id6_0_2_ from user user0_ left outer join bike bike1_ on user0_.id=bike1_.user_id where user0_.id=?
+[DEBUG] 2018-02-20 19:59:30.699 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@36b9cb99]
+[DEBUG] 2018-02-20 19:59:30.701 [main] MetamodelGraphWalker - Visiting attribute path : bike
+[DEBUG] 2018-02-20 19:59:30.701 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@2bfaba70]
+[DEBUG] 2018-02-20 19:59:30.702 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@71adfedd]
+[DEBUG] 2018-02-20 19:59:30.703 [main] MetamodelGraphWalker - Visiting attribute path : createDate
+[DEBUG] 2018-02-20 19:59:30.703 [main] MetamodelGraphWalker - Visiting attribute path : email
+[DEBUG] 2018-02-20 19:59:30.704 [main] MetamodelGraphWalker - Visiting attribute path : firstName
+[DEBUG] 2018-02-20 19:59:30.704 [main] MetamodelGraphWalker - Visiting attribute path : lastName
+[DEBUG] 2018-02-20 19:59:30.705 [main] MetamodelGraphWalker - Visiting attribute path : password
+[DEBUG] 2018-02-20 19:59:30.705 [main] MetamodelGraphWalker - Visiting attribute path : updateDate
+[DEBUG] 2018-02-20 19:59:30.706 [main] MetamodelGraphWalker - Visiting attribute path : userName
+[DEBUG] 2018-02-20 19:59:30.707 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2018-02-20 19:59:30.709 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2018-02-20 19:59:30.713 [main] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.User)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.User, querySpaceUid=<gen:0>, path=edu.matc.entity.User)
+          - CollectionAttributeFetchImpl(collection=edu.matc.entity.User.bike, querySpaceUid=<gen:1>, path=edu.matc.entity.User.bike)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=edu.matc.entity.Bike, querySpaceUid=<gen:2>, path=edu.matc.entity.User.bike.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+[DEBUG] 2018-02-20 19:59:30.715 [main] EntityLoader - Static select for entity edu.matc.entity.User [UPGRADE]: select user0_.id as id1_1_0_, user0_.createDate as createDa2_1_0_, user0_.email as email3_1_0_, user0_.firstName as firstNam4_1_0_, user0_.lastName as lastName5_1_0_, user0_.password as password6_1_0_, user0_.updateDate as updateDa7_1_0_, user0_.userName as userName8_1_0_ from user user0_ where user0_.id=? for update
+[DEBUG] 2018-02-20 19:59:30.716 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@9301672]
+[DEBUG] 2018-02-20 19:59:30.717 [main] MetamodelGraphWalker - Visiting attribute path : bike
+[DEBUG] 2018-02-20 19:59:30.718 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@3238e2aa]
+[DEBUG] 2018-02-20 19:59:30.719 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@2c7db926]
+[DEBUG] 2018-02-20 19:59:30.719 [main] MetamodelGraphWalker - Visiting attribute path : createDate
+[DEBUG] 2018-02-20 19:59:30.720 [main] MetamodelGraphWalker - Visiting attribute path : email
+[DEBUG] 2018-02-20 19:59:30.720 [main] MetamodelGraphWalker - Visiting attribute path : firstName
+[DEBUG] 2018-02-20 19:59:30.721 [main] MetamodelGraphWalker - Visiting attribute path : lastName
+[DEBUG] 2018-02-20 19:59:30.721 [main] MetamodelGraphWalker - Visiting attribute path : password
+[DEBUG] 2018-02-20 19:59:30.722 [main] MetamodelGraphWalker - Visiting attribute path : updateDate
+[DEBUG] 2018-02-20 19:59:30.722 [main] MetamodelGraphWalker - Visiting attribute path : userName
+[DEBUG] 2018-02-20 19:59:30.723 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2018-02-20 19:59:30.725 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2018-02-20 19:59:30.729 [main] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.User)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.User, querySpaceUid=<gen:0>, path=edu.matc.entity.User)
+          - CollectionAttributeFetchImpl(collection=edu.matc.entity.User.bike, querySpaceUid=<gen:1>, path=edu.matc.entity.User.bike)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=edu.matc.entity.Bike, querySpaceUid=<gen:2>, path=edu.matc.entity.User.bike.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+[DEBUG] 2018-02-20 19:59:30.731 [main] EntityLoader - Static select for entity edu.matc.entity.User [UPGRADE_NOWAIT]: select user0_.id as id1_1_0_, user0_.createDate as createDa2_1_0_, user0_.email as email3_1_0_, user0_.firstName as firstNam4_1_0_, user0_.lastName as lastName5_1_0_, user0_.password as password6_1_0_, user0_.updateDate as updateDa7_1_0_, user0_.userName as userName8_1_0_ from user user0_ where user0_.id=? for update
+[DEBUG] 2018-02-20 19:59:30.732 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@2577a95d]
+[DEBUG] 2018-02-20 19:59:30.734 [main] MetamodelGraphWalker - Visiting attribute path : bike
+[DEBUG] 2018-02-20 19:59:30.734 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@63300c4b]
+[DEBUG] 2018-02-20 19:59:30.735 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@22c53d82]
+[DEBUG] 2018-02-20 19:59:30.736 [main] MetamodelGraphWalker - Visiting attribute path : createDate
+[DEBUG] 2018-02-20 19:59:30.736 [main] MetamodelGraphWalker - Visiting attribute path : email
+[DEBUG] 2018-02-20 19:59:30.737 [main] MetamodelGraphWalker - Visiting attribute path : firstName
+[DEBUG] 2018-02-20 19:59:30.738 [main] MetamodelGraphWalker - Visiting attribute path : lastName
+[DEBUG] 2018-02-20 19:59:30.739 [main] MetamodelGraphWalker - Visiting attribute path : password
+[DEBUG] 2018-02-20 19:59:30.740 [main] MetamodelGraphWalker - Visiting attribute path : updateDate
+[DEBUG] 2018-02-20 19:59:30.740 [main] MetamodelGraphWalker - Visiting attribute path : userName
+[DEBUG] 2018-02-20 19:59:30.741 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2018-02-20 19:59:30.744 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2018-02-20 19:59:30.748 [main] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.User)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.User, querySpaceUid=<gen:0>, path=edu.matc.entity.User)
+          - CollectionAttributeFetchImpl(collection=edu.matc.entity.User.bike, querySpaceUid=<gen:1>, path=edu.matc.entity.User.bike)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=edu.matc.entity.Bike, querySpaceUid=<gen:2>, path=edu.matc.entity.User.bike.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+[DEBUG] 2018-02-20 19:59:30.750 [main] EntityLoader - Static select for entity edu.matc.entity.User [UPGRADE_SKIPLOCKED]: select user0_.id as id1_1_0_, user0_.createDate as createDa2_1_0_, user0_.email as email3_1_0_, user0_.firstName as firstNam4_1_0_, user0_.lastName as lastName5_1_0_, user0_.password as password6_1_0_, user0_.updateDate as updateDa7_1_0_, user0_.userName as userName8_1_0_ from user user0_ where user0_.id=? for update
+[DEBUG] 2018-02-20 19:59:30.752 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@3a6045c6]
+[DEBUG] 2018-02-20 19:59:30.753 [main] MetamodelGraphWalker - Visiting attribute path : bike
+[DEBUG] 2018-02-20 19:59:30.754 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@b67cc70]
+[DEBUG] 2018-02-20 19:59:30.754 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@45c9b3]
+[DEBUG] 2018-02-20 19:59:30.755 [main] MetamodelGraphWalker - Visiting attribute path : createDate
+[DEBUG] 2018-02-20 19:59:30.756 [main] MetamodelGraphWalker - Visiting attribute path : email
+[DEBUG] 2018-02-20 19:59:30.756 [main] MetamodelGraphWalker - Visiting attribute path : firstName
+[DEBUG] 2018-02-20 19:59:30.757 [main] MetamodelGraphWalker - Visiting attribute path : lastName
+[DEBUG] 2018-02-20 19:59:30.757 [main] MetamodelGraphWalker - Visiting attribute path : password
+[DEBUG] 2018-02-20 19:59:30.758 [main] MetamodelGraphWalker - Visiting attribute path : updateDate
+[DEBUG] 2018-02-20 19:59:30.758 [main] MetamodelGraphWalker - Visiting attribute path : userName
+[DEBUG] 2018-02-20 19:59:30.759 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2018-02-20 19:59:30.761 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2018-02-20 19:59:30.765 [main] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.User)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.User, querySpaceUid=<gen:0>, path=edu.matc.entity.User)
+          - CollectionAttributeFetchImpl(collection=edu.matc.entity.User.bike, querySpaceUid=<gen:1>, path=edu.matc.entity.User.bike)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=edu.matc.entity.Bike, querySpaceUid=<gen:2>, path=edu.matc.entity.User.bike.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+[DEBUG] 2018-02-20 19:59:30.767 [main] EntityLoader - Static select for entity edu.matc.entity.User [FORCE]: select user0_.id as id1_1_0_, user0_.createDate as createDa2_1_0_, user0_.email as email3_1_0_, user0_.firstName as firstNam4_1_0_, user0_.lastName as lastName5_1_0_, user0_.password as password6_1_0_, user0_.updateDate as updateDa7_1_0_, user0_.userName as userName8_1_0_ from user user0_ where user0_.id=? for update
+[DEBUG] 2018-02-20 19:59:30.768 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@38b3f208]
+[DEBUG] 2018-02-20 19:59:30.769 [main] MetamodelGraphWalker - Visiting attribute path : bike
+[DEBUG] 2018-02-20 19:59:30.770 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@53b1a3f8]
+[DEBUG] 2018-02-20 19:59:30.771 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@7d97e06c]
+[DEBUG] 2018-02-20 19:59:30.772 [main] MetamodelGraphWalker - Visiting attribute path : createDate
+[DEBUG] 2018-02-20 19:59:30.772 [main] MetamodelGraphWalker - Visiting attribute path : email
+[DEBUG] 2018-02-20 19:59:30.773 [main] MetamodelGraphWalker - Visiting attribute path : firstName
+[DEBUG] 2018-02-20 19:59:30.773 [main] MetamodelGraphWalker - Visiting attribute path : lastName
+[DEBUG] 2018-02-20 19:59:30.774 [main] MetamodelGraphWalker - Visiting attribute path : password
+[DEBUG] 2018-02-20 19:59:30.774 [main] MetamodelGraphWalker - Visiting attribute path : updateDate
+[DEBUG] 2018-02-20 19:59:30.775 [main] MetamodelGraphWalker - Visiting attribute path : userName
+[DEBUG] 2018-02-20 19:59:30.775 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2018-02-20 19:59:30.777 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2018-02-20 19:59:30.782 [main] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.User)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.User, querySpaceUid=<gen:0>, path=edu.matc.entity.User)
+          - CollectionAttributeFetchImpl(collection=edu.matc.entity.User.bike, querySpaceUid=<gen:1>, path=edu.matc.entity.User.bike)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=edu.matc.entity.Bike, querySpaceUid=<gen:2>, path=edu.matc.entity.User.bike.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+[DEBUG] 2018-02-20 19:59:30.784 [main] EntityLoader - Static select for entity edu.matc.entity.User [PESSIMISTIC_READ]: select user0_.id as id1_1_0_, user0_.createDate as createDa2_1_0_, user0_.email as email3_1_0_, user0_.firstName as firstNam4_1_0_, user0_.lastName as lastName5_1_0_, user0_.password as password6_1_0_, user0_.updateDate as updateDa7_1_0_, user0_.userName as userName8_1_0_ from user user0_ where user0_.id=? lock in share mode
+[DEBUG] 2018-02-20 19:59:30.785 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@5a936e64]
+[DEBUG] 2018-02-20 19:59:30.786 [main] MetamodelGraphWalker - Visiting attribute path : bike
+[DEBUG] 2018-02-20 19:59:30.786 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@65bad087]
+[DEBUG] 2018-02-20 19:59:30.788 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@276cc8dc]
+[DEBUG] 2018-02-20 19:59:30.789 [main] MetamodelGraphWalker - Visiting attribute path : createDate
+[DEBUG] 2018-02-20 19:59:30.790 [main] MetamodelGraphWalker - Visiting attribute path : email
+[DEBUG] 2018-02-20 19:59:30.790 [main] MetamodelGraphWalker - Visiting attribute path : firstName
+[DEBUG] 2018-02-20 19:59:30.791 [main] MetamodelGraphWalker - Visiting attribute path : lastName
+[DEBUG] 2018-02-20 19:59:30.791 [main] MetamodelGraphWalker - Visiting attribute path : password
+[DEBUG] 2018-02-20 19:59:30.792 [main] MetamodelGraphWalker - Visiting attribute path : updateDate
+[DEBUG] 2018-02-20 19:59:30.792 [main] MetamodelGraphWalker - Visiting attribute path : userName
+[DEBUG] 2018-02-20 19:59:30.793 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2018-02-20 19:59:30.795 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2018-02-20 19:59:30.800 [main] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.User)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.User, querySpaceUid=<gen:0>, path=edu.matc.entity.User)
+          - CollectionAttributeFetchImpl(collection=edu.matc.entity.User.bike, querySpaceUid=<gen:1>, path=edu.matc.entity.User.bike)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=edu.matc.entity.Bike, querySpaceUid=<gen:2>, path=edu.matc.entity.User.bike.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+[DEBUG] 2018-02-20 19:59:30.805 [main] EntityLoader - Static select for entity edu.matc.entity.User [PESSIMISTIC_WRITE]: select user0_.id as id1_1_0_, user0_.createDate as createDa2_1_0_, user0_.email as email3_1_0_, user0_.firstName as firstNam4_1_0_, user0_.lastName as lastName5_1_0_, user0_.password as password6_1_0_, user0_.updateDate as updateDa7_1_0_, user0_.userName as userName8_1_0_ from user user0_ where user0_.id=? for update
+[DEBUG] 2018-02-20 19:59:30.807 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@66cd621b]
+[DEBUG] 2018-02-20 19:59:30.808 [main] MetamodelGraphWalker - Visiting attribute path : bike
+[DEBUG] 2018-02-20 19:59:30.809 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@3eb292cd]
+[DEBUG] 2018-02-20 19:59:30.810 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@7fd987ef]
+[DEBUG] 2018-02-20 19:59:30.810 [main] MetamodelGraphWalker - Visiting attribute path : createDate
+[DEBUG] 2018-02-20 19:59:30.811 [main] MetamodelGraphWalker - Visiting attribute path : email
+[DEBUG] 2018-02-20 19:59:30.811 [main] MetamodelGraphWalker - Visiting attribute path : firstName
+[DEBUG] 2018-02-20 19:59:30.812 [main] MetamodelGraphWalker - Visiting attribute path : lastName
+[DEBUG] 2018-02-20 19:59:30.812 [main] MetamodelGraphWalker - Visiting attribute path : password
+[DEBUG] 2018-02-20 19:59:30.813 [main] MetamodelGraphWalker - Visiting attribute path : updateDate
+[DEBUG] 2018-02-20 19:59:30.813 [main] MetamodelGraphWalker - Visiting attribute path : userName
+[DEBUG] 2018-02-20 19:59:30.814 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2018-02-20 19:59:30.817 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2018-02-20 19:59:30.821 [main] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.User)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.User, querySpaceUid=<gen:0>, path=edu.matc.entity.User)
+          - CollectionAttributeFetchImpl(collection=edu.matc.entity.User.bike, querySpaceUid=<gen:1>, path=edu.matc.entity.User.bike)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=edu.matc.entity.Bike, querySpaceUid=<gen:2>, path=edu.matc.entity.User.bike.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+[DEBUG] 2018-02-20 19:59:30.823 [main] EntityLoader - Static select for entity edu.matc.entity.User [PESSIMISTIC_FORCE_INCREMENT]: select user0_.id as id1_1_0_, user0_.createDate as createDa2_1_0_, user0_.email as email3_1_0_, user0_.firstName as firstNam4_1_0_, user0_.lastName as lastName5_1_0_, user0_.password as password6_1_0_, user0_.updateDate as updateDa7_1_0_, user0_.userName as userName8_1_0_ from user user0_ where user0_.id=? for update
+[DEBUG] 2018-02-20 19:59:30.824 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@7209ffb5]
+[DEBUG] 2018-02-20 19:59:30.825 [main] MetamodelGraphWalker - Visiting attribute path : bike
+[DEBUG] 2018-02-20 19:59:30.826 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@2fe74516]
+[DEBUG] 2018-02-20 19:59:30.827 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1c3259fa]
+[DEBUG] 2018-02-20 19:59:30.827 [main] MetamodelGraphWalker - Visiting attribute path : createDate
+[DEBUG] 2018-02-20 19:59:30.828 [main] MetamodelGraphWalker - Visiting attribute path : email
+[DEBUG] 2018-02-20 19:59:30.828 [main] MetamodelGraphWalker - Visiting attribute path : firstName
+[DEBUG] 2018-02-20 19:59:30.829 [main] MetamodelGraphWalker - Visiting attribute path : lastName
+[DEBUG] 2018-02-20 19:59:30.829 [main] MetamodelGraphWalker - Visiting attribute path : password
+[DEBUG] 2018-02-20 19:59:30.830 [main] MetamodelGraphWalker - Visiting attribute path : updateDate
+[DEBUG] 2018-02-20 19:59:30.831 [main] MetamodelGraphWalker - Visiting attribute path : userName
+[DEBUG] 2018-02-20 19:59:30.831 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2018-02-20 19:59:30.833 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2018-02-20 19:59:30.837 [main] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.User)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.User, querySpaceUid=<gen:0>, path=edu.matc.entity.User)
+          - CollectionAttributeFetchImpl(collection=edu.matc.entity.User.bike, querySpaceUid=<gen:1>, path=edu.matc.entity.User.bike)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=edu.matc.entity.Bike, querySpaceUid=<gen:2>, path=edu.matc.entity.User.bike.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+[DEBUG] 2018-02-20 19:59:30.839 [main] EntityLoader - Static select for entity edu.matc.entity.User [OPTIMISTIC]: select user0_.id as id1_1_0_, user0_.createDate as createDa2_1_0_, user0_.email as email3_1_0_, user0_.firstName as firstNam4_1_0_, user0_.lastName as lastName5_1_0_, user0_.password as password6_1_0_, user0_.updateDate as updateDa7_1_0_, user0_.userName as userName8_1_0_ from user user0_ where user0_.id=?
+[DEBUG] 2018-02-20 19:59:30.841 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@217bf99e]
+[DEBUG] 2018-02-20 19:59:30.842 [main] MetamodelGraphWalker - Visiting attribute path : bike
+[DEBUG] 2018-02-20 19:59:30.842 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@7ddd84b5]
+[DEBUG] 2018-02-20 19:59:30.843 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@73aeef7d]
+[DEBUG] 2018-02-20 19:59:30.844 [main] MetamodelGraphWalker - Visiting attribute path : createDate
+[DEBUG] 2018-02-20 19:59:30.845 [main] MetamodelGraphWalker - Visiting attribute path : email
+[DEBUG] 2018-02-20 19:59:30.845 [main] MetamodelGraphWalker - Visiting attribute path : firstName
+[DEBUG] 2018-02-20 19:59:30.845 [main] MetamodelGraphWalker - Visiting attribute path : lastName
+[DEBUG] 2018-02-20 19:59:30.846 [main] MetamodelGraphWalker - Visiting attribute path : password
+[DEBUG] 2018-02-20 19:59:30.846 [main] MetamodelGraphWalker - Visiting attribute path : updateDate
+[DEBUG] 2018-02-20 19:59:30.847 [main] MetamodelGraphWalker - Visiting attribute path : userName
+[DEBUG] 2018-02-20 19:59:30.848 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2018-02-20 19:59:30.850 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2018-02-20 19:59:30.856 [main] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.User)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.User, querySpaceUid=<gen:0>, path=edu.matc.entity.User)
+          - CollectionAttributeFetchImpl(collection=edu.matc.entity.User.bike, querySpaceUid=<gen:1>, path=edu.matc.entity.User.bike)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=edu.matc.entity.Bike, querySpaceUid=<gen:2>, path=edu.matc.entity.User.bike.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+[DEBUG] 2018-02-20 19:59:30.858 [main] EntityLoader - Static select for entity edu.matc.entity.User [OPTIMISTIC_FORCE_INCREMENT]: select user0_.id as id1_1_0_, user0_.createDate as createDa2_1_0_, user0_.email as email3_1_0_, user0_.firstName as firstNam4_1_0_, user0_.lastName as lastName5_1_0_, user0_.password as password6_1_0_, user0_.updateDate as updateDa7_1_0_, user0_.userName as userName8_1_0_ from user user0_ where user0_.id=?
+[DEBUG] 2018-02-20 19:59:30.977 [main] Loader - Static select for action ACTION_MERGE on entity edu.matc.entity.User: select user0_.id as id1_1_1_, user0_.createDate as createDa2_1_1_, user0_.email as email3_1_1_, user0_.firstName as firstNam4_1_1_, user0_.lastName as lastName5_1_1_, user0_.password as password6_1_1_, user0_.updateDate as updateDa7_1_1_, user0_.userName as userName8_1_1_, bike1_.user_id as user_id6_0_3_, bike1_.id as id1_0_3_, bike1_.id as id1_0_0_, bike1_.accessories as accessor2_0_0_, bike1_.bikeBrand as bikeBran3_0_0_, bike1_.bikeName as bikeName4_0_0_, bike1_.modelYear as modelYea5_0_0_, bike1_.user_id as user_id6_0_0_ from user user0_ left outer join bike bike1_ on user0_.id=bike1_.user_id where user0_.id=?
+[DEBUG] 2018-02-20 19:59:30.982 [main] Loader - Static select for action ACTION_REFRESH on entity edu.matc.entity.User: select user0_.id as id1_1_1_, user0_.createDate as createDa2_1_1_, user0_.email as email3_1_1_, user0_.firstName as firstNam4_1_1_, user0_.lastName as lastName5_1_1_, user0_.password as password6_1_1_, user0_.updateDate as updateDa7_1_1_, user0_.userName as userName8_1_1_, bike1_.user_id as user_id6_0_3_, bike1_.id as id1_0_3_, bike1_.id as id1_0_0_, bike1_.accessories as accessor2_0_0_, bike1_.bikeBrand as bikeBran3_0_0_, bike1_.bikeName as bikeName4_0_0_, bike1_.modelYear as modelYea5_0_0_, bike1_.user_id as user_id6_0_0_ from user user0_ left outer join bike bike1_ on user0_.id=bike1_.user_id where user0_.id=?
+[DEBUG] 2018-02-20 19:59:30.985 [main] AbstractEntityPersister - Static SQL for entity: edu.matc.entity.Bike
+[DEBUG] 2018-02-20 19:59:30.986 [main] AbstractEntityPersister -  Version select: select id from bike where id =?
+[DEBUG] 2018-02-20 19:59:30.987 [main] AbstractEntityPersister -  Snapshot select: select bike_.id, bike_.accessories as accessor2_0_, bike_.bikeBrand as bikeBran3_0_, bike_.bikeName as bikeName4_0_, bike_.modelYear as modelYea5_0_, bike_.user_id as user_id6_0_ from bike bike_ where bike_.id=?
+[DEBUG] 2018-02-20 19:59:30.987 [main] AbstractEntityPersister -  Insert 0: insert into bike (accessories, bikeBrand, bikeName, modelYear, user_id, id) values (?, ?, ?, ?, ?, ?)
+[DEBUG] 2018-02-20 19:59:30.988 [main] AbstractEntityPersister -  Update 0: update bike set accessories=?, bikeBrand=?, bikeName=?, modelYear=?, user_id=? where id=?
+[DEBUG] 2018-02-20 19:59:30.988 [main] AbstractEntityPersister -  Delete 0: delete from bike where id=?
+[DEBUG] 2018-02-20 19:59:30.989 [main] AbstractEntityPersister -  Identity insert: insert into bike (accessories, bikeBrand, bikeName, modelYear, user_id) values (?, ?, ?, ?, ?)
+[DEBUG] 2018-02-20 19:59:30.990 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@17b37e9a]
+[DEBUG] 2018-02-20 19:59:30.991 [main] MetamodelGraphWalker - Visiting attribute path : accessories
+[DEBUG] 2018-02-20 19:59:30.991 [main] MetamodelGraphWalker - Visiting attribute path : bikeBrand
+[DEBUG] 2018-02-20 19:59:30.992 [main] MetamodelGraphWalker - Visiting attribute path : bikeName
+[DEBUG] 2018-02-20 19:59:30.992 [main] MetamodelGraphWalker - Visiting attribute path : modelYear
+[DEBUG] 2018-02-20 19:59:30.993 [main] MetamodelGraphWalker - Visiting attribute path : user
+[DEBUG] 2018-02-20 19:59:30.993 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@111d5c97]
+[DEBUG] 2018-02-20 19:59:30.999 [main] MetamodelGraphWalker - Visiting attribute path : user.bike
+[DEBUG] 2018-02-20 19:59:30.999 [main] MetamodelGraphWalker - Property path deemed to be circular : user.bike
+[DEBUG] 2018-02-20 19:59:31.000 [main] MetamodelGraphWalker - Visiting attribute path : user.createDate
+[DEBUG] 2018-02-20 19:59:31.000 [main] MetamodelGraphWalker - Visiting attribute path : user.email
+[DEBUG] 2018-02-20 19:59:31.001 [main] MetamodelGraphWalker - Visiting attribute path : user.firstName
+[DEBUG] 2018-02-20 19:59:31.001 [main] MetamodelGraphWalker - Visiting attribute path : user.lastName
+[DEBUG] 2018-02-20 19:59:31.002 [main] MetamodelGraphWalker - Visiting attribute path : user.password
+[DEBUG] 2018-02-20 19:59:31.003 [main] MetamodelGraphWalker - Visiting attribute path : user.updateDate
+[DEBUG] 2018-02-20 19:59:31.003 [main] MetamodelGraphWalker - Visiting attribute path : user.userName
+[DEBUG] 2018-02-20 19:59:31.004 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2018-02-20 19:59:31.006 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2018-02-20 19:59:31.013 [main] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.Bike)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.Bike, querySpaceUid=<gen:0>, path=edu.matc.entity.Bike)
+          - EntityAttributeFetchImpl(entity=edu.matc.entity.User, querySpaceUid=<gen:1>, path=edu.matc.entity.Bike.user)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.Bike)
+          - SQL table alias mapping - bike0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+          - JOIN (JoinDefinedByMetadata(user)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=edu.matc.entity.User)
+                - SQL table alias mapping - user1_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_1_1_}
+
+[DEBUG] 2018-02-20 19:59:31.016 [main] EntityLoader - Static select for entity edu.matc.entity.Bike [NONE]: select bike0_.id as id1_0_0_, bike0_.accessories as accessor2_0_0_, bike0_.bikeBrand as bikeBran3_0_0_, bike0_.bikeName as bikeName4_0_0_, bike0_.modelYear as modelYea5_0_0_, bike0_.user_id as user_id6_0_0_, user1_.id as id1_1_1_, user1_.createDate as createDa2_1_1_, user1_.email as email3_1_1_, user1_.firstName as firstNam4_1_1_, user1_.lastName as lastName5_1_1_, user1_.password as password6_1_1_, user1_.updateDate as updateDa7_1_1_, user1_.userName as userName8_1_1_ from bike bike0_ left outer join user user1_ on bike0_.user_id=user1_.id where bike0_.id=?
+[DEBUG] 2018-02-20 19:59:31.018 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@3e1fd62b]
+[DEBUG] 2018-02-20 19:59:31.019 [main] MetamodelGraphWalker - Visiting attribute path : accessories
+[DEBUG] 2018-02-20 19:59:31.020 [main] MetamodelGraphWalker - Visiting attribute path : bikeBrand
+[DEBUG] 2018-02-20 19:59:31.021 [main] MetamodelGraphWalker - Visiting attribute path : bikeName
+[DEBUG] 2018-02-20 19:59:31.021 [main] MetamodelGraphWalker - Visiting attribute path : modelYear
+[DEBUG] 2018-02-20 19:59:31.022 [main] MetamodelGraphWalker - Visiting attribute path : user
+[DEBUG] 2018-02-20 19:59:31.023 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@558b4942]
+[DEBUG] 2018-02-20 19:59:31.024 [main] MetamodelGraphWalker - Visiting attribute path : user.bike
+[DEBUG] 2018-02-20 19:59:31.024 [main] MetamodelGraphWalker - Property path deemed to be circular : user.bike
+[DEBUG] 2018-02-20 19:59:31.025 [main] MetamodelGraphWalker - Visiting attribute path : user.createDate
+[DEBUG] 2018-02-20 19:59:31.026 [main] MetamodelGraphWalker - Visiting attribute path : user.email
+[DEBUG] 2018-02-20 19:59:31.026 [main] MetamodelGraphWalker - Visiting attribute path : user.firstName
+[DEBUG] 2018-02-20 19:59:31.027 [main] MetamodelGraphWalker - Visiting attribute path : user.lastName
+[DEBUG] 2018-02-20 19:59:31.027 [main] MetamodelGraphWalker - Visiting attribute path : user.password
+[DEBUG] 2018-02-20 19:59:31.028 [main] MetamodelGraphWalker - Visiting attribute path : user.updateDate
+[DEBUG] 2018-02-20 19:59:31.029 [main] MetamodelGraphWalker - Visiting attribute path : user.userName
+[DEBUG] 2018-02-20 19:59:31.030 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2018-02-20 19:59:31.031 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2018-02-20 19:59:31.038 [main] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.Bike)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.Bike, querySpaceUid=<gen:0>, path=edu.matc.entity.Bike)
+          - EntityAttributeFetchImpl(entity=edu.matc.entity.User, querySpaceUid=<gen:1>, path=edu.matc.entity.Bike.user)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.Bike)
+          - SQL table alias mapping - bike0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+          - JOIN (JoinDefinedByMetadata(user)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=edu.matc.entity.User)
+                - SQL table alias mapping - user1_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_1_1_}
+
+[DEBUG] 2018-02-20 19:59:31.040 [main] EntityLoader - Static select for entity edu.matc.entity.Bike [READ]: select bike0_.id as id1_0_0_, bike0_.accessories as accessor2_0_0_, bike0_.bikeBrand as bikeBran3_0_0_, bike0_.bikeName as bikeName4_0_0_, bike0_.modelYear as modelYea5_0_0_, bike0_.user_id as user_id6_0_0_, user1_.id as id1_1_1_, user1_.createDate as createDa2_1_1_, user1_.email as email3_1_1_, user1_.firstName as firstNam4_1_1_, user1_.lastName as lastName5_1_1_, user1_.password as password6_1_1_, user1_.updateDate as updateDa7_1_1_, user1_.userName as userName8_1_1_ from bike bike0_ left outer join user user1_ on bike0_.user_id=user1_.id where bike0_.id=?
+[DEBUG] 2018-02-20 19:59:31.041 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@70025b99]
+[DEBUG] 2018-02-20 19:59:31.042 [main] MetamodelGraphWalker - Visiting attribute path : accessories
+[DEBUG] 2018-02-20 19:59:31.043 [main] MetamodelGraphWalker - Visiting attribute path : bikeBrand
+[DEBUG] 2018-02-20 19:59:31.043 [main] MetamodelGraphWalker - Visiting attribute path : bikeName
+[DEBUG] 2018-02-20 19:59:31.044 [main] MetamodelGraphWalker - Visiting attribute path : modelYear
+[DEBUG] 2018-02-20 19:59:31.044 [main] MetamodelGraphWalker - Visiting attribute path : user
+[DEBUG] 2018-02-20 19:59:31.045 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@7134b8a7]
+[DEBUG] 2018-02-20 19:59:31.046 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2018-02-20 19:59:31.048 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2018-02-20 19:59:31.051 [main] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.Bike)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.Bike, querySpaceUid=<gen:0>, path=edu.matc.entity.Bike)
+          - EntityAttributeFetchImpl(entity=edu.matc.entity.User, querySpaceUid=<gen:1>, path=edu.matc.entity.Bike.user)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.Bike)
+          - SQL table alias mapping - bike0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+[DEBUG] 2018-02-20 19:59:31.053 [main] EntityLoader - Static select for entity edu.matc.entity.Bike [UPGRADE]: select bike0_.id as id1_0_0_, bike0_.accessories as accessor2_0_0_, bike0_.bikeBrand as bikeBran3_0_0_, bike0_.bikeName as bikeName4_0_0_, bike0_.modelYear as modelYea5_0_0_, bike0_.user_id as user_id6_0_0_ from bike bike0_ where bike0_.id=? for update
+[DEBUG] 2018-02-20 19:59:31.054 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@2262d6d5]
+[DEBUG] 2018-02-20 19:59:31.055 [main] MetamodelGraphWalker - Visiting attribute path : accessories
+[DEBUG] 2018-02-20 19:59:31.056 [main] MetamodelGraphWalker - Visiting attribute path : bikeBrand
+[DEBUG] 2018-02-20 19:59:31.056 [main] MetamodelGraphWalker - Visiting attribute path : bikeName
+[DEBUG] 2018-02-20 19:59:31.056 [main] MetamodelGraphWalker - Visiting attribute path : modelYear
+[DEBUG] 2018-02-20 19:59:31.057 [main] MetamodelGraphWalker - Visiting attribute path : user
+[DEBUG] 2018-02-20 19:59:31.057 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@6ff0b1cc]
+[DEBUG] 2018-02-20 19:59:31.059 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2018-02-20 19:59:31.060 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2018-02-20 19:59:31.064 [main] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.Bike)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.Bike, querySpaceUid=<gen:0>, path=edu.matc.entity.Bike)
+          - EntityAttributeFetchImpl(entity=edu.matc.entity.User, querySpaceUid=<gen:1>, path=edu.matc.entity.Bike.user)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.Bike)
+          - SQL table alias mapping - bike0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+[DEBUG] 2018-02-20 19:59:31.065 [main] EntityLoader - Static select for entity edu.matc.entity.Bike [UPGRADE_NOWAIT]: select bike0_.id as id1_0_0_, bike0_.accessories as accessor2_0_0_, bike0_.bikeBrand as bikeBran3_0_0_, bike0_.bikeName as bikeName4_0_0_, bike0_.modelYear as modelYea5_0_0_, bike0_.user_id as user_id6_0_0_ from bike bike0_ where bike0_.id=? for update
+[DEBUG] 2018-02-20 19:59:31.066 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@3b55dd15]
+[DEBUG] 2018-02-20 19:59:31.068 [main] MetamodelGraphWalker - Visiting attribute path : accessories
+[DEBUG] 2018-02-20 19:59:31.068 [main] MetamodelGraphWalker - Visiting attribute path : bikeBrand
+[DEBUG] 2018-02-20 19:59:31.068 [main] MetamodelGraphWalker - Visiting attribute path : bikeName
+[DEBUG] 2018-02-20 19:59:31.069 [main] MetamodelGraphWalker - Visiting attribute path : modelYear
+[DEBUG] 2018-02-20 19:59:31.069 [main] MetamodelGraphWalker - Visiting attribute path : user
+[DEBUG] 2018-02-20 19:59:31.070 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@3ba3d4b6]
+[DEBUG] 2018-02-20 19:59:31.071 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2018-02-20 19:59:31.073 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2018-02-20 19:59:31.078 [main] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.Bike)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.Bike, querySpaceUid=<gen:0>, path=edu.matc.entity.Bike)
+          - EntityAttributeFetchImpl(entity=edu.matc.entity.User, querySpaceUid=<gen:1>, path=edu.matc.entity.Bike.user)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.Bike)
+          - SQL table alias mapping - bike0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+[DEBUG] 2018-02-20 19:59:31.080 [main] EntityLoader - Static select for entity edu.matc.entity.Bike [UPGRADE_SKIPLOCKED]: select bike0_.id as id1_0_0_, bike0_.accessories as accessor2_0_0_, bike0_.bikeBrand as bikeBran3_0_0_, bike0_.bikeName as bikeName4_0_0_, bike0_.modelYear as modelYea5_0_0_, bike0_.user_id as user_id6_0_0_ from bike bike0_ where bike0_.id=? for update
+[DEBUG] 2018-02-20 19:59:31.081 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@51b77cdf]
+[DEBUG] 2018-02-20 19:59:31.083 [main] MetamodelGraphWalker - Visiting attribute path : accessories
+[DEBUG] 2018-02-20 19:59:31.084 [main] MetamodelGraphWalker - Visiting attribute path : bikeBrand
+[DEBUG] 2018-02-20 19:59:31.084 [main] MetamodelGraphWalker - Visiting attribute path : bikeName
+[DEBUG] 2018-02-20 19:59:31.085 [main] MetamodelGraphWalker - Visiting attribute path : modelYear
+[DEBUG] 2018-02-20 19:59:31.086 [main] MetamodelGraphWalker - Visiting attribute path : user
+[DEBUG] 2018-02-20 19:59:31.086 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@6088451e]
+[DEBUG] 2018-02-20 19:59:31.088 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2018-02-20 19:59:31.090 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2018-02-20 19:59:31.093 [main] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.Bike)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.Bike, querySpaceUid=<gen:0>, path=edu.matc.entity.Bike)
+          - EntityAttributeFetchImpl(entity=edu.matc.entity.User, querySpaceUid=<gen:1>, path=edu.matc.entity.Bike.user)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.Bike)
+          - SQL table alias mapping - bike0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+[DEBUG] 2018-02-20 19:59:31.095 [main] EntityLoader - Static select for entity edu.matc.entity.Bike [FORCE]: select bike0_.id as id1_0_0_, bike0_.accessories as accessor2_0_0_, bike0_.bikeBrand as bikeBran3_0_0_, bike0_.bikeName as bikeName4_0_0_, bike0_.modelYear as modelYea5_0_0_, bike0_.user_id as user_id6_0_0_ from bike bike0_ where bike0_.id=? for update
+[DEBUG] 2018-02-20 19:59:31.096 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@45ab3bdd]
+[DEBUG] 2018-02-20 19:59:31.097 [main] MetamodelGraphWalker - Visiting attribute path : accessories
+[DEBUG] 2018-02-20 19:59:31.097 [main] MetamodelGraphWalker - Visiting attribute path : bikeBrand
+[DEBUG] 2018-02-20 19:59:31.098 [main] MetamodelGraphWalker - Visiting attribute path : bikeName
+[DEBUG] 2018-02-20 19:59:31.098 [main] MetamodelGraphWalker - Visiting attribute path : modelYear
+[DEBUG] 2018-02-20 19:59:31.099 [main] MetamodelGraphWalker - Visiting attribute path : user
+[DEBUG] 2018-02-20 19:59:31.099 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1642eeae]
+[DEBUG] 2018-02-20 19:59:31.100 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2018-02-20 19:59:31.102 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2018-02-20 19:59:31.106 [main] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.Bike)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.Bike, querySpaceUid=<gen:0>, path=edu.matc.entity.Bike)
+          - EntityAttributeFetchImpl(entity=edu.matc.entity.User, querySpaceUid=<gen:1>, path=edu.matc.entity.Bike.user)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.Bike)
+          - SQL table alias mapping - bike0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+[DEBUG] 2018-02-20 19:59:31.107 [main] EntityLoader - Static select for entity edu.matc.entity.Bike [PESSIMISTIC_READ]: select bike0_.id as id1_0_0_, bike0_.accessories as accessor2_0_0_, bike0_.bikeBrand as bikeBran3_0_0_, bike0_.bikeName as bikeName4_0_0_, bike0_.modelYear as modelYea5_0_0_, bike0_.user_id as user_id6_0_0_ from bike bike0_ where bike0_.id=? lock in share mode
+[DEBUG] 2018-02-20 19:59:31.108 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@3440e9cd]
+[DEBUG] 2018-02-20 19:59:31.109 [main] MetamodelGraphWalker - Visiting attribute path : accessories
+[DEBUG] 2018-02-20 19:59:31.110 [main] MetamodelGraphWalker - Visiting attribute path : bikeBrand
+[DEBUG] 2018-02-20 19:59:31.110 [main] MetamodelGraphWalker - Visiting attribute path : bikeName
+[DEBUG] 2018-02-20 19:59:31.111 [main] MetamodelGraphWalker - Visiting attribute path : modelYear
+[DEBUG] 2018-02-20 19:59:31.111 [main] MetamodelGraphWalker - Visiting attribute path : user
+[DEBUG] 2018-02-20 19:59:31.112 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@a09303]
+[DEBUG] 2018-02-20 19:59:31.113 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2018-02-20 19:59:31.115 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2018-02-20 19:59:31.118 [main] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.Bike)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.Bike, querySpaceUid=<gen:0>, path=edu.matc.entity.Bike)
+          - EntityAttributeFetchImpl(entity=edu.matc.entity.User, querySpaceUid=<gen:1>, path=edu.matc.entity.Bike.user)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.Bike)
+          - SQL table alias mapping - bike0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+[DEBUG] 2018-02-20 19:59:31.120 [main] EntityLoader - Static select for entity edu.matc.entity.Bike [PESSIMISTIC_WRITE]: select bike0_.id as id1_0_0_, bike0_.accessories as accessor2_0_0_, bike0_.bikeBrand as bikeBran3_0_0_, bike0_.bikeName as bikeName4_0_0_, bike0_.modelYear as modelYea5_0_0_, bike0_.user_id as user_id6_0_0_ from bike bike0_ where bike0_.id=? for update
+[DEBUG] 2018-02-20 19:59:31.122 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1163a27]
+[DEBUG] 2018-02-20 19:59:31.123 [main] MetamodelGraphWalker - Visiting attribute path : accessories
+[DEBUG] 2018-02-20 19:59:31.124 [main] MetamodelGraphWalker - Visiting attribute path : bikeBrand
+[DEBUG] 2018-02-20 19:59:31.125 [main] MetamodelGraphWalker - Visiting attribute path : bikeName
+[DEBUG] 2018-02-20 19:59:31.125 [main] MetamodelGraphWalker - Visiting attribute path : modelYear
+[DEBUG] 2018-02-20 19:59:31.126 [main] MetamodelGraphWalker - Visiting attribute path : user
+[DEBUG] 2018-02-20 19:59:31.126 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@502a4156]
+[DEBUG] 2018-02-20 19:59:31.128 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2018-02-20 19:59:31.130 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2018-02-20 19:59:31.134 [main] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.Bike)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.Bike, querySpaceUid=<gen:0>, path=edu.matc.entity.Bike)
+          - EntityAttributeFetchImpl(entity=edu.matc.entity.User, querySpaceUid=<gen:1>, path=edu.matc.entity.Bike.user)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.Bike)
+          - SQL table alias mapping - bike0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+[DEBUG] 2018-02-20 19:59:31.136 [main] EntityLoader - Static select for entity edu.matc.entity.Bike [PESSIMISTIC_FORCE_INCREMENT]: select bike0_.id as id1_0_0_, bike0_.accessories as accessor2_0_0_, bike0_.bikeBrand as bikeBran3_0_0_, bike0_.bikeName as bikeName4_0_0_, bike0_.modelYear as modelYea5_0_0_, bike0_.user_id as user_id6_0_0_ from bike bike0_ where bike0_.id=? for update
+[DEBUG] 2018-02-20 19:59:31.137 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@5416f8db]
+[DEBUG] 2018-02-20 19:59:31.138 [main] MetamodelGraphWalker - Visiting attribute path : accessories
+[DEBUG] 2018-02-20 19:59:31.139 [main] MetamodelGraphWalker - Visiting attribute path : bikeBrand
+[DEBUG] 2018-02-20 19:59:31.139 [main] MetamodelGraphWalker - Visiting attribute path : bikeName
+[DEBUG] 2018-02-20 19:59:31.140 [main] MetamodelGraphWalker - Visiting attribute path : modelYear
+[DEBUG] 2018-02-20 19:59:31.140 [main] MetamodelGraphWalker - Visiting attribute path : user
+[DEBUG] 2018-02-20 19:59:31.141 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@b0fd744]
+[DEBUG] 2018-02-20 19:59:31.142 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2018-02-20 19:59:31.144 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2018-02-20 19:59:31.147 [main] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.Bike)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.Bike, querySpaceUid=<gen:0>, path=edu.matc.entity.Bike)
+          - EntityAttributeFetchImpl(entity=edu.matc.entity.User, querySpaceUid=<gen:1>, path=edu.matc.entity.Bike.user)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.Bike)
+          - SQL table alias mapping - bike0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+[DEBUG] 2018-02-20 19:59:31.149 [main] EntityLoader - Static select for entity edu.matc.entity.Bike [OPTIMISTIC]: select bike0_.id as id1_0_0_, bike0_.accessories as accessor2_0_0_, bike0_.bikeBrand as bikeBran3_0_0_, bike0_.bikeName as bikeName4_0_0_, bike0_.modelYear as modelYea5_0_0_, bike0_.user_id as user_id6_0_0_ from bike bike0_ where bike0_.id=?
+[DEBUG] 2018-02-20 19:59:31.150 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@92d1782]
+[DEBUG] 2018-02-20 19:59:31.151 [main] MetamodelGraphWalker - Visiting attribute path : accessories
+[DEBUG] 2018-02-20 19:59:31.152 [main] MetamodelGraphWalker - Visiting attribute path : bikeBrand
+[DEBUG] 2018-02-20 19:59:31.152 [main] MetamodelGraphWalker - Visiting attribute path : bikeName
+[DEBUG] 2018-02-20 19:59:31.152 [main] MetamodelGraphWalker - Visiting attribute path : modelYear
+[DEBUG] 2018-02-20 19:59:31.153 [main] MetamodelGraphWalker - Visiting attribute path : user
+[DEBUG] 2018-02-20 19:59:31.154 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@72976b4]
+[DEBUG] 2018-02-20 19:59:31.155 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2018-02-20 19:59:31.157 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2018-02-20 19:59:31.160 [main] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.Bike)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.Bike, querySpaceUid=<gen:0>, path=edu.matc.entity.Bike)
+          - EntityAttributeFetchImpl(entity=edu.matc.entity.User, querySpaceUid=<gen:1>, path=edu.matc.entity.Bike.user)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.Bike)
+          - SQL table alias mapping - bike0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+[DEBUG] 2018-02-20 19:59:31.161 [main] EntityLoader - Static select for entity edu.matc.entity.Bike [OPTIMISTIC_FORCE_INCREMENT]: select bike0_.id as id1_0_0_, bike0_.accessories as accessor2_0_0_, bike0_.bikeBrand as bikeBran3_0_0_, bike0_.bikeName as bikeName4_0_0_, bike0_.modelYear as modelYea5_0_0_, bike0_.user_id as user_id6_0_0_ from bike bike0_ where bike0_.id=?
+[DEBUG] 2018-02-20 19:59:31.164 [main] Loader - Static select for action ACTION_MERGE on entity edu.matc.entity.Bike: select bike0_.id as id1_0_0_, bike0_.accessories as accessor2_0_0_, bike0_.bikeBrand as bikeBran3_0_0_, bike0_.bikeName as bikeName4_0_0_, bike0_.modelYear as modelYea5_0_0_, bike0_.user_id as user_id6_0_0_ from bike bike0_ where bike0_.id=?
+[DEBUG] 2018-02-20 19:59:31.166 [main] Loader - Static select for action ACTION_REFRESH on entity edu.matc.entity.Bike: select bike0_.id as id1_0_0_, bike0_.accessories as accessor2_0_0_, bike0_.bikeBrand as bikeBran3_0_0_, bike0_.bikeName as bikeName4_0_0_, bike0_.modelYear as modelYea5_0_0_, bike0_.user_id as user_id6_0_0_ from bike bike0_ where bike0_.id=?
+[DEBUG] 2018-02-20 19:59:31.218 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@3069a360]
+[DEBUG] 2018-02-20 19:59:31.219 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@7235f92b]
+[DEBUG] 2018-02-20 19:59:31.221 [main] MetamodelGraphWalker - Visiting attribute path : accessories
+[DEBUG] 2018-02-20 19:59:31.221 [main] MetamodelGraphWalker - Visiting attribute path : bikeBrand
+[DEBUG] 2018-02-20 19:59:31.222 [main] MetamodelGraphWalker - Visiting attribute path : bikeName
+[DEBUG] 2018-02-20 19:59:31.222 [main] MetamodelGraphWalker - Visiting attribute path : modelYear
+[DEBUG] 2018-02-20 19:59:31.223 [main] MetamodelGraphWalker - Visiting attribute path : user
+[DEBUG] 2018-02-20 19:59:31.223 [main] MetamodelGraphWalker - Property path deemed to be circular : user
+[DEBUG] 2018-02-20 19:59:31.224 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2018-02-20 19:59:31.242 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2018-02-20 19:59:31.247 [main] LoadPlanTreePrinter - LoadPlan(collection=edu.matc.entity.User.bike)
+    - Returns
+       - CollectionReturnImpl(collection=edu.matc.entity.User.bike, querySpaceUid=<gen:0>, path=[edu.matc.entity.User.bike])
+          - (collection element) CollectionFetchableElementEntityGraph(entity=edu.matc.entity.Bike, querySpaceUid=<gen:1>, path=[edu.matc.entity.User.bike].<elements>)
+    - QuerySpaces
+       - CollectionQuerySpaceImpl(uid=<gen:0>, collection=edu.matc.entity.User.bike)
+          - SQL table alias mapping - bike0_
+          - alias suffix - 0_
+          - suffixed key columns - {user_id6_0_0_}
+          - entity-element alias suffix - 1_
+          - 1_entity-element suffixed key columns - id1_0_1_
+          - JOIN (JoinDefinedByMetadata(elements)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=edu.matc.entity.Bike)
+                - SQL table alias mapping - bike0_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_0_1_}
+
+[DEBUG] 2018-02-20 19:59:31.253 [main] CollectionLoader - Static select for collection edu.matc.entity.User.bike: select bike0_.user_id as user_id6_0_0_, bike0_.id as id1_0_0_, bike0_.id as id1_0_1_, bike0_.accessories as accessor2_0_1_, bike0_.bikeBrand as bikeBran3_0_1_, bike0_.bikeName as bikeName4_0_1_, bike0_.modelYear as modelYea5_0_1_, bike0_.user_id as user_id6_0_1_ from bike bike0_ where bike0_.user_id=?
+[DEBUG] 2018-02-20 19:59:31.538 [main] SchemaManagementToolCoordinator - No actions specified; doing nothing
+[DEBUG] 2018-02-20 19:59:31.538 [main] JtaPlatformInitiator - No JtaPlatform was specified, checking resolver
+[DEBUG] 2018-02-20 19:59:31.543 [main] JtaPlatformResolverInitiator - No JtaPlatformResolver was specified, using default [org.hibernate.engine.transaction.jta.platform.internal.StandardJtaPlatformResolver]
+[DEBUG] 2018-02-20 19:59:31.631 [main] StandardJtaPlatformResolver - Could not resolve JtaPlatform, using default [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[DEBUG] 2018-02-20 19:59:31.644 [main] NamedQueryRepository - Checking 0 named HQL queries
+[DEBUG] 2018-02-20 19:59:31.645 [main] NamedQueryRepository - Checking 0 named SQL queries
+[DEBUG] 2018-02-20 19:59:31.660 [main] SessionFactoryRegistry - Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@3596b249
+[DEBUG] 2018-02-20 19:59:31.674 [main] SessionFactoryRegistry - Registering SessionFactory: a11b9556-47d2-494d-87f6-d122229b8eea (<unnamed>)
+[DEBUG] 2018-02-20 19:59:31.675 [main] SessionFactoryRegistry - Not binding SessionFactory to JNDI, no JNDI name configured
+[DEBUG] 2018-02-20 19:59:32.275 [main] StatisticsInitiator - Statistics initialized [enabled=false]
+[DEBUG] 2018-02-20 19:59:32.445 [main] SQL - select user0_.id as id1_1_0_, user0_.createDate as createDa2_1_0_, user0_.email as email3_1_0_, user0_.firstName as firstNam4_1_0_, user0_.lastName as lastName5_1_0_, user0_.password as password6_1_0_, user0_.updateDate as updateDa7_1_0_, user0_.userName as userName8_1_0_, bike1_.user_id as user_id6_0_1_, bike1_.id as id1_0_1_, bike1_.id as id1_0_2_, bike1_.accessories as accessor2_0_2_, bike1_.bikeBrand as bikeBran3_0_2_, bike1_.bikeName as bikeName4_0_2_, bike1_.modelYear as modelYea5_0_2_, bike1_.user_id as user_id6_0_2_ from user user0_ left outer join bike bike1_ on user0_.id=bike1_.user_id where user0_.id=?
+[DEBUG] 2018-02-20 19:59:32.542 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2018-02-20 19:59:32.562 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2018-02-20 19:59:32.636 [main] CollectionReferenceInitializerImpl - Result set contains (possibly empty) collection: [edu.matc.entity.User.bike#3]
+[DEBUG] 2018-02-20 19:59:32.702 [main] TwoPhaseLoad - Resolving associations for [edu.matc.entity.User#3]
+[DEBUG] 2018-02-20 19:59:32.720 [main] TwoPhaseLoad - Done materializing entity [edu.matc.entity.User#3]
+[DEBUG] 2018-02-20 19:59:32.721 [main] CollectionLoadContext - 1 collections were found in result set for role: edu.matc.entity.User.bike
+[DEBUG] 2018-02-20 19:59:32.737 [main] CollectionLoadContext - Collection fully initialized: [edu.matc.entity.User.bike#3]
+[DEBUG] 2018-02-20 19:59:32.738 [main] CollectionLoadContext - 1 collections initialized for role: edu.matc.entity.User.bike
+[DEBUG] 2018-02-20 19:59:32.739 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2018-02-20 19:59:32.741 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : edu.matc.entity.User#3
+[DEBUG] 2018-02-20 19:59:32.742 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2018-02-20 20:01:03.911 [main] TransactionImpl - begin
+[DEBUG] 2018-02-20 20:01:03.966 [main] ActionQueue - Executing identity-insert immediately
+[DEBUG] 2018-02-20 20:01:03.983 [main] SQL - insert into bike (accessories, bikeBrand, bikeName, modelYear, user_id) values (?, ?, ?, ?, ?)
+[DEBUG] 2018-02-20 20:01:04.000 [main] IdentifierGeneratorHelper - Natively generated identity: 11
+[DEBUG] 2018-02-20 20:01:04.001 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2018-02-20 20:01:04.009 [main] TransactionImpl - committing
+[DEBUG] 2018-02-20 20:01:04.022 [main] AbstractFlushingEventListener - Processing flush-time cascades
+[DEBUG] 2018-02-20 20:01:04.023 [main] AbstractFlushingEventListener - Dirty checking collections
+[DEBUG] 2018-02-20 20:01:04.054 [main] AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+[DEBUG] 2018-02-20 20:01:04.055 [main] AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+[DEBUG] 2018-02-20 20:01:04.084 [main] EntityPrinter - Listing entities:
+[DEBUG] 2018-02-20 20:01:04.087 [main] EntityPrinter - edu.matc.entity.Bike{bikeName=Domane, accessories=carbon wheels, id=11, modelYear=2015, user=edu.matc.entity.User#3, bikeBrand=Trek}
+[DEBUG] 2018-02-20 20:01:04.105 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2018-02-20 20:01:04.109 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2018-02-20 20:02:24.947 [main] SQL - select user0_.id as id1_1_0_, user0_.createDate as createDa2_1_0_, user0_.email as email3_1_0_, user0_.firstName as firstNam4_1_0_, user0_.lastName as lastName5_1_0_, user0_.password as password6_1_0_, user0_.updateDate as updateDa7_1_0_, user0_.userName as userName8_1_0_, bike1_.user_id as user_id6_0_1_, bike1_.id as id1_0_1_, bike1_.id as id1_0_2_, bike1_.accessories as accessor2_0_2_, bike1_.bikeBrand as bikeBran3_0_2_, bike1_.bikeName as bikeName4_0_2_, bike1_.modelYear as modelYea5_0_2_, bike1_.user_id as user_id6_0_2_ from user user0_ left outer join bike bike1_ on user0_.id=bike1_.user_id where user0_.id=?
+[DEBUG] 2018-02-20 20:02:24.955 [main] CollectionLoadContext - No collections were found in result set for role: edu.matc.entity.User.bike
+[DEBUG] 2018-02-20 20:02:24.956 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2018-02-20 20:02:24.956 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : edu.matc.entity.User#11
+[DEBUG] 2018-02-20 20:02:24.957 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction

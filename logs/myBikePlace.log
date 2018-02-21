@@ -129,3 +129,9 @@
 [DEBUG] 2018-02-19 18:13:25.428 [main] GenericDao - Searching for order with bikeBrand = T
 [ERROR] 2018-02-19 18:13:25.492 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '2' for key 'bike_user_id_uindex'
 [ERROR] 2018-02-19 18:13:25.535 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '2' for key 'bike_user_id_uindex'
+[DEBUG] 2018-02-20 17:23:56.172 [main] GenericDao - Searching for order with bikeBrand = Trek
+[DEBUG] 2018-02-20 17:23:56.823 [main] GenericDao - Searching for order with bikeBrand = T
+[DEBUG] 2018-02-20 21:03:44.139 [main] GenericDao - Searching for order with bikeBrand = Trek
+[DEBUG] 2018-02-20 21:03:44.696 [main] GenericDao - Searching for order with bikeBrand = T
+[DEBUG] 2018-02-20 21:04:04.336 [main] GenericDao - Searching for order with lastName = Curry
+[DEBUG] 2018-02-20 21:04:04.859 [main] GenericDao - Searching for order with lastName = c

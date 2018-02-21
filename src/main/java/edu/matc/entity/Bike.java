@@ -20,9 +20,17 @@ public class Bike {
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
     @GenericGenerator(name = "native", strategy = "native")
     private int id;
+
+    @Column(name = "modelYear")
     private String modelYear;
+
+    @Column(name = "bikeBrand")
     private String bikeBrand;
+
+    @Column(name = "bikeName")
     private String bikeName;
+
+    @Column(name = "accessories")
     private String accessories;
 
     @ManyToOne
