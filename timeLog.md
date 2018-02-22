@@ -39,6 +39,7 @@
 | 02/17/2018 | Watch Week 5 videos | 8 | |
 | 02/18/2018 | Create Bike, GenericDao, and BikeDaoTest tables | 9 | |
 | 02/19/2018 | Work on fk table issue | 3 | |
+| 02/21/2018 | Work on In Class Code Reviews | 1.5 |
 
 
   
