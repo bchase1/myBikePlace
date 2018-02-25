@@ -41,6 +41,7 @@
 | 02/19/2018 | Work on fk table issue | 3 | |
 | 02/21/2018 | Work on In Class Code Reviews | 1.5 |
 | 02/23/2018 | Work on In Class Code Reviews and set up AWS account | 4.5 |
+| 02/24/208 | Finish Week 6 videos and deploy Week 1 Exercise to AWS for Exercise 6 | 5 |
 
 
   

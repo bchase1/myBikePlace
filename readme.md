@@ -5,7 +5,7 @@
 
 ## Problem Statement
 
-Although there are other sites where you can enter information regarding your bike rides I don't think there is a site where you can easily enter information about both your bikes and your bike rides.  myBikePlace is an attempt to solve this problem.
+Although there are other sites where you can enter information regarding your bike rides I don't think there is a site where you can easily enter information about both your bikes and your bike rides.  Most of the sites/apps I have used focus on the statistical part of the bike ride (miles ridden, calories burned, etc.) but do not allow for a more personal experience such as adding information about the users bike(s) and pictures.  myBikePlace is an attempt to solve this problem.
 
 ## Project Technologies/Techniques
 
