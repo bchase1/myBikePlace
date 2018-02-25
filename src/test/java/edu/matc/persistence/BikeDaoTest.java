@@ -61,7 +61,7 @@ class BikeDaoTest {
         assertNotEquals(0,id);
         Bike insertedBike = (Bike)genericDao.getById(id);
         assertEquals(newBike, insertedBike);
-        // TODO review .equals recommendations http://docs.jboss.org/hibernate/orm/5.2/userguide/html_single/Hibernate_User_Guide.html#mapping-model-pojo-equalshashcode
+
     }
 
     /**
@@ -69,15 +69,19 @@ class BikeDaoTest {
      */
     @Test
     void deleteSuccess() {
-        genericDao.delete(genericDao.getById(3));
+        GenericDao localDao = new GenericDao(User.class);
+        genericDao.delete(localDao.getById(2));
         assertNull(genericDao.getById(3));
+
+        genericDao.delete(genericDao.getById(6));
+        assertNull(genericDao.getById(6));
     }
     /**
      * Verify successful update of user
      */
     @Test
     void updateSuccess() {
-        String newBikeBrand = "Trek";
+        String newBikeBrand = "Specialized";
         Bike bikeToUpdate = (Bike)genericDao.getById(3);
         bikeToUpdate.setBikeBrand(newBikeBrand);
         genericDao.saveOrUpdate(bikeToUpdate);
