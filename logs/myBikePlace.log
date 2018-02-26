@@ -149,3 +149,5 @@
 [DEBUG] 2018-02-25 11:07:23.077 [main] GenericDao - Searching for order with bikeBrand = T
 [DEBUG] 2018-02-25 11:08:37.155 [main] GenericDao - Searching for order with lastName = Curry
 [DEBUG] 2018-02-25 11:08:37.645 [main] GenericDao - Searching for order with lastName = c
+[DEBUG] 2018-02-25 13:39:52.996 [main] GenericDao - Searching for order with lastName = Curry
+[DEBUG] 2018-02-25 13:39:53.876 [main] GenericDao - Searching for order with lastName = c

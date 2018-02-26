@@ -50,6 +50,8 @@ public class User {
 
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     private Set<Bike> bikes = new HashSet<>();
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
+    private Set<BikeRides> bikeRides = new HashSet<>();
 
     /**
      * Instantiates a new User.
@@ -242,11 +244,42 @@ public class User {
     public void setBike(Set<Bike> bikes) {
         this.bikes = bikes;
     }
+
+
+    /**
+     * Adds a bike
+     * @param bike
+     */
     public void addBike(Bike bike) {
         bikes.add(bike);
         bike.setUser(this);
     }
+    /**
+     * Gets bike ride.
+     *
+     * @return the bike ride
+     */
+    public Set<BikeRides> getBikeRides() {
+        return bikeRides;
+    }
 
+    /**
+     * Sets bike ride.
+     *
+     * @param bikeRides the bike ride
+     */
+    public void setBikeRides(Set<BikeRides> bikeRides) {
+        this.bikeRides = bikeRides;
+    }
+
+    /**
+     * Adds a bike ride
+     * @param bikeRide
+     */
+    public void addBikeRide(BikeRides bikeRide) {
+        bikeRides.add(bikeRide);
+        bikeRide.setUser(this);
+    }
 
     @Override
     public String toString() {

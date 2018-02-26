@@ -5,7 +5,6 @@ import edu.matc.entity.User;
 import edu.matc.util.Database;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import java.time.LocalDate;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -30,7 +29,7 @@ class BikeDaoTest {
     }
 
     /**
-     * Verifies gets all bikes by successfully.
+     * Verifies gets all bikes successfully.
      */
     @Test
     void getBikeSuccess() {
@@ -65,7 +64,7 @@ class BikeDaoTest {
     }
 
     /**
-     * Verify successful delete of user
+     * Verify successful delete of bike tied to a user
      */
     @Test
     void deleteSuccess() {
@@ -77,7 +76,7 @@ class BikeDaoTest {
         assertNull(genericDao.getById(6));
     }
     /**
-     * Verify successful update of user
+     * Verify successful update of bike
      */
     @Test
     void updateSuccess() {

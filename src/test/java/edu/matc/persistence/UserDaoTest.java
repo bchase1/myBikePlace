@@ -1,6 +1,5 @@
 package edu.matc.persistence;
 
-import edu.matc.entity.Bike;
 import edu.matc.entity.User;
 import edu.matc.util.Database;
 import org.junit.jupiter.api.BeforeEach;
@@ -31,7 +30,7 @@ class UserDaoTest {
     }
 
     /**
-     * Verifies gets all users by successfully.
+     * Verifies gets all users successfully.
      */
     @Test
     void getUserSuccess() {

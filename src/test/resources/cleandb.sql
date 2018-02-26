@@ -1,4 +1,6 @@
 delete from user;
 delete from bike;
+delete from bikeRides;
 INSERT INTO user VALUES (1, CURRENT_TIMESTAMP, 'jcoyne@gmail.com', 'Joe', 'Coyne', 'supersecret1', current_timestamp, 'jcoyne'),(2, current_timestamp, 'fhensen@yahoo.com', 'Fred', 'Hensen', 'supersecret2', current_timestamp, 'fhensen'),(3, current_timestamp, 'bcurry@yahoo.com', 'Barney', 'Curry', 'supersecret3', current_timestamp, 'bcurry'),(4, current_timestamp, 'kmack@yahoo.com', 'Karen', 'Mack', 'supersecret4', current_timestamp, 'kmack'),(5, current_timestamp, 'dklein@gmail.com', 'Dianne', 'Klein', 'supersecret5', current_timestamp, 'dklein'),(6, current_timestamp, 'dtillman@gamil.com', 'Dawn', 'Tillman', 'supersecret6', current_timestamp, 'dtillman');
 INSERT INTO bike VALUES (1,'2005','Trek','Madone','seat pack',1),(2,'2006', 'Specialized','Robaix','carbon wheels, seat pack',2),(3,'2015','Trek','Domane','carbon wheels',2),(4,'2017','Trek','FX3','seat pack, SRAM group set',1),(5,'2014','Trek','Domane','seat pack',4),(6,'2016','Giant','Special','seat pack',1);
+INSERT INTO bikeRides VALUES (1,23,'Columbia County 8 Loop',2),(2,46, 'Columbia County 7 Loop',6),(3,60,'Badger State Trail Bellville to State Line Round Trip',4),(4,66,'Elroy Sparta Trail Round Trip',1),(5,32,'Fall River to Randolph Round Trip',3),(6,80,'Military Ridge Trail Round Trip',5);

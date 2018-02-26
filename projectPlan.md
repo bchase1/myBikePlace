@@ -39,12 +39,13 @@
 ## Week 6
  -	[ ] Create db on AWS
  -	[ ] Deploy to AWS for first time
- -	[ ] Create bike rides table
+ -	[x] Create bike rides table
+ - [ ] Create the bike rides dao unit tests
  -	[ ] Add update and delete functionality in jsp for user
  -	[ ] Build the bike rides add/update/delete jsp
  - [ ] Create the template for all jsps using materialize
- -	[ ] Prepare for Checkpoint 2: Database designed and created, at least one DAO implemented with Hibernate, DAO is unit tested, Log4J is implemented (no System.out.printlns), class design and any other diagrams you plan to use have been created
- -	[ ] Daily Time Log entry
+ -	[x] Prepare for Checkpoint 2: Database designed and created, at least one DAO implemented with Hibernate, DAO is unit tested, Log4J is implemented (no System.out.printlns), class design and any other diagrams you plan to use have been created
+ -	[x] Daily Time Log entry
 	
 ## Week 7
  - 	[ ] Set up authentication locally
