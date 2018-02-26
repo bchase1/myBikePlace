@@ -40,7 +40,7 @@
  -	[ ] Create db on AWS
  -	[ ] Deploy to AWS for first time
  -	[x] Create bike rides table
- - [ ] Create the bike rides dao unit tests
+ - [x] Create the bike rides dao unit tests
  -	[ ] Add update and delete functionality in jsp for user
  -	[ ] Build the bike rides add/update/delete jsp
  - [ ] Create the template for all jsps using materialize

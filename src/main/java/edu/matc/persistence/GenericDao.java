@@ -11,6 +11,7 @@ import javax.persistence.criteria.Root;
 
 import edu.matc.entity.Bike;
 import edu.matc.entity.User;
+import edu.matc.entity.BikeRides;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.hibernate.Session;
