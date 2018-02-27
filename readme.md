@@ -52,6 +52,7 @@ Although there are other sites where you can enter information regarding your bi
 ## Design
 * [Screen Design](myBikePlaceScreens.pdf "myBikePlaceScreens.pdf")
 * [Application Flow](applicationFlow.md "Application Flow")
+* [Database Design] (myBikePlace.pdf "Database Design")
 
 
 ## [Project Plan](projectPlan.md "Project Plan")
