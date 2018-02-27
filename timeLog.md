@@ -43,6 +43,7 @@
 | 02/23/2018 | Work on In Class Code Reviews and set up AWS account | 4.5 |
 | 02/24/2018 | Finish Week 6 videos and deploy Week 1 Exercise to AWS for Exercise 6 | 5 |
 | 02/25/2018 | Review Week 5 Presentations,add bikeRides table and update Project Plan | 8 |
+| 02/26/2018 | Create Database Design | 1.5 |
 
 
   
