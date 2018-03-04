@@ -1,5 +1,6 @@
 package edu.matc.persistence;
 
+import edu.matc.entity.Role;
 import edu.matc.entity.User;
 import edu.matc.util.Database;
 import org.junit.jupiter.api.BeforeEach;
@@ -16,6 +17,13 @@ import static org.junit.jupiter.api.Assertions.*;
 class UserDaoTest {
 
     GenericDao genericDao;
+
+    //Date object
+    Date date= new Date();
+    //getTime() returns current time in milliseconds
+    long time = date.getTime();
+    //Passed the milliseconds to constructor of Timestamp class
+    Timestamp ts = new Timestamp(time);
 
     /**
      * Run set up tasks before each test:
@@ -52,18 +60,34 @@ class UserDaoTest {
      */
     @Test
     void insertSuccess() {
-
-        //Date object
-        Date date= new Date();
-        //getTime() returns current time in milliseconds
-        long time = date.getTime();
-        //Passed the milliseconds to constructor of Timestamp class
-        Timestamp ts = new Timestamp(time);
         User newUser = new User(7, ts, "fflintstone@gmail.com", "Fred", "Flintstone", "supersecret7", ts, "fflintstone");
         int id = genericDao.insert(newUser);
         assertNotEquals(0,id);
         User insertedUser = (User)genericDao.getById(id);
         assertEquals(newUser, insertedUser);
+    }
+
+    /**
+     * Verify successful insert of a user with role
+     */
+    @Test
+    void insertWithRoleSuccess() {
+
+            String userName = "fflintstone";
+            User newUser = new User(7, ts, "fflintstone@gmail.com", "Fred", "Flintstone", "supersecret7", ts, "fflintstone");
+
+            String roleName = "admin";
+            Role role = new Role(newUser,roleName, userName);
+
+            newUser.addRole(role);
+
+            int id = genericDao.insert(newUser);
+
+
+            assertNotEquals(0,id);
+            User insertedUser = (User)genericDao.getById(id);
+            assertEquals(newUser, insertedUser);
+            assertEquals(1, insertedUser.getRoles().size());
     }
 
     /**

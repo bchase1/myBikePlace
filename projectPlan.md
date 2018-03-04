@@ -30,7 +30,7 @@
  -	[x] Add the bike entity
  -	[x] Create the bike dao
  -	[x] Create the bike dao unit tests
- -	[ ] add a jsp to display user
+ -	[x] add a jsp to display user
  -	[ ] Add jsp to add a user
  -	[x] Prepare for Week 6 peer design/code review
 
@@ -48,10 +48,10 @@
  -	[x] Daily Time Log entry
 	
 ## Week 7
- - 	[ ] Set up authentication locally
+ - 	[x] Set up authentication locally
  -	[ ] Set up authentication on AWS
- -	[ ] Review and incorporate any feedback from Checkpoint 2
- -	[ ] Daily Time Log entry
+ -	[x] Review and incorporate any feedback from Checkpoint 2
+ -	[x] Daily Time Log entry
 	
 ## Week 8
  -	[ ] Possible bike rides table integration with google maps api??

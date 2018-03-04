@@ -19,6 +19,7 @@
         <mapping class="edu.matc.entity.User"/>
         <mapping class="edu.matc.entity.Bike"/>
         <mapping class="edu.matc.entity.BikeRides"/>
+        <mapping class="edu.matc.entity.Role"/>
 
     </session-factory>
 

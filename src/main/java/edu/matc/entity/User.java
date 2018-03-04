@@ -38,8 +38,8 @@ public class User {
     @Column(name = "lastName")
     private String lastName;
 
-    @Column(name = "password")
-    private String password;
+    @Column(name = "pass")
+    private String pass;
 
     @Column(name = "updateDate")
     @UpdateTimestamp
@@ -52,6 +52,8 @@ public class User {
     private Set<Bike> bikes = new HashSet<>();
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     private Set<BikeRides> bikeRides = new HashSet<>();
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
+    private Set<Role> roles = new HashSet<>();
 
     /**
      * Instantiates a new User.
@@ -67,18 +69,18 @@ public class User {
      * @param email      the email address
      * @param firstName  the first name
      * @param lastName   the last name
-     * @param password   the password
+     * @param pass       the password
      * @param updateDate the date the user is updated
      * @param userName   the user name
      */
-    public User(int UserId, Timestamp createDate, String email, String firstName, String lastName, String password,
+    public User(int UserId, Timestamp createDate, String email, String firstName, String lastName, String pass,
                 Timestamp updateDate, String userName) {
         this.UserId = UserId;
         this.createDate = createDate;
         this.email = email;
         this.firstName = firstName;
         this.lastName = lastName;
-        this.password = password;
+        this.pass = pass;
         this.updateDate = updateDate;
         this.userName = userName;
     }
@@ -179,16 +181,16 @@ public class User {
      * @return the password
      */
     public String getPassword() {
-        return password;
+        return pass;
     }
 
     /**
      * Sets the password
      *
-     * @param password the password
+     * @param pass the password
      */
-    public void setPassword(String password) {
-        this.password = password;
+    public void setPassword(String pass) {
+        this.pass = pass;
     }
 
     /**
@@ -245,6 +247,23 @@ public class User {
         this.bikes = bikes;
     }
 
+    /**
+     * Gets roles.
+     *
+     * @return the roles
+     */
+    public Set<Role> getRoles() {
+        return roles;
+    }
+
+    /**
+     * Sets roles.
+     *
+     * @param roles the roles
+     */
+    public void setRoles(Set<Role> roles) {
+        this.roles = roles;
+    }
 
     /**
      * Adds a bike
@@ -281,6 +300,26 @@ public class User {
         bikeRide.setUser(this);
     }
 
+    /**
+     * Add role.
+     *
+     * @param role the role
+     */
+    public void addRole(Role role) {
+        roles.add(role);
+        role.setUser(this);
+    }
+
+    /**
+     * Remove role.
+     *
+     * @param role the role
+     */
+    public void removeRole(Role role) {
+        roles.remove(role);
+        role.setUser(null);
+    }
+
     @Override
     public String toString() {
         return "User{" +
@@ -289,7 +328,7 @@ public class User {
                 ", email" + email + '\'' +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
-                ", password='" + password + '\'' +
+                ", pass='" + pass + '\'' +
                 ", updateDate" + updateDate + '\'' +
                 ", userName" + userName + '\'' +
                 '}';

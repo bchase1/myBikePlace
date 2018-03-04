@@ -45,5 +45,6 @@
 | 02/25/2018 | Review Week 5 Presentations,add bikeRides table and update Project Plan | 8 |
 | 02/26/2018 | Create Database Design | 1.5 |
 | 03/03/2018 | Watch Week 7 videos and add authentication to Week 1 Exercise | 4.5 |
+| 03/04/2018 | add authentication to myBikePlace and add search feature to verify data in tables | 7 |
 
   
