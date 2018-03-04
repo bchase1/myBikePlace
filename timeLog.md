@@ -44,6 +44,6 @@
 | 02/24/2018 | Finish Week 6 videos and deploy Week 1 Exercise to AWS for Exercise 6 | 5 |
 | 02/25/2018 | Review Week 5 Presentations,add bikeRides table and update Project Plan | 8 |
 | 02/26/2018 | Create Database Design | 1.5 |
-
+| 03/03/2018 | Watch Week 7 videos and add authentication to Week 1 Exercise | 4.5 |
 
   
