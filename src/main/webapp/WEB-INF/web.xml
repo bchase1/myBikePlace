@@ -20,6 +20,7 @@
     </web-resource-collection>
     <auth-constraint>
       <role-name>admin</role-name>
+      <role-name>user</role-name>
     </auth-constraint>
   </security-constraint>
 
@@ -27,4 +28,7 @@
     <role-name>admin</role-name>
   </security-role>
 
+  <security-role>
+    <role-name>user</role-name>
+  </security-role>
 </web-app>
