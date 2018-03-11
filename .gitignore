@@ -50,3 +50,6 @@ fabric.properties
 
 # hibernate.cfg.xml
 src/main/resources/hibernate.cfg.xml
+
+# context.xml
+src/main/META-INF/context.xml
