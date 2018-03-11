@@ -52,4 +52,4 @@ fabric.properties
 src/main/resources/hibernate.cfg.xml
 
 # context.xml
-src/main/META-INF/context.xml
+src/main/webapp/META-INF/context.xml
