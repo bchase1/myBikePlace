@@ -48,5 +48,6 @@
 | 03/04/2018 | add authentication to myBikePlace and add search feature to verify data in tables | 7 |
 | 03/09/2018 | Feedback for Week 8 Professional Development Presentation, Week 8 videos, and Activity 2 | 5 |
 | 03/10/2018 | Activity 2 and Activity 3 | 6 | 
+| 03/11/2018 | Activity 3 & build tables for AWS and deploy project to AWS | 6.5 | 
 
   

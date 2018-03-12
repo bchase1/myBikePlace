@@ -37,8 +37,8 @@
  -	[x] Daily Time Log entry
 	
 ## Week 6
- -	[ ] Create db on AWS
- -	[ ] Deploy to AWS for first time
+ -	[x] Create db on AWS
+ -	[x] Deploy to AWS for first time
  -	[x] Create bike rides table
  - [x] Create the bike rides dao unit tests
  -	[ ] Add update and delete functionality in jsp for user
