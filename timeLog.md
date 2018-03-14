@@ -50,5 +50,6 @@
 | 03/10/2018 | Activity 2 and Activity 3 | 6 | 
 | 03/11/2018 | Activity 3 & build tables for AWS and deploy project to AWS | 6.5 | 
 | 02/12/2018 | Download FileZila & work on transfering mySQL Connector jar to AWS | 1 |
+| 02/13/2018 | Work on transfering mySQL Connector jar to AWS | 1.5 |
 
   
