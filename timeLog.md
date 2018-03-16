@@ -49,8 +49,9 @@
 | 03/09/2018 | Feedback for Week 8 Professional Development Presentation, Week 8 videos, and Activity 2 | 5 |
 | 03/10/2018 | Activity 2 and Activity 3 | 6 | 
 | 03/11/2018 | Activity 3 & build tables for AWS and deploy project to AWS | 6.5 | 
-| 02/12/2018 | Download FileZila & work on transfering mySQL Connector jar to AWS | 1 |
-| 02/13/2018 | Work on transfering mySQL Connector jar to AWS | 1.5 |
-| 02/14/2018 | Work on transfering mySQL Connector jar to AWS | .5 |
+| 03/12/2018 | Download FileZila & work on transfering mySQL Connector jar to AWS | 1 |
+| 03/13/2018 | Work on transfering mySQL Connector jar to AWS | 1.5 |
+| 03/14/2018 | Work on transfering mySQL Connector jar to AWS | .5 |
+| 03/15/2018 | Check on AWS connection | .5 |
 
   
