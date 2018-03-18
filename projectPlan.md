@@ -43,19 +43,20 @@
  - [x] Create the bike rides dao unit tests
  -	[ ] Add update and delete functionality in jsp for user
  -	[ ] Build the bike rides add/update/delete jsp
- - [ ] Create the template for all jsps using materialize
+ - [x] Create the template for all jsps using materialize
  -	[x] Prepare for Checkpoint 2: Database designed and created, at least one DAO implemented with Hibernate, DAO is unit tested, Log4J is implemented (no System.out.printlns), class design and any other diagrams you plan to use have been created
  -	[x] Daily Time Log entry
 	
 ## Week 7
  - 	[x] Set up authentication locally
- -	[ ] Set up authentication on AWS
+ -	[x] Set up authentication on AWS
  -	[x] Review and incorporate any feedback from Checkpoint 2
  -	[x] Daily Time Log entry
 	
 ## Week 8
  -	[ ] Possible bike rides table integration with google maps api??
- -	[ ] Prepare for Checkpoint 3: Deployed to AWS, at least one JSP that displays data from the database is implemented
+ -	[x] Prepare for Checkpoint 3: Deployed to AWS, at least one JSP that displays data from the database is implemented
+ - 	[x] Daily Time Log entry
 	
 ## Week 9
  -	[ ] Review and incorporate feedback from Checkpoint 3

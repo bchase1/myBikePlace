@@ -8,7 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@include file="head.jsp"%>
 <html>
-<body>
+<body style="background:#92a8d1">
 <h2>myBikePlace</h2>
 <div id="content">
     <form action="searchUser" method="GET">

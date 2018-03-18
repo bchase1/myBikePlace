@@ -8,9 +8,13 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>login</title>
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <title>myBikePlace Login</title>
 </head>
-<body>
+<body class="container #18ffff #4dd0e1 cyan lighten-2">
 <FORM ACTION="j_security_check" METHOD="POST">
     <TABLE>
         <TR><TD>User name: <INPUT TYPE="TEXT" NAME="j_username">
@@ -18,5 +22,10 @@
         <TR><TH><INPUT TYPE="SUBMIT" VALUE="Log In">
     </TABLE>
 </FORM>
+<!--  Scripts-->
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="js/materialize.js"></script>
+<script src="js/init.js"></script>
 </body>
 </html>
+

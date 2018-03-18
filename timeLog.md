@@ -53,5 +53,7 @@
 | 03/13/2018 | Work on transfering mySQL Connector jar to AWS | 1.5 |
 | 03/14/2018 | Work on transfering mySQL Connector jar to AWS | .5 |
 | 03/15/2018 | Check on AWS connection | .5 |
+| 03/17/2018 | Complete AWS authentication & work on implementing materialize css to myBikePlace | 4.5 |
+| 03/18/2018 | Implement materialize css for main and login pages and add color to search and results jsps.  Redeploy war file to AWS. | 6 | 
 
   
