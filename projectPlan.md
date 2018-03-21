@@ -54,7 +54,7 @@
  -	[x] Daily Time Log entry
 	
 ## Week 8
- -	[ ] Possible bike rides table integration with google maps api??
+ -	[ ] Possible bike rides table integration with Weatherbit Historical Weather api??
  -	[x] Prepare for Checkpoint 3: Deployed to AWS, at least one JSP that displays data from the database is implemented
  - 	[x] Daily Time Log entry
 	

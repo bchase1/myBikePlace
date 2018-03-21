@@ -39,7 +39,7 @@ Although there are other sites where you can enter information regarding your bi
 
 * Independent Research Topics
 	* Materialize
-	* Google Maps API??
+	* Weatherbit Historical Weather API??
 	* Hibernate Validation??
 
 * Project Lombok to eliminate boilerplate code like getters/setters/equals??
