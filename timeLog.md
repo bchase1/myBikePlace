@@ -55,5 +55,7 @@
 | 03/15/2018 | Check on AWS connection | .5 |
 | 03/17/2018 | Complete AWS authentication & work on implementing materialize css to myBikePlace | 4.5 |
 | 03/18/2018 | Implement materialize css for main and login pages and add color to search and results jsps.  Redeploy war file to AWS. | 6 | 
+| 03/21/2018 | Watch Week 9 videos & Individual Development Presentation Feedback | 1 |
+
 
   
