@@ -57,5 +57,7 @@
 | 03/18/2018 | Implement materialize css for main and login pages and add color to search and results jsps.  Redeploy war file to AWS. | 6 | 
 | 03/21/2018 | Watch Week 9 videos & Individual Development Presentation Feedback | 1 |
 | 03/22/2018 | Watch Week 9 videos | 1 |
+| 03/24/2018 | Week 9 Activities and Exercise | 6 |
+
 
   
