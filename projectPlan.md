@@ -8,7 +8,6 @@
  -	[x] Daily Time Log entry
  -	[x] Determine possible Web Services or APIs to use
  -	[x] List technologies, versions and how they will be used
- -	[x] Daily Time Log entry
  -	[x] Write Project Plan
  -	[x] Write Screen Design in Balsamiq
  -	[x] Write Application FLow
@@ -59,9 +58,9 @@
  - 	[x] Daily Time Log entry
 	
 ## Week 9
- -	[ ] Review and incorporate feedback from Checkpoint 3
+ -	[x] Review and incorporate feedback from Checkpoint 3
  -	[ ] Add password reset/reminder functionality
- -	[ ] Daily Time Log entry
+ -	[x] Daily Time Log entry
 	
 ## Week 10
  -	[ ] Unit test all api integrations

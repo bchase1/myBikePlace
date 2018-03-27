@@ -59,6 +59,8 @@
 | 03/22/2018 | Watch Week 9 videos | 1 |
 | 03/24/2018 | Week 9 Activities and Exercise | 6 |
 | 03/25/2018 | Week 9 Exercise and Professional Development Presentation - Materialize CSS | 6 |
+| 03/26/2018 | Implemented feedback from Week 9 Exercise | .5 |
+
 
 
   
