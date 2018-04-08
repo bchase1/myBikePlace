@@ -140,11 +140,4 @@ public class GenericDao<T> {
         logger.debug("getByPropertyLike users: {}", list);
         return list;
     }
-    /**
-     * Gets user by last name.
-     *
-     * @param lastName the last name
-     * @return the user by last name
-     */
-
 }

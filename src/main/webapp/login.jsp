@@ -14,7 +14,12 @@
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <title>myBikePlace Login</title>
 </head>
-<body class="container #18ffff #4dd0e1 cyan lighten-2">
+<body class="container #18ffff #bbdefb blue lighten-4">
+<div class="container">
+    <br><br>
+    <h1 class="header center #000000 black-text text-lighten-2">myBikePlace Login</h1>
+    <div class="row center"></div>
+</div>
 <FORM ACTION="j_security_check" METHOD="POST">
     <TABLE>
         <TR><TD>User name: <INPUT TYPE="TEXT" NAME="j_username">

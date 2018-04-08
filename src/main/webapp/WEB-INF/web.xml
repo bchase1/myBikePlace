@@ -15,8 +15,8 @@
   <!-- Protect everything within the search page. -->
   <security-constraint>
     <web-resource-collection>
-      <web-resource-name>search</web-resource-name>
-      <url-pattern>/search.jsp</url-pattern>
+      <web-resource-name>home</web-resource-name>
+      <url-pattern>/home.jsp</url-pattern>
     </web-resource-collection>
     <auth-constraint>
       <role-name>admin</role-name>

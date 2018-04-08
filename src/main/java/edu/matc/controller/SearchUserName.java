@@ -9,26 +9,26 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.annotation.*;
 import java.io.IOException;
-import java.util.List;
+
 
 /**
- * A simple servlet to welcome the user.
- * @author pwaite
+ * A simple servlet to get user information by user name.
+ * @author bchase
  */
 
 @WebServlet(
-        urlPatterns = {"/searchUser"}
+        urlPatterns = {"/searchUserName"}
 )
 
-public class SearchUser extends HttpServlet {
+public class SearchUserName extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         GenericDao genericDao;
         genericDao = new GenericDao(User.class);
-        String searchLastName = req.getParameter("searchLastName");
-        req.setAttribute("users", genericDao.getByPropertyLike("lastName", searchLastName));
-        RequestDispatcher dispatcher = req.getRequestDispatcher("/results.jsp");
+        String searchUserName = req.getParameter("searchUserName");
+        req.setAttribute("users", genericDao.getByPropertyLike("userName", searchUserName));
+        RequestDispatcher dispatcher = req.getRequestDispatcher("/users.jsp");
         dispatcher.forward(req, resp);
     }
 }

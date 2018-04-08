@@ -64,14 +64,14 @@
 	
 ## Week 10
  -	[ ] Unit test all api integrations
- -	[ ] Daily Time Log entry
+ -	[x] Daily Time Log entry
 	
 ## Week 11 - Team project work week
- -	[ ] Daily Time Log entry
+ -	[x] Daily Time Log entry
 	
 ## Week 12 - Team project due
  -	[ ] Review indie project and create list of todos
- -	[ ] Daily Time Log entry
+ -	[x] Daily Time Log entry
 	
 ## Week 13
  -	[ ] Complete todos identified in week 12

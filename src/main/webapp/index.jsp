@@ -13,10 +13,6 @@
 <nav class="white" role="navigation">
     <div class="nav-wrapper container">
         <a id="logo-container" href="#" class="brand-logo">myBikePlace</a>
-        <ul class="right hide-on-med-and-down">
-            <li><a href="#">Navbar Link</a></li>
-        </ul>
-
         <ul id="nav-mobile" class="side-nav">
             <li><a href="#">Navbar Link</a></li>
         </ul>
@@ -33,7 +29,7 @@
                 <h5 class="header col s12 light">A place to keep track of your bikes and bike rides!</h5>
             </div>
             <div class="row center">
-                <a href="search.jsp" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Click here to login!</a>
+                <a href="home.jsp" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Click here to login!</a>
             </div>
             <br><br>
 
@@ -125,24 +121,6 @@
                 <p class="grey-text text-lighten-4">myBikePlace is an Individual Project for the Madison College Enterprise Java Spring 2018 Course.</p>
 
 
-            </div>
-            <div class="col l3 s12">
-                <h5 class="white-text">Settings</h5>
-                <ul>
-                    <li><a class="white-text" href="#!">Link 1</a></li>
-                    <li><a class="white-text" href="#!">Link 2</a></li>
-                    <li><a class="white-text" href="#!">Link 3</a></li>
-                    <li><a class="white-text" href="#!">Link 4</a></li>
-                </ul>
-            </div>
-            <div class="col l3 s12">
-                <h5 class="white-text">Connect</h5>
-                <ul>
-                    <li><a class="white-text" href="#!">Link 1</a></li>
-                    <li><a class="white-text" href="#!">Link 2</a></li>
-                    <li><a class="white-text" href="#!">Link 3</a></li>
-                    <li><a class="white-text" href="#!">Link 4</a></li>
-                </ul>
             </div>
         </div>
     </div>
