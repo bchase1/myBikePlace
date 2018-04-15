@@ -14,13 +14,13 @@
     <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
     <table id="users">
         <thead>
-        <th>Bikes and Accessories</th>
+        <th>Bike Id Bikes and Accessories</th>
         </thead>
         <c:forEach var="user" items="${users}">
             <tr>
                 <td>
                     <c:forEach var="bike" items="${user.bikes}">
-                        ${bike.modelYear} ${bike.bikeBrand} ${bike.bikeName} ${bike.accessories}<br/>
+                        ${bike.getId()} ${bike.modelYear} ${bike.bikeBrand} ${bike.bikeName} ${bike.accessories}<br/>
                     </c:forEach>
                 </td>
             </tr>

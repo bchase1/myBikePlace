@@ -17,11 +17,11 @@
 <body class="container #18ffff #ffab91 deep-orange lighten-3">
 <div class="container">
     <br><br>
-    <h1 class="header center #000000 black-text text-lighten-2">myBikePlace</h1>
+    <h1 class="header center #000000 black-text text-lighten-2">myBikePlace - Add Bike Ride</h1>
     <div class="row center"></div>
 </div>
 <div id="content">
-    <form action="/addUserBikeRide" method="POST">
+    <form action="addUserBikeRide" method="POST">
         Miles Ridden: <input type = "text" name = "milesRidden"
         data-error="Please enter the miles ridden." required>
         <br />
@@ -32,7 +32,10 @@
         data-error="Please enter the user id." required>
         <br />
         <div class="container">
-        Add The Bike Ride: <input type="SUBMIT" name="" value="Submit">
+            <button type="SUBMIT" class="btn btn-default col-sm-offset-3"
+                    data-disable="true">Add The Bike Ride
+            </button>
+            <button type="reset" class="btn btn-default">Clear</button>
         </div>
     </form>
     <a class="container #000000 black-text" href="home.jsp">Home Page</a>

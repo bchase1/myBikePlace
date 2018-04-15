@@ -68,12 +68,10 @@ class BikeDaoTest {
      */
     @Test
     void deleteSuccess() {
-        GenericDao localDao = new GenericDao(User.class);
-        genericDao.delete(localDao.getById(2));
-        assertNull(genericDao.getById(3));
-
-        genericDao.delete(genericDao.getById(6));
-        assertNull(genericDao.getById(6));
+        GenericDao localDao = new GenericDao(Bike.class);
+        Object bike = localDao.getById(2);
+        genericDao.delete(bike);
+        assertNull(genericDao.getById(2));
     }
     /**
      * Verify successful update of bike

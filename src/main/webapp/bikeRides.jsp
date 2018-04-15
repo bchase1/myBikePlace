@@ -10,14 +10,14 @@
 <html>
 <body style="color:#000000;background:#80ced6">
 <div class="container-fluid">
-    <h2>Miles Ridden and Ride Description For Bike Rides</h2>
+    <h2>Bike Ride Id Miles Ridden and Ride Description For Bike Rides</h2>
     <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
     <table id="users">
         <c:forEach var="user" items="${users}">
             <tr>
                 <td>
                     <c:forEach var="bikeRides" items="${user.bikeRides}">
-                        ${bikeRides.milesRidden} ${bikeRides.rideDescription}<br/>
+                        ${bikeRides.getId()} ${bikeRides.milesRidden} ${bikeRides.rideDescription}<br/>
                     </c:forEach>
                 </td>
             </tr>

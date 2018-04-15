@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataSource name="myBikePlace@localhost">
+<dataSource name="hibernate.cfg.xml/Hibernate">
   <database-model serializer="dbm" rdbms="MYSQL" format-version="4.7">
     <root id="1">
       <DefaultCasing>mixed/mixed</DefaultCasing>
@@ -14,11 +14,11 @@
       <Collation>latin1_swedish_ci</Collation>
     </schema>
     <schema id="5" parent="1" name="myBikePlace">
-      <Current>1</Current>
-      <Visible>1</Visible>
       <Collation>latin1_swedish_ci</Collation>
     </schema>
     <schema id="6" parent="1" name="myBikePlace_test">
+      <Current>1</Current>
+      <Visible>1</Visible>
       <Collation>latin1_swedish_ci</Collation>
     </schema>
     <schema id="7" parent="1" name="mysql">
@@ -921,16 +921,16 @@
       <Charset>utf8mb4</Charset>
       <DefaultForCharset>0</DefaultForCharset>
     </collation>
-    <table id="233" parent="5" name="bike">
+    <table id="233" parent="6" name="bike">
       <Engine>InnoDB</Engine>
     </table>
-    <table id="234" parent="5" name="bikeRides">
+    <table id="234" parent="6" name="bikeRides">
       <Engine>InnoDB</Engine>
     </table>
-    <table id="235" parent="5" name="role">
+    <table id="235" parent="6" name="role">
       <Engine>InnoDB</Engine>
     </table>
-    <table id="236" parent="5" name="user">
+    <table id="236" parent="6" name="user">
       <Engine>InnoDB</Engine>
     </table>
     <column id="237" parent="233" name="id">
@@ -966,187 +966,159 @@
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="243" parent="233" name="bike_id_uindex">
-      <ColNames>id</ColNames>
-      <Unique>1</Unique>
-    </index>
-    <index id="244" parent="233" name="bike_user_id_fk">
+    <index id="243" parent="233" name="bike_user_id_fk">
       <ColNames>user_id</ColNames>
     </index>
-    <key id="245" parent="233" name="PRIMARY">
+    <key id="244" parent="233" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="246" parent="233" name="bike_id_uindex">
-      <ColNames>id</ColNames>
-      <UnderlyingIndexName>bike_id_uindex</UnderlyingIndexName>
-    </key>
-    <foreign-key id="247" parent="233" name="bike_user_id_fk">
+    <foreign-key id="245" parent="233" name="bike_user_id_fk">
       <ColNames>user_id</ColNames>
-      <RefSchemaName>mybikeplace</RefSchemaName>
+      <RefSchemaName>mybikeplace_test</RefSchemaName>
       <RefTableName>user</RefTableName>
       <RefColNames>id</RefColNames>
       <OnUpdate>cascade</OnUpdate>
       <OnDelete>cascade</OnDelete>
     </foreign-key>
-    <column id="248" parent="234" name="id">
+    <column id="246" parent="234" name="id">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="249" parent="234" name="milesRidden">
+    <column id="247" parent="234" name="milesRidden">
       <Position>2</Position>
       <DataType>int(3)|0</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="250" parent="234" name="rideDescription">
+    <column id="248" parent="234" name="rideDescription">
       <Position>3</Position>
       <DataType>varchar(255)|0</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="251" parent="234" name="user_id">
+    <column id="249" parent="234" name="user_id">
       <Position>4</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="252" parent="234" name="bikeRides_id_uindex">
-      <ColNames>id</ColNames>
-      <Unique>1</Unique>
-    </index>
-    <index id="253" parent="234" name="bikeRides_user_id_fk">
+    <index id="250" parent="234" name="bikeRides_user_id_fk">
       <ColNames>user_id</ColNames>
     </index>
-    <key id="254" parent="234" name="PRIMARY">
+    <key id="251" parent="234" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="255" parent="234" name="bikeRides_id_uindex">
-      <ColNames>id</ColNames>
-      <UnderlyingIndexName>bikeRides_id_uindex</UnderlyingIndexName>
-    </key>
-    <foreign-key id="256" parent="234" name="bikeRides_user_id_fk">
+    <foreign-key id="252" parent="234" name="bikeRides_user_id_fk">
       <ColNames>user_id</ColNames>
-      <RefSchemaName>mybikeplace</RefSchemaName>
+      <RefSchemaName>mybikeplace_test</RefSchemaName>
       <RefTableName>user</RefTableName>
       <RefColNames>id</RefColNames>
       <OnUpdate>cascade</OnUpdate>
       <OnDelete>cascade</OnDelete>
     </foreign-key>
-    <column id="257" parent="235" name="id">
+    <column id="253" parent="235" name="id">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="258" parent="235" name="roleName">
+    <column id="254" parent="235" name="roleName">
       <Position>2</Position>
       <DataType>varchar(255)|0</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="259" parent="235" name="userName">
+    <column id="255" parent="235" name="userName">
       <Position>3</Position>
       <DataType>varchar(255)|0</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="260" parent="235" name="user_id">
+    <column id="256" parent="235" name="user_id">
       <Position>4</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="261" parent="235" name="role_id_uindex">
-      <ColNames>id</ColNames>
-      <Unique>1</Unique>
-    </index>
-    <index id="262" parent="235" name="role_user_id_fk">
+    <index id="257" parent="235" name="role_user_id_fk">
       <ColNames>user_id</ColNames>
     </index>
-    <key id="263" parent="235" name="PRIMARY">
+    <key id="258" parent="235" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="264" parent="235" name="role_id_uindex">
-      <ColNames>id</ColNames>
-      <UnderlyingIndexName>role_id_uindex</UnderlyingIndexName>
-    </key>
-    <foreign-key id="265" parent="235" name="role_user_id_fk">
+    <foreign-key id="259" parent="235" name="role_user_id_fk">
       <ColNames>user_id</ColNames>
-      <RefSchemaName>mybikeplace</RefSchemaName>
+      <RefSchemaName>mybikeplace_test</RefSchemaName>
       <RefTableName>user</RefTableName>
       <RefColNames>id</RefColNames>
       <OnUpdate>cascade</OnUpdate>
       <OnDelete>cascade</OnDelete>
     </foreign-key>
-    <column id="266" parent="236" name="id">
+    <column id="260" parent="236" name="id">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="267" parent="236" name="createDate">
+    <column id="261" parent="236" name="createDate">
       <Position>2</Position>
       <DataType>timestamp|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="268" parent="236" name="email">
+    <column id="262" parent="236" name="email">
       <Position>3</Position>
       <DataType>varchar(255)|0</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="269" parent="236" name="firstName">
+    <column id="263" parent="236" name="firstName">
       <Position>4</Position>
       <DataType>varchar(255)|0</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="270" parent="236" name="lastName">
+    <column id="264" parent="236" name="lastName">
       <Position>5</Position>
       <DataType>varchar(255)|0</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="271" parent="236" name="pass">
+    <column id="265" parent="236" name="pass">
       <Position>6</Position>
       <DataType>varchar(255)|0</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="272" parent="236" name="updateDate">
+    <column id="266" parent="236" name="updateDate">
       <Position>7</Position>
       <DataType>timestamp|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="273" parent="236" name="userName">
+    <column id="267" parent="236" name="userName">
       <Position>8</Position>
       <DataType>varchar(255)|0</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="274" parent="236" name="user_id_uindex">
-      <ColNames>id</ColNames>
-      <Unique>1</Unique>
-    </index>
-    <index id="275" parent="236" name="userName">
+    <index id="268" parent="236" name="user_id_uindex">
       <ColNames>userName</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="276" parent="236" name="PRIMARY">
+    <key id="269" parent="236" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="277" parent="236" name="user_id_uindex">
-      <ColNames>id</ColNames>
-      <UnderlyingIndexName>user_id_uindex</UnderlyingIndexName>
-    </key>
-    <key id="278" parent="236" name="userName">
+    <key id="270" parent="236" name="user_id_uindex">
       <ColNames>userName</ColNames>
-      <UnderlyingIndexName>userName</UnderlyingIndexName>
+      <UnderlyingIndexName>user_id_uindex</UnderlyingIndexName>
     </key>
   </database-model>
 </dataSource>

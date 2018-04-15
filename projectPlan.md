@@ -19,7 +19,7 @@
  -	[x] Create the user entity class and annotate for hibernate
  -	[x] Create user dao
  -	[x] Set up logging
- -	[ ] Create the test database
+ -	[x] Create the test database
  -	[x] Create user dao unit tests
  -	[ ] Create class uml diagram
  -	[x] Daily Time Log entry
@@ -40,8 +40,10 @@
  -	[x] Deploy to AWS for first time
  -	[x] Create bike rides table
  - [x] Create the bike rides dao unit tests
- -	[ ] Add update and delete functionality in jsp for user
- -	[ ] Build the bike rides add/update/delete jsp
+ - [ ] Add functionality to add new user
+ -	[x] Build the bike add and delete jsp  
+ -	[x] Build the bike rides add and delete jsp
+ - [ ] Build the bike and bike rides update jsps
  - [x] Create the template for all jsps using materialize
  -	[x] Prepare for Checkpoint 2: Database designed and created, at least one DAO implemented with Hibernate, DAO is unit tested, Log4J is implemented (no System.out.printlns), class design and any other diagrams you plan to use have been created
  -	[x] Daily Time Log entry
@@ -70,7 +72,7 @@
  -	[x] Daily Time Log entry
 	
 ## Week 12 - Team project due
- -	[ ] Review indie project and create list of todos
+ -	[x] Review indie project and create list of todos
  -	[x] Daily Time Log entry
 	
 ## Week 13

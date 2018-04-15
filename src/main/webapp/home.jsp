@@ -21,18 +21,18 @@
     <div class="row center"></div>
 </div>
 <form action="searchUserBike" method="GET">
-    <input type="TEXT" name="searchUserName" value="" /> Enter You User Name To See Your Bikes <br />
-    <br />
+    Enter You User Name To See Your Bikes <input type="TEXT" name="searchUserName" value=""
+    data-error="Please enter the user name." required>
     <input type="SUBMIT" name="" value="Submit" />
 </form>
 <form action="searchUserBikeRide" method="GET">
-    <input type="TEXT" name="searchUserName" value="" /> Enter You User Name To See Your Bike Rides <br />
-    <br />
+    Enter You User Name To See Your Bike Rides <input type="TEXT" name="searchUserName" value=""
+    data-error="Please enter the user name." required>
     <input type="SUBMIT" name="" value="Submit" />
 </form>
 <form action="searchUserName" method="GET">
-    <input type="TEXT" name="searchUserName" value="" /> Enter You User Name To See Your User Information <br />
-    <br />
+    Enter You User Name To See Your User Information <input type="TEXT" name="searchUserName" value=""
+    data-error="Please enter the user name." required>
     <input type="SUBMIT" name="" value="Submit" />
 </form>
 <div class="row center">
@@ -42,7 +42,14 @@
 <div class="row center">
     <a href="addBikeRide.jsp" id="bikeRide-button" class="btn-large waves-effect waves-light teal lighten-1">Click here to add a bike ride!</a>
 </div>
-
+<br><br>
+<div class="row center">
+    <a href="deleteBike.jsp" id="deleteBike-button" class="btn-large waves-effect waves-light teal lighten-1">Click here to delete a bike!</a>
+</div>
+<br><br>
+<div class="row center">
+    <a href="deleteBikeRide.jsp" id="deleteBikeRide-button" class="btn-large waves-effect waves-light teal lighten-1">Click here to delete a bike ride!</a>
+</div>
 <!--  Scripts-->
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="js/materialize.js"></script>

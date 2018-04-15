@@ -273,6 +273,7 @@ public class User {
         bikes.add(bike);
         bike.setUser(this);
     }
+
     /**
      * Gets bike ride.
      *
