@@ -62,6 +62,7 @@
 | 03/26/2018 | Implemented feedback from Week 9 Exercise | .5 |
 | 04//06/2018 | Watched Week 11 videos & Week 11 Exercise| 4.5 | 
 | 04/08/2018 | Added SearchUserBike, SearchUserBikeRide, and SearchUserName classes & jsps | 4 |
+| 04/14/2018 | Added AddUserBike, addBike.jsp, & addBikeRide.jsp | 8 |
 
 
 

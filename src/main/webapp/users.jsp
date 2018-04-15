@@ -8,12 +8,13 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@include file="head.jsp"%>
 <html>
-<body style="color:#fff;background:#80ced6">
+<body style="color:#000000;background:#80ced6">
 <div class="container-fluid">
     <h2>User Information</h2>
     <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
     <table id="users">
         <thead>
+        <th>User Id</th>
         <th>Email</th>
         <th>First Name</th>
         <th>Last Name</th>
@@ -21,6 +22,7 @@
         </thead>
         <c:forEach var="user" items="${users}">
             <tr>
+                <td>${user.getUserId()}</td>
                 <td>${user.email}</td>
                 <td>${user.firstName}</td>
                 <td>${user.lastName}</td>
@@ -29,6 +31,7 @@
         </c:forEach>
         </tr>
     </table>
+    <a lass="container #000000 black-text" href="home.jsp">Home Page</a>
 </div>
 </body>
 </html>

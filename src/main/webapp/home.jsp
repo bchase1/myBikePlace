@@ -35,6 +35,13 @@
     <br />
     <input type="SUBMIT" name="" value="Submit" />
 </form>
+<div class="row center">
+    <a href="addBike.jsp" id="bike-button" class="btn-large waves-effect waves-light teal lighten-1">Click here to add a bike!</a>
+</div>
+<br><br>
+<div class="row center">
+    <a href="addBikeRide.jsp" id="bikeRide-button" class="btn-large waves-effect waves-light teal lighten-1">Click here to add a bike ride!</a>
+</div>
 
 <!--  Scripts-->
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>

@@ -8,7 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@include file="head.jsp"%>
 <html>
-<body style="color:#fff;background:#80ced6">
+<body style="color:#000000;background:#80ced6">
 <div class="container-fluid">
     <h2>Bikes</h2>
     <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
@@ -27,6 +27,7 @@
         </c:forEach>
         </tr>
     </table>
+    <a lass="container #000000 black-text" href="home.jsp">Home Page</a>
 </div>
 </body>
 </html>
