@@ -64,7 +64,7 @@
 | 04/08/2018 | Added SearchUserBike, SearchUserBikeRide, and SearchUserName classes & jsps | 4 |
 | 04/14/2018 | Added AddUserBike, addBike.jsp, & addBikeRide.jsp | 8 |
 | 04/15/2018 | Added DeleteUserBike, deleteBike.jsp, DeleteUserBikeRide, deleteBikeRide.jsp, and test db/tables | 7.5 |
-
+| 04/16/2018 | Added updateBike.jsp and updateBikeRide.jsp | 1.5 |
 
 
   

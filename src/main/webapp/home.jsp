@@ -50,6 +50,16 @@
 <div class="row center">
     <a href="deleteBikeRide.jsp" id="deleteBikeRide-button" class="btn-large waves-effect waves-light teal lighten-1">Click here to delete a bike ride!</a>
 </div>
+</div>
+<br><br>
+<div class="row center">
+    <a href="updateBike.jsp" id="updateBike-button" class="btn-large waves-effect waves-light teal lighten-1">Click here to update bike accessories!</a>
+</div>
+</div>
+<br><br>
+<div class="row center">
+    <a href="updateBikeRide.jsp" id="updateBikeRide-button" class="btn-large waves-effect waves-light teal lighten-1">Click here to update a bike ride description!</a>
+</div>
 <!--  Scripts-->
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="js/materialize.js"></script>

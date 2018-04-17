@@ -40,10 +40,9 @@
  -	[x] Deploy to AWS for first time
  -	[x] Create bike rides table
  - [x] Create the bike rides dao unit tests
- - [ ] Add functionality to add new user
  -	[x] Build the bike add and delete jsp  
  -	[x] Build the bike rides add and delete jsp
- - [ ] Build the bike and bike rides update jsps
+ - [x] Build the bike and bike rides update jsps
  - [x] Create the template for all jsps using materialize
  -	[x] Prepare for Checkpoint 2: Database designed and created, at least one DAO implemented with Hibernate, DAO is unit tested, Log4J is implemented (no System.out.printlns), class design and any other diagrams you plan to use have been created
  -	[x] Daily Time Log entry
@@ -55,7 +54,7 @@
  -	[x] Daily Time Log entry
 	
 ## Week 8
- -	[ ] Possible bike rides table integration with Weatherbit Historical Weather api??
+ -	[ ] Possible current weather data on home page from OpenWeatherMap api??
  -	[x] Prepare for Checkpoint 3: Deployed to AWS, at least one JSP that displays data from the database is implemented
  - 	[x] Daily Time Log entry
 	

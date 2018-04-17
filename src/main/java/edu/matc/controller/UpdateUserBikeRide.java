@@ -11,23 +11,26 @@ import java.io.IOException;
 
 
 /**
- * A simple servlet to delete a bike.
+ * A simple servlet to update a bike ride description.
  * @author bchase
  */
 
 @WebServlet(
-        urlPatterns = {"/deleteUserBikeRide"}
+        urlPatterns = {"/updateUserBikeRide"}
 )
 
-public class DeleteUserBikeRide extends HttpServlet {
+public class UpdateUserBikeRide extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
 
         GenericDao genericDao = new GenericDao(BikeRides.class);
         int bikeRideId = Integer.parseInt(req.getParameter("id"));
         BikeRides bikeRide = (BikeRides)genericDao.getById(bikeRideId);
-        genericDao.delete(bikeRide);
-        RequestDispatcher dispatcher = req.getRequestDispatcher("/deleteBikeRideMessage.jsp");
+        String newBikeDescription = req.getParameter("rideDescription");
+        bikeRide.setRideDescription(newBikeDescription);
+        genericDao.saveOrUpdate(bikeRide);
+        RequestDispatcher dispatcher = req.getRequestDispatcher("/updateBikeRideMessage.jsp");
         dispatcher.forward(req, resp);
     }
 }
