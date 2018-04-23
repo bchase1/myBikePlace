@@ -20,21 +20,18 @@
     <h1 class="header center #000000 black-text text-lighten-2">myBikePlace</h1>
     <div class="row center"></div>
 </div>
-<form action="searchUserBike" method="GET">
-    Enter You User Name To See Your Bikes <input type="TEXT" name="searchUserName" value=""
-    data-error="Please enter the user name." required>
-    <input type="SUBMIT" name="" value="Submit" />
-</form>
-<form action="searchUserBikeRide" method="GET">
-    Enter You User Name To See Your Bike Rides <input type="TEXT" name="searchUserName" value=""
-    data-error="Please enter the user name." required>
-    <input type="SUBMIT" name="" value="Submit" />
-</form>
-<form action="searchUserName" method="GET">
-    Enter You User Name To See Your User Information <input type="TEXT" name="searchUserName" value=""
-    data-error="Please enter the user name." required>
-    <input type="SUBMIT" name="" value="Submit" />
-</form>
+<div class="row center">
+    <a href="searchUserBike" id="userBike-button" class="btn-large waves-effect waves-light teal lighten-1">Click here to see your bikes!</a>
+</div>
+<br><br>
+<div class="row center">
+<a href="searchUserBikeRide" id="userBikeRide-button" class="btn-large waves-effect waves-light teal lighten-1">Click here to see your bike rides!</a>
+</div>
+<br><br>
+<div class="row center">
+<a href="searchUserName" id="userName-button" class="btn-large waves-effect waves-light teal lighten-1">Click here to see your user information!</a>
+</div>
+<br><br>
 <div class="row center">
     <a href="addBike.jsp" id="bike-button" class="btn-large waves-effect waves-light teal lighten-1">Click here to add a bike!</a>
 </div>
@@ -44,21 +41,15 @@
 </div>
 <br><br>
 <div class="row center">
-    <a href="deleteBike.jsp" id="deleteBike-button" class="btn-large waves-effect waves-light teal lighten-1">Click here to delete a bike!</a>
-</div>
-<br><br>
-<div class="row center">
-    <a href="deleteBikeRide.jsp" id="deleteBikeRide-button" class="btn-large waves-effect waves-light teal lighten-1">Click here to delete a bike ride!</a>
-</div>
-</div>
-<br><br>
-<div class="row center">
     <a href="updateBike.jsp" id="updateBike-button" class="btn-large waves-effect waves-light teal lighten-1">Click here to update bike accessories!</a>
-</div>
 </div>
 <br><br>
 <div class="row center">
     <a href="updateBikeRide.jsp" id="updateBikeRide-button" class="btn-large waves-effect waves-light teal lighten-1">Click here to update a bike ride description!</a>
+</div>
+<br><br>
+<div class="row center">
+    <a href="logout.jsp" id="logout-button" class="btn-large waves-effect waves-light teal lighten-1">Click here to Logout!</a>
 </div>
 <!--  Scripts-->
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>

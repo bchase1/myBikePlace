@@ -1,8 +1,8 @@
 <%--
   Created by IntelliJ IDEA.
   User: sighguy4
-  Date: 4/8/18
-  Time: 3:38 PM
+  Date: 4/22/18
+  Time: 6:31 PM
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -20,7 +20,7 @@
             <tr>
                 <td>
                     <c:forEach var="bike" items="${user.bikes}">
-                        ${bike.getId()} ${bike.modelYear} ${bike.bikeBrand} ${bike.bikeName} ${bike.accessories}<br/>
+                        ${bike.getId()} ${bike.modelYear} ${bike.bikeBrand} ${bike.bikeName} ${bike.accessories} <a href="deleteBike.jsp" id="deleteBike-button" class="btn-large waves-effect waves-light teal lighten-1">Click here to delete this bike!</a><br/>
                     </c:forEach>
                 </td>
             </tr>
@@ -31,4 +31,3 @@
 </div>
 </body>
 </html>
-

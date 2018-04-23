@@ -1,17 +1,10 @@
 package edu.matc.persistence;
 
-import java.io.Serializable;
-import java.util.ArrayList;
 import java.util.List;
-
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Expression;
 import javax.persistence.criteria.Root;
-
-import edu.matc.entity.Bike;
-import edu.matc.entity.User;
-import edu.matc.entity.BikeRides;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.hibernate.Session;

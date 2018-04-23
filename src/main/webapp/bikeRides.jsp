@@ -17,7 +17,7 @@
             <tr>
                 <td>
                     <c:forEach var="bikeRides" items="${user.bikeRides}">
-                        ${bikeRides.getId()} ${bikeRides.milesRidden} ${bikeRides.rideDescription}<br/>
+                        ${bikeRides.getId()} ${bikeRides.milesRidden} ${bikeRides.rideDescription} <a href="deleteBikeRide.jsp" id="deleteBikeRide-button" class="btn-large waves-effect waves-light teal lighten-1">Click here to delete this bike ride!</a><br/>
                     </c:forEach>
                 </td>
             </tr>

@@ -29,10 +29,12 @@
                 <h5 class="header col s12 light">A place to keep track of your bikes and bike rides!</h5>
             </div>
             <div class="row center">
-                <a href="home.jsp" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Click here to login!</a>
+                <a href="home.jsp" id="login-button" class="btn-large waves-effect waves-light teal lighten-1">Click here to login!</a>
+            </div>
+            <div class="row center">
+                <a href="register.jsp" id="register-button" class="btn-large waves-effect waves-light teal lighten-1">Click here to register!</a>
             </div>
             <br><br>
-
         </div>
     </div>
     <div class="parallax"><img src="Kramon_StradeBianche2018.jpg" alt="Unsplashed background img 1"></div>

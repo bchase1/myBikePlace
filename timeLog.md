@@ -65,6 +65,9 @@
 | 04/14/2018 | Added AddUserBike, addBike.jsp, & addBikeRide.jsp | 8 |
 | 04/15/2018 | Added DeleteUserBike, deleteBike.jsp, DeleteUserBikeRide, deleteBikeRide.jsp, and test db/tables | 7.5 |
 | 04/16/2018 | Added updateBike.jsp and updateBikeRide.jsp | 1.5 |
+| 04/18/2018 | First two Week 13 videos | .5 |
+| 04/21/2018 | Third Week 13 video and Week 13 Exercise | 3.5 |
+| 04/22/2018 | Updated various jsps and classes | 8 | 
 
 
   

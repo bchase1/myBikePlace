@@ -30,7 +30,7 @@
  -	[x] Create the bike dao
  -	[x] Create the bike dao unit tests
  -	[x] add a jsp to display user
- -	[ ] Add jsp to add a user
+ -	[x] Add jsp to add a user
  -	[x] Prepare for Week 6 peer design/code review
 
  -	[x] Daily Time Log entry
@@ -75,11 +75,11 @@
  -	[x] Daily Time Log entry
 	
 ## Week 13
- -	[ ] Complete todos identified in week 12
- -	[ ] Prepare for week 13 peer code reviews
- -	[ ] Code quality check
- -	[ ] Review rubric to make sure I'm on target
- -	[ ] Daily Time Log entry
+ -	[x] Complete todos identified in week 12
+ -	[x] Prepare for week 13 peer code reviews
+ -	[x] Code quality check
+ -	[x] Review rubric to make sure I'm on target
+ -	[x] Daily Time Log entry
 	
 ## Week 14
  -	[ ] Create final presentation

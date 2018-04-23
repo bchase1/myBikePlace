@@ -22,7 +22,7 @@
 <div id="content">
     <form action="deleteUserBikeRide" method="POST">
 
-        Id: <input type = "text" name = "id"
+        Bike Rides Id: <input type = "text" name = "id"
                    data-error="Please enter the bike rides id." required>
         <br />
         <button type="SUBMIT" class="btn btn-default col-sm-offset-3"

@@ -25,7 +25,7 @@
         Ride Description: <input type = "text" name = "rideDescription"
                                  data-error="Please enter the ride description." required>
         <br />
-        User Id: <input type = "text" name = "id"
+        Bike Rides Id: <input type = "text" name = "id"
                         data-error="Please enter the bike rides id." required>
         <br />
         <div class="container">

@@ -25,8 +25,7 @@ public class SearchUserBike extends HttpServlet {
 
         GenericDao genericDao;
         genericDao = new GenericDao(User.class);
-        String searchUserName = req.getParameter("searchUserName");
-        req.setAttribute("users", genericDao.getByPropertyLike("userName", searchUserName));
+        req.setAttribute("users", genericDao.getByPropertyLike("userName", req.getRemoteUser()));
         RequestDispatcher dispatcher = req.getRequestDispatcher("/bikes.jsp");
         dispatcher.forward(req, resp);
     }

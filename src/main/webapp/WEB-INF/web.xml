@@ -31,4 +31,7 @@
   <security-role>
     <role-name>user</role-name>
   </security-role>
+  <error-page>
+    <location>/error.jsp</location>
+  </error-page>
 </web-app>

@@ -25,7 +25,7 @@
         Accessories: <input type = "text" name = "accessories"
                             data-error="Please enter the accessories." required>
         <br />
-        User Id: <input type = "text" name = "id"
+        Bike Id: <input type = "text" name = "id"
                         data-error="Please enter the bike id." required>
         <br />
         <button type="SUBMIT" class="btn btn-default col-sm-offset-3"
