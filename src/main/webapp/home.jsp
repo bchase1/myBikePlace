@@ -51,6 +51,8 @@
 <div class="row center">
     <a href="logout.jsp" id="logout-button" class="btn-large waves-effect waves-light teal lighten-1">Click here to Logout!</a>
 </div>
+<div class="row center" id="openweathermap-widget-5"></div>
+<script>window.myWidgetParam ? window.myWidgetParam : window.myWidgetParam = [];  window.myWidgetParam.push({id: 5,cityid: '5261457',appid: '6a6c46d4dc5113d20b1e6cf5a286573b',units: 'imperial',containerid: 'openweathermap-widget-5',  });  (function() {var script = document.createElement('script');script.async = true;script.charset = "utf-8";script.src = "//openweathermap.org/themes/openweathermap/assets/vendor/owm/js/weather-widget-generator.js";var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(script, s);  })();</script>
 <!--  Scripts-->
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="js/materialize.js"></script>

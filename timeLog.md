@@ -68,6 +68,6 @@
 | 04/18/2018 | First two Week 13 videos | .5 |
 | 04/21/2018 | Third Week 13 video and Week 13 Exercise | 3.5 |
 | 04/22/2018 | Updated various jsps and classes | 8 | 
-
+| 04/23/2018 | Implement OpenWeatherMap api | 1 |
 
   
