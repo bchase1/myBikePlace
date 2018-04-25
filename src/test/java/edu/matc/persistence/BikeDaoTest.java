@@ -90,7 +90,7 @@ class BikeDaoTest {
      */
     @Test
     void getByPropertyEqualSuccess() {
-        List<Bike> bikes = genericDao.getByPropertyLike("bikeBrand", "Trek");
+        List<Bike> bikes = genericDao.getByPropertyEqual("bikeBrand", "Trek");
         assertEquals(4, bikes.size());
         assertEquals(1, bikes.get(0).getId());
     }

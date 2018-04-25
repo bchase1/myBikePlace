@@ -133,4 +133,26 @@ public class GenericDao<T> {
         logger.debug("getByPropertyLike users: {}", list);
         return list;
     }
+    /**
+     * Get order by property (equal)
+     * sample usage: getByPropertyEqual("lastName", "Smith")
+     *
+     * @param propertyName entity property to search by
+     * @param value value of the property to search for
+     * @return list of orders meeting the criteria search
+     */
+    public List<T> getByPropertyEqual(String propertyName, String value) {
+        Session session = getSession();
+
+        logger.debug("Searching for user with " + propertyName + " = " + value);
+
+        CriteriaBuilder builder = session.getCriteriaBuilder();
+        CriteriaQuery<T> query = builder.createQuery(type);
+        Root<T> root = query.from(type);
+        query.select(root).where(builder.equal(root.get(propertyName), value));
+        List<T> entities = session.createQuery( query ).getResultList();
+
+        session.close();
+        return entities;
+    }
 }

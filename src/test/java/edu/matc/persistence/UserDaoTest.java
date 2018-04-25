@@ -115,7 +115,7 @@ class UserDaoTest {
      */
     @Test
     void getByPropertyEqualSuccess() {
-        List<User> users = genericDao.getByPropertyLike("lastName", "Curry");
+        List<User> users = genericDao.getByPropertyEqual("lastName", "Curry");
         assertEquals(1, users.size());
         assertEquals(3, users.get(0).getUserId());
     }

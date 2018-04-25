@@ -21,7 +21,6 @@
  -	[x] Set up logging
  -	[x] Create the test database
  -	[x] Create user dao unit tests
- -	[ ] Create class uml diagram
  -	[x] Daily Time Log entry
 	
 ## Week 5
@@ -60,7 +59,6 @@
 	
 ## Week 9
  -	[x] Review and incorporate feedback from Checkpoint 3
- -	[ ] Add password reset/reminder functionality
  -	[x] Daily Time Log entry
 	
 ## Week 10
