@@ -41,14 +41,6 @@
 </div>
 <br><br>
 <div class="row center">
-    <a href="updateBike.jsp" id="updateBike-button" class="btn-large waves-effect waves-light teal lighten-1">Click here to update bike accessories!</a>
-</div>
-<br><br>
-<div class="row center">
-    <a href="updateBikeRide.jsp" id="updateBikeRide-button" class="btn-large waves-effect waves-light teal lighten-1">Click here to update a bike ride description!</a>
-</div>
-<br><br>
-<div class="row center">
     <a href="logout.jsp" id="logout-button" class="btn-large waves-effect waves-light teal lighten-1">Click here to Logout!</a>
 </div>
 <div class="row center" id="openweathermap-widget-5"></div>

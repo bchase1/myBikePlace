@@ -81,12 +81,12 @@
 	
 ## Week 14
  -	[ ] Create final presentation
- -	[ ] Daily Time Log entry
+ -	[x] Daily Time Log entry
 	
 ## Week 15
  -	[ ] Finalize all documentation
  -	[ ] Code quality check
- -	[ ] Daily Time Log entry
+ -	[x] Daily Time Log entry
 	
 ## Week 16
  -	[ ] Final Presentation

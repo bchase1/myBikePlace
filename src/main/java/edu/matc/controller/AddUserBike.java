@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.annotation.*;
 import java.io.IOException;
+import java.util.List;
 
 
 /**
@@ -30,9 +31,8 @@ public class AddUserBike extends HttpServlet {
         bike.setBikeBrand(req.getParameter("bikeBrand"));
         bike.setBikeName(req.getParameter("bikeName"));
         bike.setAccessories(req.getParameter("accessories"));
-        String user_id = req.getParameter("user_id");
-        int userId = Integer.parseInt(user_id);
-        User user = (User)genericDao.getById(userId);
+        List<User> users = genericDao.getByPropertyEqual("userName", req.getRemoteUser());
+        User user = users.get(0);
         bike.setUser(user);
         user.addBike(bike);
         int id = genericDao.insert(bike);

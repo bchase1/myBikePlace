@@ -8,26 +8,28 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@include file="head.jsp"%>
 <html>
-<body style="color:#000000;background:#80ced6">
+<body style="color:#000000;background:#b3ffff">
 <div class="container-fluid">
     <h2>Bikes</h2>
     <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
     <table id="users">
         <thead>
-        <th>Bike Id Bikes and Accessories</th>
+        <th>Bikes and Accessories</th>
         </thead>
         <c:forEach var="user" items="${users}">
             <tr>
                 <td>
                     <c:forEach var="bike" items="${user.bikes}">
-                        ${bike.getId()} ${bike.modelYear} ${bike.bikeBrand} ${bike.bikeName} ${bike.accessories} <a href="deleteBike.jsp" id="deleteBike-button" class="btn-large waves-effect waves-light teal lighten-1">Click here to delete this bike!</a><br/>
+                        ${bike.modelYear} ${bike.bikeBrand} ${bike.bikeName} ${bike.accessories}
+                        <a href="deleteUserBike?id=${bike.getId()}"  class="btn-large waves-effect waves-#01579b light-blue darken-4">Click here to delete this bike!</a>
+                        <a href="updateBike.jsp?id=${bike.getId()}"  class="btn-large waves-effect waves-#311b92 deep-purple darken-4">Click here to update the bike accessories!</a><br/>
                     </c:forEach>
                 </td>
             </tr>
         </c:forEach>
         </tr>
     </table>
-    <a lass="container #000000 black-text" href="home.jsp">Home Page</a>
+    <a class="container #000000 black-text" href="home.jsp">Home Page</a>
 </div>
 </body>
 </html>

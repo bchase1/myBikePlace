@@ -23,7 +23,6 @@ public class UpdateUserBike extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-
         GenericDao genericDao = new GenericDao(Bike.class);
         int bikeId = Integer.parseInt(req.getParameter("id"));
         Bike bike = (Bike)genericDao.getById(bikeId);

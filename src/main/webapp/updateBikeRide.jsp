@@ -21,12 +21,9 @@
     <div class="row center"></div>
 </div>
 <div id="content">
-    <form action="updateUserBikeRide" method="POST">
+    <form action="updateUserBikeRide?id=${param.id}" method="POST">
         Ride Description: <input type = "text" name = "rideDescription"
                                  data-error="Please enter the ride description." required>
-        <br />
-        Bike Rides Id: <input type = "text" name = "id"
-                        data-error="Please enter the bike rides id." required>
         <br />
         <div class="container">
             <button type="SUBMIT" class="btn btn-default col-sm-offset-3"

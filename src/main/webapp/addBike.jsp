@@ -34,9 +34,6 @@
         Accessories: <input type = "text" name = "accessories"
         data-error="Please enter the accessories." required>
         <br />
-        User Id: <input type = "text" name = "user_id"
-        data-error="Please enter the user id." required>
-        <br />
         <button type="SUBMIT" class="btn btn-default col-sm-offset-3"
                 data-disable="true">Add The Bike
         </button>

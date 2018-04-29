@@ -21,12 +21,9 @@
     <div class="row center"></div>
 </div>
 <div id="content">
-    <form action="updateUserBike" method="POST">
+    <form action="updateUserBike?id=${param.id}" method="POST">
         Accessories: <input type = "text" name = "accessories"
                             data-error="Please enter the accessories." required>
-        <br />
-        Bike Id: <input type = "text" name = "id"
-                        data-error="Please enter the bike id." required>
         <br />
         <button type="SUBMIT" class="btn btn-default col-sm-offset-3"
                 data-disable="true">Update The Bike Accessories

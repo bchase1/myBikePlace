@@ -34,6 +34,9 @@
             <div class="row center">
                 <a href="register.jsp" id="register-button" class="btn-large waves-effect waves-light teal lighten-1">Click here to register!</a>
             </div>
+            <div class="row center">
+                <a href="admin.jsp" id="admin-button" class="btn-large waves-effect waves-light teal lighten-1">Click here to login as admin!</a>
+            </div>
             <br><br>
         </div>
     </div>

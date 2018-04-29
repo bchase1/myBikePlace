@@ -21,7 +21,7 @@ import java.io.IOException;
 
 public class DeleteUserBikeRide extends HttpServlet {
     @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         GenericDao genericDao = new GenericDao(BikeRides.class);
         int bikeRideId = Integer.parseInt(req.getParameter("id"));

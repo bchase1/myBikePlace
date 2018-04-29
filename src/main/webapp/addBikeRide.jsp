@@ -28,9 +28,6 @@
         Ride Description: <input type = "text" name = "rideDescription"
         data-error="Please enter the ride description." required>
         <br />
-        User Id: <input type = "text" name = "user_id"
-        data-error="Please enter the user id." required>
-        <br />
         <div class="container">
             <button type="SUBMIT" class="btn btn-default col-sm-offset-3"
                     data-disable="true">Add The Bike Ride

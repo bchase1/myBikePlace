@@ -69,5 +69,6 @@
 | 04/21/2018 | Third Week 13 video and Week 13 Exercise | 3.5 |
 | 04/22/2018 | Updated various jsps and classes | 8 | 
 | 04/23/2018 | Implement OpenWeatherMap api | 1 |
+| 04/28/2018 | Updated Read/Add/Update/Delete Functionality | 7 | 
 
   

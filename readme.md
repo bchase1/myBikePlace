@@ -11,8 +11,8 @@ Although there are other sites where you can enter information regarding your bi
 
 * Security/Authentication
 	* Tomcat's JDBC Realm Authentication
-	* Admin role: create/read/update/delete (crud) of all data
-	* User role: enter information about bike(s), enter information about bike rides(s), edit data they have entered previously
+	* User role: create/read/update/delete (crud) of that User's Bike and Bike Rides data
+	* User role: enter information about bike(s), enter information about bike rides(s), edit data they have entered previously for bike accessories and bike ride description
 	
 * Database
 	* MySQL
@@ -29,7 +29,7 @@ Although there are other sites where you can enter information regarding your bi
 	* Materialize
 
 * Data Validation
-	* Explore Hibernate's validation??
+	* Validate data using Dao tests for User, Bike, and Bike Rides entities
 
 * Logging
 	* Configurable logging using Log4J2. In production, only errors will normally be logged, but logging at a debug level can be turned on to facilitate trouble-shooting.
@@ -39,9 +39,8 @@ Although there are other sites where you can enter information regarding your bi
 
 * Independent Research Topics
 	* Materialize
-	* OpenWeatherMap API??
-	* Hibernate Validation??
-
+	* OpenWeatherMap API
+	
 * Unit Testing
 	* JUnit tests to achieve 80%+ code coverage
 	
