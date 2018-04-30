@@ -21,10 +21,7 @@
     <div class="row center"></div>
 </div>
 <div id="content">
-    <form action="updateUserEmail" method="POST">
-        User Id: <input type = "text" name = "id"
-                      data-error="Please enter the user id." required>
-        <br />
+    <form action="updateUserEmail?id=${param.id}" method="POST">
         Email: <input type = "text" name = "email"
                             data-error="Please enter the email address." required>
         <br />

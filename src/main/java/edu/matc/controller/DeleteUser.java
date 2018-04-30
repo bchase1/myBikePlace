@@ -21,7 +21,7 @@ import java.io.IOException;
 
 public class DeleteUser extends HttpServlet {
     @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         GenericDao genericDao = new GenericDao(User.class);
         int id = Integer.parseInt(req.getParameter("id"));

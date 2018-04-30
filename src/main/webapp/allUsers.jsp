@@ -13,20 +13,16 @@
     <h2>User Information</h2>
     <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
     <table id="users">
-        <thead>
-        <th>User Id</th>
-        <th>Email</th>
-        <th>First Name</th>
-        <th>Last Name</th>
-        <th>User Name</th>
-        </thead>
+        <head>
+        <th>User Id Email First Name Last Name and User Name</th>
+        </head>
         <c:forEach var="user" items="${users}">
             <tr>
-                <td>${user.getUserId()}</td>
-                <td>${user.email}</td>
-                <td>${user.firstName}</td>
-                <td>${user.lastName}</td>
-                <td>${user.userName}</td>
+                <td>
+                    ${user.getUserId()} ${user.email} ${user.firstName} ${user.lastName} ${user.userName}
+                    <a href="updateEmail.jsp?id=${user.getUserId()}"  class="btn-large waves-effect waves-#01579b light-blue darken-4">Click here to update a user email!</a>
+                    <a href="deleteUser?id=${user.getUserId()}"  class="btn-large waves-effect waves-#311b92 deep-purple darken-4">Click here to delete a user!</a><br/>
+                </td>
             </tr>
         </c:forEach>
         </tr>

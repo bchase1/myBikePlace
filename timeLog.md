@@ -70,5 +70,5 @@
 | 04/22/2018 | Updated various jsps and classes | 8 | 
 | 04/23/2018 | Implement OpenWeatherMap api | 1 |
 | 04/28/2018 | Updated Read/Add/Update/Delete Functionality | 7 | 
-
+| 04/29/2018 | Updated Update/Delete functionality for Admin Role - Review OpenWeatherMap api | 6 |
   

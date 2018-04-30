@@ -18,7 +18,7 @@
 <h1 class="center-align">Error Encountered! </h1>
 <h2 class="center-align">If Registering - User Name May Already Exist.  </h2>
 <h2 class="center-align">Please choose another.</h2>
-<a class="container #000000 black-text" href="index.jsp">Welcome Page</a>
+<a class="container #000000 black-text" href="logout.jsp">Click here to Logout!</a>
 <!--  Scripts-->
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="js/materialize.js"></script>

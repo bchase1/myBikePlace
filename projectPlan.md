@@ -53,7 +53,7 @@
  -	[x] Daily Time Log entry
 	
 ## Week 8
- -	[ ] Possible current weather data on home page from OpenWeatherMap api??
+ -	[x] Add current Madison, WI weather data on home page from OpenWeatherMap api
  -	[x] Prepare for Checkpoint 3: Deployed to AWS, at least one JSP that displays data from the database is implemented
  - 	[x] Daily Time Log entry
 	
@@ -62,7 +62,6 @@
  -	[x] Daily Time Log entry
 	
 ## Week 10
- -	[ ] Unit test all api integrations
  -	[x] Daily Time Log entry
 	
 ## Week 11 - Team project work week
@@ -85,7 +84,7 @@
 	
 ## Week 15
  -	[ ] Finalize all documentation
- -	[ ] Code quality check
+ -	[x] Code quality check
  -	[x] Daily Time Log entry
 	
 ## Week 16

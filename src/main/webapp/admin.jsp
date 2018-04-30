@@ -25,14 +25,6 @@
 </div>
 <br><br>
 <div class="row center">
-    <a href="updateEmail.jsp" id="updateEmail-button" class="btn-large waves-effect waves-light teal lighten-1">Click here to update a user email!</a>
-</div>
-<br><br>
-<div class="row center">
-    <a href="deleteUser.jsp" id="deleteUser-button" class="btn-large waves-effect waves-light teal lighten-1">Click here to delete a user!</a>
-</div>
-<br><br>
-<div class="row center">
     <a href="logout.jsp" id="logout-button" class="btn-large waves-effect waves-light teal lighten-1">Click here to Logout!</a>
 </div>
 <!--  Scripts-->
