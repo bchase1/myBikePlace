@@ -41,6 +41,10 @@
 </div>
 <br><br>
 <div class="row center">
+    <a href="getWeather" id="weather-button" class="btn-large waves-effect waves-light teal lighten-1">Click here to get Madison, WI weather!</a>
+</div>
+<br><br>
+<div class="row center">
     <a href="logout.jsp" id="logout-button" class="btn-large waves-effect waves-light teal lighten-1">Click here to Logout!</a>
 </div>
 <div class="row center" id="openweathermap-widget-5"></div>
