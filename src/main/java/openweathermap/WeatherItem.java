@@ -1,4 +1,4 @@
-package null;
+package openweathermap;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import javax.annotation.Generated;
