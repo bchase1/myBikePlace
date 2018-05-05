@@ -7,6 +7,8 @@ import java.util.Objects;
 
 /**
  * The type Role.
+ *
+ *  @author bchase
  */
 @Entity(name = "Role")
 @Table(name = "role")

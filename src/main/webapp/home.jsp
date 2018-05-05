@@ -41,7 +41,7 @@
 </div>
 <br><br>
 <div class="row center">
-    <a href="getWeather" id="weather-button" class="btn-large waves-effect waves-light teal lighten-1">Click here to get Madison, WI weather!</a>
+    <a href="weatherByZip.jsp" id="weather-button" class="btn-large waves-effect waves-light teal lighten-1">Click here to enter a zip code to get weather!</a>
 </div>
 <br><br>
 <div class="row center">

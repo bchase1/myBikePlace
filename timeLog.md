@@ -74,4 +74,5 @@
 | 04/30/2018 | Work on api | 1 |
 | 05/03/2018 | Work on api | 2 |
 | 05/04/2018 | Work on api | 2 |
+| 05/05/2018 | Finalize api | 6 |
   

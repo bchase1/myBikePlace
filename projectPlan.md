@@ -79,19 +79,20 @@
  -	[x] Daily Time Log entry
 	
 ## Week 14
- -	[ ] Create final presentation
+ -	[x] Create final presentation
  -	[x] Daily Time Log entry
 	
 ## Week 15
- -	[ ] Finalize all documentation
+ -	[x] Finalize all documentation
  -	[x] Code quality check
  -	[x] Daily Time Log entry
 	
 ## Week 16
+ - [x] Add ability to search for weather by zip code using OpenWeatherMap api
  -	[ ] Final Presentation
  -	[ ] Create video
- -	[ ] Final touches before code complete
- -	[ ] Daily Time Log entry
+ -	[x] Final touches before code complete
+ -	[x] Daily Time Log entry
 
 	
 	
