@@ -1,13 +1,12 @@
 package edu.matc.controller;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import edu.matc.persistence.OwmWeather;
-
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
-import javax.ws.rs.client.Client;
-import javax.ws.rs.client.ClientBuilder;
-import javax.ws.rs.client.WebTarget;
-import javax.ws.rs.core.MediaType;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
@@ -18,25 +17,28 @@ import java.io.IOException;
 @WebServlet(
         urlPatterns = {"/getWeather"}
 )
-public class GetWeather {
-    public void getOwmWeather() {
-        OwmWeather owmWeather = new OwmWeather();
+public class GetWeather extends HttpServlet {
+    @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         try {
-            owmWeather.owmApi();
-        } catch (Exception e) {
+            OwmWeather owmWeather = new OwmWeather();
+            req.setAttribute("theWeather", owmWeather.owmApi());
+            RequestDispatcher dispatcher = req.getRequestDispatcher("/showWeather.jsp");
+            dispatcher.forward(req, resp);
+        } catch (ServletException e) {
             e.printStackTrace();
+        } catch (Exception ex) {
+            ex.printStackTrace();
         }
+
     }
-    //public OWMSearchResults getJsonResponse(String url) throws IOException {
-
-        //Client client = ClientBuilder.newClient();
-        //WebTarget target = client.target(url);
-
-        //String response = target.request(MediaType.APPLICATION_JSON).get(String.class);
-
-        //ObjectMapper mapper = new ObjectMapper();
-
-        //return mapper.readValue(response, OWMSearchResults.class);
+    //public void getOwmWeather() {
+        //OwmWeather owmWeather = new OwmWeather();
+        //try {
+            //owmWeather.owmApi();
+        //} catch (Exception e) {
+            //e.printStackTrace();
+        //}
     //}
 }
 
