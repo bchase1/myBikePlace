@@ -55,3 +55,5 @@ Although there are other sites where you can enter information regarding your bi
 ## [Project Plan](projectPlan.md "Project Plan")
 
 ## [Time Log](timeLog.md)
+## [Video Demo 1](https://youtu.be/LFLrUjCPseI)
+## [Video Demo 2](https://youtu.be/sV0Ac76LYbk)
