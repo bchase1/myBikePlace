@@ -75,4 +75,4 @@
 | 05/03/2018 | Work on api | 2 |
 | 05/04/2018 | Work on api | 2 |
 | 05/05/2018 | Finalize api & update error handling | 6.5 |
-  
+| 05/06/2018 | Record Project Demo | .5 |  
