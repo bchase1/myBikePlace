@@ -89,8 +89,8 @@
 	
 ## Week 16
  - [x] Add ability to search for weather by zip code using OpenWeatherMap api
- -	[ ] Final Presentation
- -	[ ] Create video
+ -	[x] Final Presentation
+ -	[x] Create video
  -	[x] Final touches before code complete
  -	[x] Daily Time Log entry
 
